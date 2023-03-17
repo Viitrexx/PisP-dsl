@@ -16,7 +16,7 @@
         <child id="12618812418352735" name="coordinates" index="Rwzbx" />
       </concept>
       <concept id="12618812418270434" name="PisP.structure.Shape" flags="ng" index="Rwn1s">
-        <reference id="12618812418292533" name="lattice" index="RwiYb" />
+        <property id="12618812418382271" name="lattice" index="RwSO1" />
         <child id="12618812418280747" name="locations" index="RwhAl" />
       </concept>
       <concept id="12618812418269233" name="PisP.structure.BagOfPieces" flags="ng" index="Rwnif">
@@ -28,7 +28,7 @@
       </concept>
       <concept id="12618812418296553" name="PisP.structure.Piece" flags="ng" index="RwHTn">
         <property id="12618812418299683" name="dimensions" index="RwGet" />
-        <reference id="12618812418368012" name="lattice" index="RwZqM" />
+        <property id="12618812418379663" name="lattice" index="RwTGL" />
         <child id="12618812418297492" name="locations" index="RwHCE" />
       </concept>
       <concept id="12618812418160283" name="PisP.structure.Puzzle" flags="ng" index="RxM8_">
@@ -61,7 +61,7 @@
   <node concept="RwHTn" id="GPbSRFM6x">
     <property role="TrG5h" value=":. Piece" />
     <property role="RwGet" value="2" />
-    <ref role="RwZqM" to="y4b7:GPbSRFLrZ" resolve="Cubic Lattice" />
+    <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
     <node concept="RwmKx" id="GPbSRFM6y" role="RwHCE">
       <node concept="RwgVp" id="GPbSRFMNp" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -89,7 +89,7 @@
   </node>
   <node concept="Rwn1s" id="GPbSRFLs0">
     <property role="TrG5h" value="2x2x1 Square" />
-    <ref role="RwiYb" to="y4b7:GPbSRFLrZ" resolve="Cubic Lattice" />
+    <property role="RwSO1" value="GPbSRFNsK/CubicLattice" />
     <node concept="RwmKx" id="GPbSRFM4D" role="RwhAl">
       <node concept="RwgVp" id="GPbSRFM4F" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -138,7 +138,7 @@
   <node concept="RwHTn" id="GPbSRFNoh">
     <property role="TrG5h" value=". Piece" />
     <property role="RwGet" value="1" />
-    <ref role="RwZqM" to="y4b7:GPbSRFLrZ" resolve="Cubic Lattice" />
+    <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
     <node concept="RwmKx" id="GPbSRFNoi" role="RwHCE">
       <node concept="RwgVp" id="GPbSRFNok" role="Rwzbx">
         <property role="RwgEk" value="0" />

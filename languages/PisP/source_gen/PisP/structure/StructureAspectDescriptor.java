@@ -4,13 +4,16 @@ package PisP.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBagOfPieces = createDescriptorForBagOfPieces();
@@ -21,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPieceReference = createDescriptorForPieceReference();
   /*package*/ final ConceptDescriptor myConceptPuzzle = createDescriptorForPuzzle();
   /*package*/ final ConceptDescriptor myConceptShape = createDescriptorForShape();
+  /*package*/ final EnumerationDescriptor myEnumerationLatticeEnum = new EnumerationDescriptor_LatticeEnum();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -63,6 +67,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myEnumerationLatticeEnum);
+  }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
@@ -108,7 +116,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418296553");
     b.version(3);
     b.property("dimensions", 0x2cd4be37ae1723L).type(PrimitiveTypeId.INTEGER).origin("12618812418299683").done();
-    b.associate("lattice", 0x2cd4be37af220cL).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adf1b9L).optional(false).origin("12618812418368012").done();
+    b.property("lattice", 0x2cd4be37af4f8fL).type(MetaIdFactory.dataTypeId(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37af372fL)).origin("12618812418379663").done();
     b.aggregate("locations", 0x2cd4be37ae0e94L).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL).optional(true).ordered(true).multiple(true).origin("12618812418297492").done();
     return b.create();
   }
@@ -137,7 +145,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418270434");
     b.version(3);
-    b.associate("lattice", 0x2cd4be37adfb35L).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adf1b9L).optional(false).origin("12618812418292533").done();
+    b.property("lattice", 0x2cd4be37af59bfL).type(MetaIdFactory.dataTypeId(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37af372fL)).origin("12618812418382271").done();
     b.aggregate("locations", 0x2cd4be37adcd2bL).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL).optional(true).ordered(true).multiple(true).origin("12618812418280747").done();
     return b.create();
   }

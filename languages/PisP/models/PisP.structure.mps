@@ -9,6 +9,17 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -35,6 +46,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -89,14 +103,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="GPbSRFryv" resolve="Location" />
     </node>
-    <node concept="1TJgyj" id="GPbSRFvGP" role="1TKVEi">
-      <property role="IQ2ns" value="12618812418292533" />
-      <property role="20kJfa" value="lattice" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="GPbSRFv6T" resolve="Lattice" />
-    </node>
     <node concept="PrWs8" id="GPbSRFKEb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="GPbSRFPAZ" role="1TKVEl">
+      <property role="IQ2nx" value="12618812418382271" />
+      <property role="TrG5h" value="lattice" />
+      <ref role="AX2Wp" node="GPbSRFNsJ" resolve="LatticeEnum" />
     </node>
   </node>
   <node concept="1TIwiD" id="GPbSRFryv">
@@ -129,6 +142,7 @@
     <node concept="PrWs8" id="GPbSRFKep" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="asaX9" id="GPbSRFPkD" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="GPbSRFwaX">
     <property role="EcuMT" value="12618812418294461" />
@@ -156,6 +170,11 @@
       <property role="TrG5h" value="dimensions" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="GPbSRFOYf" role="1TKVEl">
+      <property role="IQ2nx" value="12618812418379663" />
+      <property role="TrG5h" value="lattice" />
+      <ref role="AX2Wp" node="GPbSRFNsJ" resolve="LatticeEnum" />
+    </node>
     <node concept="1TJgyj" id="GPbSRFwUk" role="1TKVEi">
       <property role="IQ2ns" value="12618812418297492" />
       <property role="20kJfa" value="locations" />
@@ -166,11 +185,24 @@
     <node concept="PrWs8" id="GPbSRFJBF" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" />
     </node>
-    <node concept="1TJgyj" id="GPbSRFM8c" role="1TKVEi">
-      <property role="IQ2ns" value="12618812418368012" />
-      <property role="20kJfa" value="lattice" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="GPbSRFv6T" resolve="Lattice" />
+  </node>
+  <node concept="25R3W" id="GPbSRFNsJ">
+    <property role="3F6X1D" value="12618812418373423" />
+    <property role="TrG5h" value="LatticeEnum" />
+    <node concept="25R33" id="GPbSRFNsK" role="25R1y">
+      <property role="3tVfz5" value="12618812418373424" />
+      <property role="TrG5h" value="CubicLattice" />
+      <property role="1L1pqM" value="cubic lattice" />
+    </node>
+    <node concept="25R33" id="GPbSRFNsL" role="25R1y">
+      <property role="3tVfz5" value="12618812418373425" />
+      <property role="TrG5h" value="RhombohedralLattice" />
+      <property role="1L1pqM" value="rhombohedral lattice" />
+    </node>
+    <node concept="25R33" id="GPbSRFPU8" role="25R1y">
+      <property role="3tVfz5" value="12618812418383496" />
+      <property role="TrG5h" value="FCCLattice" />
+      <property role="1L1pqM" value="FCC lattice" />
     </node>
   </node>
 </model>
