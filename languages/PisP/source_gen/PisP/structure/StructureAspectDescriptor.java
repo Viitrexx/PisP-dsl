@@ -18,6 +18,8 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBagOfPieces = createDescriptorForBagOfPieces();
   /*package*/ final ConceptDescriptor myConceptCoordinate = createDescriptorForCoordinate();
+  /*package*/ final ConceptDescriptor myConceptDescriptionComment = createDescriptorForDescriptionComment();
+  /*package*/ final ConceptDescriptor myConceptIDescriptionComment = createDescriptorForIDescriptionComment();
   /*package*/ final ConceptDescriptor myConceptLattice = createDescriptorForLattice();
   /*package*/ final ConceptDescriptor myConceptLocation = createDescriptorForLocation();
   /*package*/ final ConceptDescriptor myConceptPiece = createDescriptorForPiece();
@@ -39,7 +41,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBagOfPieces, myConceptCoordinate, myConceptLattice, myConceptLocation, myConceptPiece, myConceptPieceReference, myConceptPuzzle, myConceptShape);
+    return Arrays.asList(myConceptBagOfPieces, myConceptCoordinate, myConceptDescriptionComment, myConceptIDescriptionComment, myConceptLattice, myConceptLocation, myConceptPiece, myConceptPieceReference, myConceptPuzzle, myConceptShape);
   }
 
   @Override
@@ -50,6 +52,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBagOfPieces;
       case LanguageConceptSwitch.Coordinate:
         return myConceptCoordinate;
+      case LanguageConceptSwitch.DescriptionComment:
+        return myConceptDescriptionComment;
+      case LanguageConceptSwitch.IDescriptionComment:
+        return myConceptIDescriptionComment;
       case LanguageConceptSwitch.Lattice:
         return myConceptLattice;
       case LanguageConceptSwitch.Location:
@@ -80,6 +86,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "BagOfPieces", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ada031L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c62282L);
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418269233");
     b.version(3);
     b.aggregate("pieces", 0x2cd4be37aed1a3L).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae02bdL).optional(true).ordered(true).multiple(true).origin("12618812418347427").done();
@@ -91,6 +98,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418284135");
     b.version(3);
     b.property("coordinate", 0x2cd4be37adde2aL).type(PrimitiveTypeId.INTEGER).origin("12618812418285098").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDescriptionComment() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "DescriptionComment", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c6322eL);
+    b.class_(false, false, false);
+    // extends: jetbrains.mps.lang.core.structure.NodeAttribute
+    b.super_(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da54L);
+    b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/1962471989986079278");
+    b.version(3);
+    b.property("comment", 0x1b3c19e094c64ad2L).type(PrimitiveTypeId.STRING).origin("1962471989986085586").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIDescriptionComment() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "IDescriptionComment", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c62282L);
+    b.interface_();
+    b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/1962471989986075266");
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLattice() {
@@ -113,9 +137,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "Piece", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c62282L);
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418296553");
     b.version(3);
-    b.property("dimensions", 0x2cd4be37ae1723L).type(PrimitiveTypeId.INTEGER).origin("12618812418299683").done();
     b.property("lattice", 0x2cd4be37af4f8fL).type(MetaIdFactory.dataTypeId(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37af372fL)).origin("12618812418379663").done();
     b.aggregate("locations", 0x2cd4be37ae0e94L).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL).optional(true).ordered(true).multiple(true).origin("12618812418297492").done();
     return b.create();
@@ -133,6 +157,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "Puzzle", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37abf69bL);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c62282L);
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418160283");
     b.version(3);
     b.associate("bagofpieces", 0x2cd4be37adea14L).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ada031L).optional(false).origin("12618812418288148").done();

@@ -11,17 +11,21 @@ public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int BagOfPieces = 0;
   public static final int Coordinate = 1;
-  public static final int Lattice = 2;
-  public static final int Location = 3;
-  public static final int Piece = 4;
-  public static final int PieceReference = 5;
-  public static final int Puzzle = 6;
-  public static final int Shape = 7;
+  public static final int DescriptionComment = 2;
+  public static final int IDescriptionComment = 3;
+  public static final int Lattice = 4;
+  public static final int Location = 5;
+  public static final int Piece = 6;
+  public static final int PieceReference = 7;
+  public static final int Puzzle = 8;
+  public static final int Shape = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L);
     builder.put(0x2cd4be37ada031L, BagOfPieces);
     builder.put(0x2cd4be37adda67L, Coordinate);
+    builder.put(0x1b3c19e094c6322eL, DescriptionComment);
+    builder.put(0x1b3c19e094c62282L, IDescriptionComment);
     builder.put(0x2cd4be37adf1b9L, Lattice);
     builder.put(0x2cd4be37adb89fL, Location);
     builder.put(0x2cd4be37ae0ae9L, Piece);

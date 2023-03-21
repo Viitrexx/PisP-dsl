@@ -9,6 +9,9 @@
   </imports>
   <registry>
     <language id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP">
+      <concept id="1962471989986079278" name="PisP.structure.DescriptionComment" flags="ng" index="2fYyJe">
+        <property id="1962471989986085586" name="comment" index="2fY_cM" />
+      </concept>
       <concept id="12618812418284135" name="PisP.structure.Coordinate" flags="ng" index="RwgVp">
         <property id="12618812418285098" name="coordinate" index="RwgEk" />
       </concept>
@@ -27,7 +30,6 @@
         <reference id="12618812418295823" name="piece" index="RwHML" />
       </concept>
       <concept id="12618812418296553" name="PisP.structure.Piece" flags="ng" index="RwHTn">
-        <property id="12618812418299683" name="dimensions" index="RwGet" />
         <property id="12618812418379663" name="lattice" index="RwTGL" />
         <child id="12618812418297492" name="locations" index="RwHCE" />
       </concept>
@@ -37,6 +39,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -46,45 +51,22 @@
     <property role="TrG5h" value="My Easy Test Puzzle" />
     <ref role="RwjzG" node="GPbSRFLs0" resolve="2x2x1 Square" />
     <ref role="RwjUE" node="GPbSRFNpd" resolve="Easy Test Pieces" />
+    <node concept="2fYyJe" id="1GW6u2kO1Dh" role="lGtFl">
+      <property role="2fY_cM" value="This puzzle has 4 symmetric solutions uniquely determined by the placement of the dot piece" />
+    </node>
   </node>
   <node concept="Rwnif" id="GPbSRFNpd">
     <property role="TrG5h" value="Easy Test Pieces" />
-    <node concept="RwHo3" id="GPbSRFNpe" role="Rwwkt">
+    <node concept="RwHo3" id="1GW6u2kL81Y" role="Rwwkt">
       <property role="RwH0G" value="1" />
-      <ref role="RwHML" node="GPbSRFNoh" resolve=". Piece" />
+      <ref role="RwHML" node="1GW6u2kL80m" resolve=". Piece" />
     </node>
-    <node concept="RwHo3" id="GPbSRFNpg" role="Rwwkt">
+    <node concept="RwHo3" id="1GW6u2kL820" role="Rwwkt">
       <property role="RwH0G" value="1" />
-      <ref role="RwHML" node="GPbSRFM6x" resolve=":. Piece" />
+      <ref role="RwHML" node="1GW6u2kL80S" resolve=":. Piece" />
     </node>
-  </node>
-  <node concept="RwHTn" id="GPbSRFM6x">
-    <property role="TrG5h" value=":. Piece" />
-    <property role="RwGet" value="2" />
-    <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
-    <node concept="RwmKx" id="GPbSRFM6y" role="RwHCE">
-      <node concept="RwgVp" id="GPbSRFMNp" role="Rwzbx">
-        <property role="RwgEk" value="0" />
-      </node>
-      <node concept="RwgVp" id="GPbSRFMNr" role="Rwzbx">
-        <property role="RwgEk" value="0" />
-      </node>
-    </node>
-    <node concept="RwmKx" id="GPbSRFNnO" role="RwHCE">
-      <node concept="RwgVp" id="GPbSRFNnT" role="Rwzbx">
-        <property role="RwgEk" value="1" />
-      </node>
-      <node concept="RwgVp" id="GPbSRFNnV" role="Rwzbx">
-        <property role="RwgEk" value="1" />
-      </node>
-    </node>
-    <node concept="RwmKx" id="GPbSRFNo4" role="RwHCE">
-      <node concept="RwgVp" id="GPbSRFNoc" role="Rwzbx">
-        <property role="RwgEk" value="1" />
-      </node>
-      <node concept="RwgVp" id="GPbSRFNoe" role="Rwzbx">
-        <property role="RwgEk" value="0" />
-      </node>
+    <node concept="2fYyJe" id="1GW6u2kNLQe" role="lGtFl">
+      <property role="2fY_cM" value="Wow imagine all the shapes you can fill with these pieces" />
     </node>
   </node>
   <node concept="Rwn1s" id="GPbSRFLs0">
@@ -135,16 +117,46 @@
       </node>
     </node>
   </node>
-  <node concept="RwHTn" id="GPbSRFNoh">
+  <node concept="RwHTn" id="1GW6u2kL80m">
     <property role="TrG5h" value=". Piece" />
-    <property role="RwGet" value="1" />
     <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
-    <node concept="RwmKx" id="GPbSRFNoi" role="RwHCE">
-      <node concept="RwgVp" id="GPbSRFNok" role="Rwzbx">
+    <node concept="RwmKx" id="1GW6u2kL80n" role="RwHCE">
+      <node concept="RwgVp" id="1GW6u2kL80p" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
-      <node concept="RwgVp" id="GPbSRFNom" role="Rwzbx">
+      <node concept="RwgVp" id="1GW6u2kL80r" role="Rwzbx">
         <property role="RwgEk" value="0" />
+      </node>
+    </node>
+    <node concept="2fYyJe" id="1GW6u2kMzDj" role="lGtFl">
+      <property role="2fY_cM" value="Singular atom" />
+    </node>
+  </node>
+  <node concept="RwHTn" id="1GW6u2kL80S">
+    <property role="TrG5h" value=":. Piece" />
+    <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
+    <node concept="RwmKx" id="1GW6u2kL80T" role="RwHCE">
+      <node concept="RwgVp" id="1GW6u2kL80V" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="1GW6u2kL80X" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="1GW6u2kL81c" role="RwHCE">
+      <node concept="RwgVp" id="1GW6u2kL81h" role="Rwzbx">
+        <property role="RwgEk" value="1" />
+      </node>
+      <node concept="RwgVp" id="1GW6u2kL81j" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="1GW6u2kL81m" role="RwHCE">
+      <node concept="RwgVp" id="1GW6u2kL81u" role="Rwzbx">
+        <property role="RwgEk" value="1" />
+      </node>
+      <node concept="RwgVp" id="1GW6u2kL81w" role="Rwzbx">
+        <property role="RwgEk" value="1" />
       </node>
     </node>
   </node>

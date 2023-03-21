@@ -11,6 +11,8 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_BagOfPieces;
   private ConceptPresentation props_Coordinate;
+  private ConceptPresentation props_DescriptionComment;
+  private ConceptPresentation props_IDescriptionComment;
   private ConceptPresentation props_Lattice;
   private ConceptPresentation props_Location;
   private ConceptPresentation props_Piece;
@@ -37,6 +39,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Coordinate = cpb.create();
         }
         return props_Coordinate;
+      case LanguageConceptSwitch.DescriptionComment:
+        if (props_DescriptionComment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("DescriptionComment");
+          props_DescriptionComment = cpb.create();
+        }
+        return props_DescriptionComment;
+      case LanguageConceptSwitch.IDescriptionComment:
+        if (props_IDescriptionComment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IDescriptionComment = cpb.create();
+        }
+        return props_IDescriptionComment;
       case LanguageConceptSwitch.Lattice:
         if (props_Lattice == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
