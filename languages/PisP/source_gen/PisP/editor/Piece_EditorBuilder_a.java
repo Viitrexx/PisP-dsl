@@ -8,8 +8,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
@@ -71,19 +71,26 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private EditorCell createCollection_0() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
     editorCell.setCellId("Collection_a6ydcf_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addKeyMap(new ToggleDescriptionComment());
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createCollection_2());
+    editorCell.addEditorCell(createIndentCell_1());
     editorCell.addEditorCell(createJComponent_0());
     return editorCell;
   }
   private EditorCell createCollection_1() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_a6ydcf_a0");
+    editorCell.addKeyMap(new ToggleDescriptionComment());
+    editorCell.addEditorCell(createCollection_2());
+    editorCell.addEditorCell(createCollection_3());
+    return editorCell;
+  }
+  private EditorCell createCollection_2() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    editorCell.setCellId("Collection_a6ydcf_a0a");
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_1());
@@ -92,7 +99,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Piece");
-    editorCell.setCellId("Constant_a6ydcf_a0a");
+    editorCell.setCellId("Constant_a6ydcf_a0a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -123,7 +130,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "in");
-    editorCell.setCellId("Constant_a6ydcf_c0a");
+    editorCell.setCellId("Constant_a6ydcf_c0a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -152,9 +159,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createCollection_2() {
+  private EditorCell createCollection_3() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_a6ydcf_b0");
+    editorCell.setCellId("Collection_a6ydcf_b0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -167,7 +174,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new locationsListHandler_a6ydcf_b1a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new locationsListHandler_a6ydcf_b1a0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_locations");
     Style style = new StyleImpl();
@@ -176,11 +183,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class locationsListHandler_a6ydcf_b1a extends RefNodeListHandler {
+  private static class locationsListHandler_a6ydcf_b1a0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public locationsListHandler_a6ydcf_b1a(SNode ownerNode, EditorContext context) {
+    public locationsListHandler_a6ydcf_b1a0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -203,7 +210,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(locationsListHandler_a6ydcf_b1a.this.getNode(), LINKS.locations$ChQi));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(locationsListHandler_a6ydcf_b1a0.this.getNode(), LINKS.locations$ChQi));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -243,6 +250,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
   }
+  private EditorCell createIndentCell_1() {
+    EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
+    return editorCell;
+  }
   private EditorCell createJComponent_0() {
     EditorCell editorCell = EditorCell_Component.createComponentCell(getEditorContext(), myNode, _QueryFunction_JComponent_a6ydcf_a2a(), "JComponent_a6ydcf_c0");
     editorCell.setCellId("JComponent_a6ydcf_c0_0");
@@ -262,9 +273,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
         final Graphics2D g2 = ((Graphics2D) g);
         getEditorContext().getRepository().getModelAccess().runReadAction(() -> {
           for (SNode loc : ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.locations$ChQi))) {
-            // TODO: improve so it can handle dimensions
-            //  and it doesn't crash
+            // TODO: improve so it can plot 3D projections
             //  and the cubes aren't off-screen
+            //  and FCC lattice/circles
             if (ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).count() >= 2) {
               int x = (SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(0), PROPS.coordinate$hw$O) + PANEL_SIZE / 2) * ATOM_SIZE;
               int y = (SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(1), PROPS.coordinate$hw$O) + PANEL_SIZE / 2) * ATOM_SIZE;
