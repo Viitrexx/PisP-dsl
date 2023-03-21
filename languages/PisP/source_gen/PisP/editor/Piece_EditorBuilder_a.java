@@ -38,16 +38,6 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
-import javax.swing.JComponent;
-import javax.swing.JPanel;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import java.awt.Color;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -77,7 +67,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     setCellContext(editorCell);
     editorCell.addEditorCell(createCollection_1());
     editorCell.addEditorCell(createIndentCell_1());
-    editorCell.addEditorCell(createJComponent_0());
+    editorCell.addEditorCell(createComponent_0());
     return editorCell;
   }
   private EditorCell createCollection_1() {
@@ -254,48 +244,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
     return editorCell;
   }
-  private EditorCell createJComponent_0() {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(getEditorContext(), myNode, _QueryFunction_JComponent_a6ydcf_a2a(), "JComponent_a6ydcf_c0");
-    editorCell.setCellId("JComponent_a6ydcf_c0_0");
+  private EditorCell createComponent_0() {
+    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "PisP.editor.PieceViewer");
     return editorCell;
-  }
-  private JComponent _QueryFunction_JComponent_a6ydcf_a2a() {
-    final int ATOM_SIZE = 50;
-    final int PANEL_SIZE = 7;
-
-    JPanel panel = new JPanel() {
-      public Dimension getPreferredSize() {
-        return new Dimension(PANEL_SIZE * ATOM_SIZE, PANEL_SIZE * ATOM_SIZE);
-      }
-
-      public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        final Graphics2D g2 = ((Graphics2D) g);
-        getEditorContext().getRepository().getModelAccess().runReadAction(() -> {
-          for (SNode loc : ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.locations$ChQi))) {
-            // TODO: improve so it can plot 3D projections
-            //  and the cubes aren't off-screen
-            //  and FCC lattice/circles
-            if (ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).count() >= 2) {
-              int x = (SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(0), PROPS.coordinate$hw$O) + PANEL_SIZE / 2) * ATOM_SIZE;
-              int y = (SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(1), PROPS.coordinate$hw$O) + PANEL_SIZE / 2) * ATOM_SIZE;
-              g2.setColor(Color.LIGHT_GRAY);
-              g2.fillRect(x, y, ATOM_SIZE, ATOM_SIZE);
-              g2.setColor(Color.DARK_GRAY);
-              g2.drawRect(x, y, ATOM_SIZE, ATOM_SIZE);
-            }
-          }
-        });
-      }
-    };
-    panel.setBackground(Color.DARK_GRAY);
-    return panel;
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty lattice$e_Fj = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, 0x2cd4be37af4f8fL, "lattice");
-    /*package*/ static final SProperty coordinate$hw$O = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adda67L, 0x2cd4be37adde2aL, "coordinate");
   }
 
   private static final class CONCEPTS {
@@ -305,6 +261,5 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink locations$ChQi = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, 0x2cd4be37ae0e94L, "locations");
-    /*package*/ static final SContainmentLink coordinates$48xZ = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL, 0x2cd4be37aee65fL, "coordinates");
   }
 }
