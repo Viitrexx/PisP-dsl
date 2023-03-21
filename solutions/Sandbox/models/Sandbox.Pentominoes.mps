@@ -82,7 +82,7 @@
     <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
     <node concept="RwmKx" id="1GW6u2kO1ES" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO1EU" role="Rwzbx">
-        <property role="RwgEk" value="0" />
+        <property role="RwgEk" value="-2" />
       </node>
       <node concept="RwgVp" id="1GW6u2kO1EW" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -90,7 +90,7 @@
     </node>
     <node concept="RwmKx" id="1GW6u2kO1EZ" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO1F4" role="Rwzbx">
-        <property role="RwgEk" value="1" />
+        <property role="RwgEk" value="-1" />
       </node>
       <node concept="RwgVp" id="1GW6u2kO1F6" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -98,7 +98,7 @@
     </node>
     <node concept="RwmKx" id="1GW6u2kO1F9" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO1Fh" role="Rwzbx">
-        <property role="RwgEk" value="2" />
+        <property role="RwgEk" value="0" />
       </node>
       <node concept="RwgVp" id="1GW6u2kO1Fj" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -106,7 +106,7 @@
     </node>
     <node concept="RwmKx" id="1GW6u2kO1Fs" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO1FD" role="Rwzbx">
-        <property role="RwgEk" value="3" />
+        <property role="RwgEk" value="1" />
       </node>
       <node concept="RwgVp" id="1GW6u2kO1FF" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -114,7 +114,7 @@
     </node>
     <node concept="RwmKx" id="1GW6u2kO1FI" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO1FW" role="Rwzbx">
-        <property role="RwgEk" value="4" />
+        <property role="RwgEk" value="2" />
       </node>
       <node concept="RwgVp" id="1GW6u2kO1FY" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -255,10 +255,10 @@
     </node>
     <node concept="RwmKx" id="1GW6u2kO2Ik" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO2Iy" role="Rwzbx">
-        <property role="RwgEk" value="2" />
+        <property role="RwgEk" value="0" />
       </node>
       <node concept="RwgVp" id="1GW6u2kO2I$" role="Rwzbx">
-        <property role="RwgEk" value="0" />
+        <property role="RwgEk" value="2" />
       </node>
     </node>
   </node>
@@ -423,10 +423,10 @@
     </node>
     <node concept="RwmKx" id="1GW6u2kO2Ob" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO2Om" role="Rwzbx">
-        <property role="RwgEk" value="1" />
+        <property role="RwgEk" value="2" />
       </node>
       <node concept="RwgVp" id="1GW6u2kO2Oo" role="Rwzbx">
-        <property role="RwgEk" value="2" />
+        <property role="RwgEk" value="1" />
       </node>
     </node>
     <node concept="RwmKx" id="1GW6u2kO2Or" role="RwHCE">
