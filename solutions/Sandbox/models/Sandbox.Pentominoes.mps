@@ -206,16 +206,16 @@
         <property role="RwgEk" value="2" />
       </node>
     </node>
-    <node concept="RwmKx" id="1GW6u2kO2GG" role="RwHCE">
-      <node concept="RwgVp" id="1GW6u2kO2GU" role="Rwzbx">
-        <property role="RwgEk" value="1" />
-      </node>
-      <node concept="RwgVp" id="1GW6u2kO2GW" role="Rwzbx">
-        <property role="RwgEk" value="3" />
-      </node>
-    </node>
     <node concept="2fYyJe" id="1GW6u2kO2S4" role="lGtFl">
       <property role="2fY_cM" value="Alternate name: S" />
+    </node>
+    <node concept="RwmKx" id="7CClzxTO2_7" role="RwHCE">
+      <node concept="RwgVp" id="7CClzxTO2_8" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="7CClzxTO2_9" role="Rwzbx">
+        <property role="RwgEk" value="-1" />
+      </node>
     </node>
   </node>
   <node concept="RwHTn" id="1GW6u2kO2Hv">
