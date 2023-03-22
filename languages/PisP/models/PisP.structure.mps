@@ -125,6 +125,9 @@
       <property role="TrG5h" value="lattice" />
       <ref role="AX2Wp" node="GPbSRFNsJ" resolve="LatticeEnum" />
     </node>
+    <node concept="PrWs8" id="7CClzxTO2WF" role="PzmwI">
+      <ref role="PrY4T" node="1GW6u2kLya2" resolve="IDescriptionComment" />
+    </node>
   </node>
   <node concept="1TIwiD" id="GPbSRFryv">
     <property role="EcuMT" value="12618812418275487" />
@@ -134,7 +137,7 @@
       <property role="IQ2ns" value="12618812418352735" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="coordinates" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="GPbSRFtDB" resolve="Coordinate" />
     </node>
   </node>

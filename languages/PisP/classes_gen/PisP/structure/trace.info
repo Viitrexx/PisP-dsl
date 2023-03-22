@@ -20,7 +20,7 @@
       <unit at="10,0,46,0" name="PisP.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="18,0,178,0" name="PisP.structure.StructureAspectDescriptor" />
+      <unit at="18,0,179,0" name="PisP.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418160283">
@@ -117,17 +117,17 @@
       <node id="12618812418270434" at="167,63,168,142" concept="5" />
       <node id="12618812418270434" at="168,142,169,33" concept="1" />
       <node id="12618812418270434" at="169,33,170,71" concept="1" />
-      <node id="12618812418270434" at="170,71,171,89" concept="1" />
-      <node id="12618812418270434" at="171,89,172,17" concept="1" />
-      <node id="12618812418382271" at="172,17,173,172" concept="1" />
-      <node id="12618812418280747" at="173,172,174,195" concept="1" />
-      <node id="12618812418270434" at="174,195,175,22" concept="6" />
-      <node id="12618812418270434" at="167,0,177,0" concept="9" trace="createDescriptorForShape#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="12618812418270434" at="171,76,172,89" concept="1" />
+      <node id="12618812418270434" at="172,89,173,17" concept="1" />
+      <node id="12618812418382271" at="173,17,174,172" concept="1" />
+      <node id="12618812418280747" at="174,172,175,195" concept="1" />
+      <node id="12618812418270434" at="175,195,176,22" concept="6" />
+      <node id="12618812418270434" at="167,0,178,0" concept="9" trace="createDescriptorForShape#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="12618812418270434" at="69,39,70,30" />
-      <scope id="12618812418270434" at="167,63,175,22">
+      <scope id="12618812418270434" at="167,63,176,22">
         <var name="b" id="12618812418270434" />
       </scope>
-      <scope id="12618812418270434" at="167,0,177,0" />
+      <scope id="12618812418270434" at="167,0,178,0" />
     </file>
   </root>
   <root nodeRef="r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418275487">
@@ -154,8 +154,8 @@
       <node id="12618812418275487" at="129,145,130,34" concept="1" />
       <node id="12618812418275487" at="130,34,131,89" concept="1" />
       <node id="12618812418275487" at="131,89,132,17" concept="1" />
-      <node id="12618812418352735" at="132,17,133,197" concept="1" />
-      <node id="12618812418275487" at="133,197,134,22" concept="6" />
+      <node id="12618812418352735" at="132,17,133,198" concept="1" />
+      <node id="12618812418275487" at="133,198,134,22" concept="6" />
       <node id="12618812418275487" at="128,0,136,0" concept="9" trace="createDescriptorForLocation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="12618812418275487" at="61,42,62,33" />
       <scope id="12618812418275487" at="128,66,134,22">
@@ -384,6 +384,7 @@
       <node id="1962471989986075266" at="117,17,118,22" concept="6" />
       <node id="1962471989986075266" at="139,71,140,76" concept="1" />
       <node id="1962471989986075266" at="159,71,160,76" concept="1" />
+      <node id="1962471989986075266" at="170,71,171,76" concept="1" />
       <node id="1962471989986075266" at="113,0,120,0" concept="9" trace="createDescriptorForIDescriptionComment#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1962471989986075266" at="57,53,58,44" />
       <scope id="1962471989986075266" at="113,77,118,22">

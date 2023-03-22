@@ -130,7 +130,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418275487");
     b.version(3);
-    b.aggregate("coordinates", 0x2cd4be37aee65fL).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adda67L).optional(true).ordered(true).multiple(true).origin("12618812418352735").done();
+    b.aggregate("coordinates", 0x2cd4be37aee65fL).target(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adda67L).optional(false).ordered(true).multiple(true).origin("12618812418352735").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPiece() {
@@ -168,6 +168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "Shape", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ada4e2L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c62282L);
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418270434");
     b.version(3);
     b.property("lattice", 0x2cd4be37af59bfL).type(MetaIdFactory.dataTypeId(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37af372fL)).origin("12618812418382271").done();
