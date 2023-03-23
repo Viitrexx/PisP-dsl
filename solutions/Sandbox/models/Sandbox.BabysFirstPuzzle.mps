@@ -70,16 +70,13 @@
     </node>
   </node>
   <node concept="Rwn1s" id="GPbSRFLs0">
-    <property role="TrG5h" value="2x2x1 Square" />
-    <property role="RwSO1" value="GPbSRFNsK/CubicLattice" />
+    <property role="TrG5h" value="2x2 Square" />
+    <property role="RwSO1" value="GPbSRFNsK/CubicLattice2D" />
     <node concept="RwmKx" id="GPbSRFM4D" role="RwhAl">
       <node concept="RwgVp" id="GPbSRFM4F" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
       <node concept="RwgVp" id="GPbSRFM4H" role="Rwzbx">
-        <property role="RwgEk" value="0" />
-      </node>
-      <node concept="RwgVp" id="GPbSRFM4K" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
     </node>
@@ -90,9 +87,6 @@
       <node concept="RwgVp" id="GPbSRFM5C" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
-      <node concept="RwgVp" id="GPbSRFM5F" role="Rwzbx">
-        <property role="RwgEk" value="0" />
-      </node>
     </node>
     <node concept="RwmKx" id="GPbSRFM5R" role="RwhAl">
       <node concept="RwgVp" id="GPbSRFM61" role="Rwzbx">
@@ -100,9 +94,6 @@
       </node>
       <node concept="RwgVp" id="GPbSRFM63" role="Rwzbx">
         <property role="RwgEk" value="1" />
-      </node>
-      <node concept="RwgVp" id="GPbSRFM66" role="Rwzbx">
-        <property role="RwgEk" value="0" />
       </node>
     </node>
     <node concept="RwmKx" id="GPbSRFM6a" role="RwhAl">
@@ -112,14 +103,11 @@
       <node concept="RwgVp" id="GPbSRFM6q" role="Rwzbx">
         <property role="RwgEk" value="1" />
       </node>
-      <node concept="RwgVp" id="GPbSRFM6t" role="Rwzbx">
-        <property role="RwgEk" value="0" />
-      </node>
     </node>
   </node>
   <node concept="RwHTn" id="1GW6u2kL80m">
     <property role="TrG5h" value=". Piece" />
-    <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
+    <property role="RwTGL" value="GPbSRFNsK/CubicLattice2D" />
     <node concept="2fYyJe" id="1GW6u2kMzDj" role="lGtFl">
       <property role="2fY_cM" value="Singular atom" />
     </node>

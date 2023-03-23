@@ -15,12 +15,12 @@ public class EnumerationDescriptor_LatticeEnum extends EnumerationDescriptorBase
     super(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37af372fL, "LatticeEnum", "r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418373423");
   }
 
-  private final EnumerationDescriptor.MemberDescriptor myMember_CubicLattice_0 = new EnumerationDescriptor.MemberDescriptor("CubicLattice", "cubic lattice", 0x2cd4be37af3730L, "r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418373424");
-  private final EnumerationDescriptor.MemberDescriptor myMember_RhombohedralLattice_0 = new EnumerationDescriptor.MemberDescriptor("RhombohedralLattice", "rhombohedral lattice", 0x2cd4be37af3731L, "r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418373425");
+  private final EnumerationDescriptor.MemberDescriptor myMember_CubicLattice2D_0 = new EnumerationDescriptor.MemberDescriptor("CubicLattice2D", "2D cubic lattice", 0x2cd4be37af3730L, "r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418373424");
+  private final EnumerationDescriptor.MemberDescriptor myMember_CubicLattoce3D_0 = new EnumerationDescriptor.MemberDescriptor("CubicLattoce3D", "3D cubic lattice", 0x2e8846265a55f50eL, "r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/3353007053115618574");
   private final EnumerationDescriptor.MemberDescriptor myMember_FCCLattice_0 = new EnumerationDescriptor.MemberDescriptor("FCCLattice", "FCC lattice", 0x2cd4be37af5e88L, "r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418383496");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37af372fL, 0x2cd4be37af3730L, 0x2cd4be37af3731L, 0x2cd4be37af5e88L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_CubicLattice_0, myMember_RhombohedralLattice_0, myMember_FCCLattice_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37af372fL, 0x2cd4be37af3730L, 0x2e8846265a55f50eL, 0x2cd4be37af5e88L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_CubicLattice2D_0, myMember_CubicLattoce3D_0, myMember_FCCLattice_0);
 
   @Nullable
   @Override
@@ -41,10 +41,10 @@ public class EnumerationDescriptor_LatticeEnum extends EnumerationDescriptorBase
       return null;
     }
     switch (memberName) {
-      case "CubicLattice":
-        return myMember_CubicLattice_0;
-      case "RhombohedralLattice":
-        return myMember_RhombohedralLattice_0;
+      case "CubicLattice2D":
+        return myMember_CubicLattice2D_0;
+      case "CubicLattoce3D":
+        return myMember_CubicLattoce3D_0;
       case "FCCLattice":
         return myMember_FCCLattice_0;
     }

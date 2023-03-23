@@ -307,16 +307,16 @@
   <root nodeRef="r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418373423">
     <file name="EnumerationDescriptor_LatticeEnum.java">
       <node id="12618812418373423" at="14,46,15,162" concept="10" />
-      <node id="12618812418373424" at="18,0,19,0" concept="2" trace="myMember_CubicLattice_0" />
-      <node id="12618812418373425" at="19,0,20,0" concept="2" trace="myMember_RhombohedralLattice_0" />
+      <node id="12618812418373424" at="18,0,19,0" concept="2" trace="myMember_CubicLattice2D_0" />
+      <node id="3353007053115618574" at="19,0,20,0" concept="2" trace="myMember_CubicLattoce3D_0" />
       <node id="12618812418383496" at="20,0,21,0" concept="2" trace="myMember_FCCLattice_0" />
       <node id="12618812418373423" at="22,0,23,0" concept="2" trace="myIndex" />
       <node id="12618812418373423" at="23,0,24,0" concept="2" trace="myMembers" />
       <node id="12618812418373423" at="27,62,28,16" concept="6" />
       <node id="12618812418373423" at="33,68,34,21" concept="6" />
       <node id="12618812418373423" at="40,29,41,18" concept="6" />
-      <node id="12618812418373424" at="44,26,45,39" concept="6" />
-      <node id="12618812418373425" at="46,33,47,46" concept="6" />
+      <node id="12618812418373424" at="44,28,45,41" concept="6" />
+      <node id="3353007053115618574" at="46,28,47,41" concept="6" />
       <node id="12618812418383496" at="48,24,49,37" concept="6" />
       <node id="12618812418373423" at="50,5,51,16" concept="6" />
       <node id="12618812418373423" at="56,73,57,39" concept="5" />
@@ -334,8 +334,8 @@
       <scope id="12618812418373423" at="27,62,28,16" />
       <scope id="12618812418373423" at="33,68,34,21" />
       <scope id="12618812418373423" at="40,29,41,18" />
-      <scope id="12618812418373424" at="44,26,45,39" />
-      <scope id="12618812418373425" at="46,33,47,46" />
+      <scope id="12618812418373424" at="44,28,45,41" />
+      <scope id="3353007053115618574" at="46,28,47,41" />
       <scope id="12618812418383496" at="48,24,49,37" />
       <scope id="12618812418373423" at="58,22,59,18" />
       <scope id="12618812418373423" at="14,0,17,0" />

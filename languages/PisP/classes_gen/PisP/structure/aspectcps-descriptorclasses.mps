@@ -1111,7 +1111,7 @@
     </node>
     <node concept="312cEg" id="56" role="jymVt">
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myMember_CubicLattice_0" />
+      <property role="TrG5h" value="myMember_CubicLattice2D_0" />
       <uo k="s:originTrace" v="n:12618812418373423" />
       <node concept="3Tm6S6" id="5v" role="1B3o_S">
         <uo k="s:originTrace" v="n:12618812418373423" />
@@ -1126,11 +1126,11 @@
           <ref role="37wK5l" to="ze1i:~EnumerationDescriptor$MemberDescriptor.&lt;init&gt;(java.lang.String,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String)" resolve="EnumerationDescriptor.MemberDescriptor" />
           <uo k="s:originTrace" v="n:12618812418373423" />
           <node concept="Xl_RD" id="5z" role="37wK5m">
-            <property role="Xl_RC" value="CubicLattice" />
+            <property role="Xl_RC" value="CubicLattice2D" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="Xl_RD" id="5$" role="37wK5m">
-            <property role="Xl_RC" value="cubic lattice" />
+            <property role="Xl_RC" value="2D cubic lattice" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="1adDum" id="5_" role="37wK5m">
@@ -1146,7 +1146,7 @@
     </node>
     <node concept="312cEg" id="57" role="jymVt">
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myMember_RhombohedralLattice_0" />
+      <property role="TrG5h" value="myMember_CubicLattoce3D_0" />
       <uo k="s:originTrace" v="n:12618812418373423" />
       <node concept="3Tm6S6" id="5B" role="1B3o_S">
         <uo k="s:originTrace" v="n:12618812418373423" />
@@ -1161,19 +1161,19 @@
           <ref role="37wK5l" to="ze1i:~EnumerationDescriptor$MemberDescriptor.&lt;init&gt;(java.lang.String,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String)" resolve="EnumerationDescriptor.MemberDescriptor" />
           <uo k="s:originTrace" v="n:12618812418373423" />
           <node concept="Xl_RD" id="5F" role="37wK5m">
-            <property role="Xl_RC" value="RhombohedralLattice" />
+            <property role="Xl_RC" value="CubicLattoce3D" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="Xl_RD" id="5G" role="37wK5m">
-            <property role="Xl_RC" value="rhombohedral lattice" />
+            <property role="Xl_RC" value="3D cubic lattice" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="1adDum" id="5H" role="37wK5m">
-            <property role="1adDun" value="0x2cd4be37af3731L" />
+            <property role="1adDun" value="0x2e8846265a55f50eL" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="Xl_RD" id="5I" role="37wK5m">
-            <property role="Xl_RC" value="r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418373425" />
+            <property role="Xl_RC" value="r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/3353007053115618574" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
         </node>
@@ -1256,7 +1256,7 @@
           <uo k="s:originTrace" v="n:12618812418373423" />
         </node>
         <node concept="1adDum" id="5Y" role="37wK5m">
-          <property role="1adDun" value="0x2cd4be37af3731L" />
+          <property role="1adDun" value="0x2e8846265a55f50eL" />
           <uo k="s:originTrace" v="n:12618812418373423" />
         </node>
         <node concept="1adDum" id="5Z" role="37wK5m">
@@ -1290,11 +1290,11 @@
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="37vLTw" id="66" role="37wK5m">
-            <ref role="3cqZAo" node="56" resolve="myMember_CubicLattice_0" />
+            <ref role="3cqZAo" node="56" resolve="myMember_CubicLattice2D_0" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="37vLTw" id="67" role="37wK5m">
-            <ref role="3cqZAo" node="57" resolve="myMember_RhombohedralLattice_0" />
+            <ref role="3cqZAo" node="57" resolve="myMember_CubicLattoce3D_0" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="37vLTw" id="68" role="37wK5m">
@@ -1433,7 +1433,7 @@
           <node concept="3KbdKl" id="6E" role="3KbHQx">
             <uo k="s:originTrace" v="n:12618812418373423" />
             <node concept="Xl_RD" id="6H" role="3Kbmr1">
-              <property role="Xl_RC" value="CubicLattice" />
+              <property role="Xl_RC" value="CubicLattice2D" />
               <uo k="s:originTrace" v="n:12618812418373423" />
             </node>
             <node concept="3clFbS" id="6I" role="3Kbo56">
@@ -1441,7 +1441,7 @@
               <node concept="3cpWs6" id="6J" role="3cqZAp">
                 <uo k="s:originTrace" v="n:12618812418373423" />
                 <node concept="37vLTw" id="6K" role="3cqZAk">
-                  <ref role="3cqZAo" node="56" resolve="myMember_CubicLattice_0" />
+                  <ref role="3cqZAo" node="56" resolve="myMember_CubicLattice2D_0" />
                   <uo k="s:originTrace" v="n:12618812418373423" />
                 </node>
               </node>
@@ -1450,7 +1450,7 @@
           <node concept="3KbdKl" id="6F" role="3KbHQx">
             <uo k="s:originTrace" v="n:12618812418373423" />
             <node concept="Xl_RD" id="6L" role="3Kbmr1">
-              <property role="Xl_RC" value="RhombohedralLattice" />
+              <property role="Xl_RC" value="CubicLattoce3D" />
               <uo k="s:originTrace" v="n:12618812418373423" />
             </node>
             <node concept="3clFbS" id="6M" role="3Kbo56">
@@ -1458,7 +1458,7 @@
               <node concept="3cpWs6" id="6N" role="3cqZAp">
                 <uo k="s:originTrace" v="n:12618812418373423" />
                 <node concept="37vLTw" id="6O" role="3cqZAk">
-                  <ref role="3cqZAo" node="57" resolve="myMember_RhombohedralLattice_0" />
+                  <ref role="3cqZAo" node="57" resolve="myMember_CubicLattoce3D_0" />
                   <uo k="s:originTrace" v="n:12618812418373423" />
                 </node>
               </node>
@@ -1612,39 +1612,39 @@
     <node concept="39e2AJ" id="7m" role="39e2AI">
       <property role="39e3Y2" value="EnumerationMember" />
       <node concept="39e2AG" id="7t" role="39e3Y0">
-        <ref role="39e2AK" to="r6rf:GPbSRFNsK" resolve="CubicLattice" />
+        <ref role="39e2AK" to="r6rf:GPbSRFNsK" resolve="CubicLattice2D" />
         <node concept="385nmt" id="7w" role="385vvn">
-          <property role="385vuF" value="CubicLattice" />
+          <property role="385vuF" value="CubicLattice2D" />
           <node concept="3u3nmq" id="7y" role="385v07">
             <property role="3u3nmv" value="12618812418373424" />
           </node>
         </node>
         <node concept="39e2AT" id="7x" role="39e2AY">
-          <ref role="39e2AS" node="56" resolve="myMember_CubicLattice_0" />
+          <ref role="39e2AS" node="56" resolve="myMember_CubicLattice2D_0" />
         </node>
       </node>
       <node concept="39e2AG" id="7u" role="39e3Y0">
-        <ref role="39e2AK" to="r6rf:GPbSRFPU8" resolve="FCCLattice" />
+        <ref role="39e2AK" to="r6rf:2U8hypqlvke" resolve="CubicLattoce3D" />
         <node concept="385nmt" id="7z" role="385vvn">
-          <property role="385vuF" value="FCCLattice" />
+          <property role="385vuF" value="CubicLattoce3D" />
           <node concept="3u3nmq" id="7_" role="385v07">
-            <property role="3u3nmv" value="12618812418383496" />
+            <property role="3u3nmv" value="3353007053115618574" />
           </node>
         </node>
         <node concept="39e2AT" id="7$" role="39e2AY">
-          <ref role="39e2AS" node="58" resolve="myMember_FCCLattice_0" />
+          <ref role="39e2AS" node="57" resolve="myMember_CubicLattoce3D_0" />
         </node>
       </node>
       <node concept="39e2AG" id="7v" role="39e3Y0">
-        <ref role="39e2AK" to="r6rf:GPbSRFNsL" resolve="RhombohedralLattice" />
+        <ref role="39e2AK" to="r6rf:GPbSRFPU8" resolve="FCCLattice" />
         <node concept="385nmt" id="7A" role="385vvn">
-          <property role="385vuF" value="RhombohedralLattice" />
+          <property role="385vuF" value="FCCLattice" />
           <node concept="3u3nmq" id="7C" role="385v07">
-            <property role="3u3nmv" value="12618812418373425" />
+            <property role="3u3nmv" value="12618812418383496" />
           </node>
         </node>
         <node concept="39e2AT" id="7B" role="39e2AY">
-          <ref role="39e2AS" node="57" resolve="myMember_RhombohedralLattice_0" />
+          <ref role="39e2AS" node="58" resolve="myMember_FCCLattice_0" />
         </node>
       </node>
     </node>

@@ -206,13 +206,13 @@
     <property role="TrG5h" value="LatticeEnum" />
     <node concept="25R33" id="GPbSRFNsK" role="25R1y">
       <property role="3tVfz5" value="12618812418373424" />
-      <property role="TrG5h" value="CubicLattice" />
-      <property role="1L1pqM" value="cubic lattice" />
+      <property role="TrG5h" value="CubicLattice2D" />
+      <property role="1L1pqM" value="2D cubic lattice" />
     </node>
-    <node concept="25R33" id="GPbSRFNsL" role="25R1y">
-      <property role="3tVfz5" value="12618812418373425" />
-      <property role="TrG5h" value="RhombohedralLattice" />
-      <property role="1L1pqM" value="rhombohedral lattice" />
+    <node concept="25R33" id="2U8hypqlvke" role="25R1y">
+      <property role="3tVfz5" value="3353007053115618574" />
+      <property role="TrG5h" value="CubicLattoce3D" />
+      <property role="1L1pqM" value="3D cubic lattice" />
     </node>
     <node concept="25R33" id="GPbSRFPU8" role="25R1y">
       <property role="3tVfz5" value="12618812418383496" />
