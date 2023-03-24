@@ -1146,7 +1146,7 @@
     </node>
     <node concept="312cEg" id="57" role="jymVt">
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myMember_CubicLattoce3D_0" />
+      <property role="TrG5h" value="myMember_CubicLattice3D_0" />
       <uo k="s:originTrace" v="n:12618812418373423" />
       <node concept="3Tm6S6" id="5B" role="1B3o_S">
         <uo k="s:originTrace" v="n:12618812418373423" />
@@ -1161,7 +1161,7 @@
           <ref role="37wK5l" to="ze1i:~EnumerationDescriptor$MemberDescriptor.&lt;init&gt;(java.lang.String,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String)" resolve="EnumerationDescriptor.MemberDescriptor" />
           <uo k="s:originTrace" v="n:12618812418373423" />
           <node concept="Xl_RD" id="5F" role="37wK5m">
-            <property role="Xl_RC" value="CubicLattoce3D" />
+            <property role="Xl_RC" value="CubicLattice3D" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="Xl_RD" id="5G" role="37wK5m">
@@ -1294,7 +1294,7 @@
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="37vLTw" id="67" role="37wK5m">
-            <ref role="3cqZAo" node="57" resolve="myMember_CubicLattoce3D_0" />
+            <ref role="3cqZAo" node="57" resolve="myMember_CubicLattice3D_0" />
             <uo k="s:originTrace" v="n:12618812418373423" />
           </node>
           <node concept="37vLTw" id="68" role="37wK5m">
@@ -1450,7 +1450,7 @@
           <node concept="3KbdKl" id="6F" role="3KbHQx">
             <uo k="s:originTrace" v="n:12618812418373423" />
             <node concept="Xl_RD" id="6L" role="3Kbmr1">
-              <property role="Xl_RC" value="CubicLattoce3D" />
+              <property role="Xl_RC" value="CubicLattice3D" />
               <uo k="s:originTrace" v="n:12618812418373423" />
             </node>
             <node concept="3clFbS" id="6M" role="3Kbo56">
@@ -1458,7 +1458,7 @@
               <node concept="3cpWs6" id="6N" role="3cqZAp">
                 <uo k="s:originTrace" v="n:12618812418373423" />
                 <node concept="37vLTw" id="6O" role="3cqZAk">
-                  <ref role="3cqZAo" node="57" resolve="myMember_CubicLattoce3D_0" />
+                  <ref role="3cqZAo" node="57" resolve="myMember_CubicLattice3D_0" />
                   <uo k="s:originTrace" v="n:12618812418373423" />
                 </node>
               </node>
@@ -1624,15 +1624,15 @@
         </node>
       </node>
       <node concept="39e2AG" id="7u" role="39e3Y0">
-        <ref role="39e2AK" to="r6rf:2U8hypqlvke" resolve="CubicLattoce3D" />
+        <ref role="39e2AK" to="r6rf:2U8hypqlvke" resolve="CubicLattice3D" />
         <node concept="385nmt" id="7z" role="385vvn">
-          <property role="385vuF" value="CubicLattoce3D" />
+          <property role="385vuF" value="CubicLattice3D" />
           <node concept="3u3nmq" id="7_" role="385v07">
             <property role="3u3nmv" value="3353007053115618574" />
           </node>
         </node>
         <node concept="39e2AT" id="7$" role="39e2AY">
-          <ref role="39e2AS" node="57" resolve="myMember_CubicLattoce3D_0" />
+          <ref role="39e2AS" node="57" resolve="myMember_CubicLattice3D_0" />
         </node>
       </node>
       <node concept="39e2AG" id="7v" role="39e3Y0">

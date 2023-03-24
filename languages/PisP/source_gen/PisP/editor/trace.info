@@ -1746,6 +1746,142 @@
       <unit id="3353007053116941756" at="20,0,71,0" name="PisP.editor.PieceViewer2DCubic" />
     </file>
   </root>
+  <root nodeRef="r:89c003e3-25cd-41c6-b183-280346ef2047(PisP.editor)/3353007053132034889">
+    <file name="PieceViewer3D.java">
+      <node id="3353007053132110714" at="33,0,34,0" concept="3" trace="node" />
+      <node id="3353007053132119778" at="34,0,35,0" concept="3" trace="editorContext" />
+      <node id="4369063704632355357" at="36,0,37,0" concept="3" trace="anchorX" />
+      <node id="4369063704632377758" at="37,0,38,0" concept="3" trace="anchorY" />
+      <node id="4369063704632412744" at="38,0,39,0" concept="3" trace="anchorAngleX" />
+      <node id="4369063704632434838" at="39,0,40,0" concept="3" trace="anchorAngleY" />
+      <node id="4369063704635516516" at="40,0,41,0" concept="3" trace="anchorTransX" />
+      <node id="4369063704635536648" at="41,0,42,0" concept="3" trace="anchorTransY" />
+      <node id="3353007053135014791" at="42,0,43,0" concept="3" trace="angleX" />
+      <node id="3353007053135037701" at="43,0,44,0" concept="3" trace="angleY" />
+      <node id="3353007053135044910" at="44,0,45,0" concept="3" trace="transX" />
+      <node id="3353007053135056515" at="45,0,46,0" concept="3" trace="transY" />
+      <node id="3353007053137826824" at="47,0,48,0" concept="3" trace="sncl" />
+      <node id="3353007053132215372" at="49,46,50,56" concept="2" />
+      <node id="3353007053132239422" at="50,56,51,56" concept="7" />
+      <node id="3353007053132276459" at="51,56,52,18" concept="2" />
+      <node id="3353007053132294742" at="52,18,53,21" concept="2" />
+      <node id="3353007053132128072" at="56,65,57,21" concept="2" />
+      <node id="3353007053132162788" at="57,21,58,39" concept="2" />
+      <node id="3353007053132373327" at="58,39,59,36" concept="2" />
+      <node id="3353007053137862794" at="59,36,60,0" concept="10" />
+      <node id="3353007053132384446" at="64,6,65,0" concept="10" />
+      <node id="3353007053132471183" at="68,25,69,25" concept="2" />
+      <node id="3353007053132524234" at="74,33,75,44" concept="7" />
+      <node id="3353007053132546427" at="75,44,76,22" concept="2" />
+      <node id="3353007053132574273" at="76,22,77,26" concept="2" />
+      <node id="3353007053132604861" at="77,26,78,0" concept="10" />
+      <node id="3353007053132695981" at="81,25,82,24" concept="2" />
+      <node id="3353007053132718956" at="87,41,88,32" concept="7" />
+      <node id="3353007053133397309" at="88,32,89,28" concept="2" />
+      <node id="3353007053132830346" at="92,31,93,30" concept="7" />
+      <node id="3353007053133063356" at="93,30,94,37" concept="7" />
+      <node id="3353007053134208442" at="94,37,95,50" concept="2" />
+      <node id="3353007053132996358" at="95,50,96,33" concept="2" />
+      <node id="3353007053132883850" at="96,33,97,79" concept="7" />
+      <node id="3353007053133652376" at="97,79,98,34" concept="2" />
+      <node id="3353007053133712880" at="98,34,99,44" concept="7" />
+      <node id="3353007053133740747" at="99,44,100,29" concept="2" />
+      <node id="3353007053133774959" at="100,29,101,28" concept="2" />
+      <node id="3353007053133814392" at="101,28,102,28" concept="2" />
+      <node id="3353007053133942133" at="102,28,103,36" concept="2" />
+      <node id="3353007053132968556" at="103,36,104,17" concept="8" />
+      <node id="3353007053135193942" at="107,61,108,50" concept="7" />
+      <node id="3353007053135284911" at="108,50,109,50" concept="7" />
+      <node id="3353007053135382571" at="109,50,110,49" concept="7" />
+      <node id="3353007053135456648" at="110,49,111,63" concept="2" />
+      <node id="3353007053135595027" at="111,63,112,41" concept="2" />
+      <node id="3353007053135656916" at="112,41,113,41" concept="2" />
+      <node id="3353007053135729155" at="113,41,114,39" concept="2" />
+      <node id="3353007053135818641" at="114,39,115,39" concept="2" />
+      <node id="3353007053135811928" at="115,39,116,0" concept="10" />
+      <node id="3353007053136005313" at="117,51,118,34" concept="2" />
+      <node id="3353007053136139086" at="118,34,119,34" concept="2" />
+      <node id="3353007053136237825" at="119,34,120,34" concept="2" />
+      <node id="3353007053136343022" at="120,34,121,34" concept="2" />
+      <node id="3353007053136443130" at="121,34,122,34" concept="2" />
+      <node id="3353007053136529371" at="122,34,123,34" concept="2" />
+      <node id="3353007053136555201" at="124,7,125,0" concept="10" />
+      <node id="3353007053136883183" at="127,53,128,65" concept="2" />
+      <node id="3353007053137069727" at="128,65,129,63" concept="2" />
+      <node id="3353007053137275111" at="130,62,131,63" concept="2" />
+      <node id="3353007053137452036" at="131,63,132,63" concept="2" />
+      <node id="3353007053132494743" at="137,44,138,35" concept="8" />
+      <node id="3353007053137912905" at="62,0,64,0" concept="6" trace="propertyChanged#(Lorg/jetbrains/mps/openapi/event/SPropertyChangeEvent;)V" />
+      <node id="3353007053132483992" at="137,0,140,0" concept="6" trace="getPreferredDimension#()Ljava/awt/Dimension;" />
+      <node id="3353007053137870854" at="60,0,64,6" concept="2" />
+      <node id="3353007053132416918" at="67,0,71,0" concept="6" trace="run#()V" />
+      <node id="3353007053132645296" at="80,0,84,0" concept="6" trace="run#()V" />
+      <node id="3353007053132683137" at="87,0,91,0" concept="6" trace="initFX#(Ljavafx/embed/swing/JFXPanel;)V" />
+      <node id="3353007053132065865" at="49,0,55,0" concept="6" trace="finalize#()V" />
+      <node id="3353007053132394781" at="65,0,71,7" concept="2" />
+      <node id="3353007053132620883" at="78,0,84,7" concept="2" />
+      <node id="3353007053136652645" at="126,51,133,7" concept="5" />
+      <node id="3353007053135860859" at="116,0,124,7" concept="2" />
+      <node id="3353007053136563411" at="125,0,134,7" concept="2" />
+      <node id="3353007053132467844" at="74,0,86,0" concept="6" trace="initAndShowGUI#()V" />
+      <node id="3353007053132755422" at="92,0,106,0" concept="6" trace="createScene#()Ljavafx/scene/Scene;" />
+      <node id="3353007053132079126" at="56,0,73,0" concept="1" trace="PieceViewer3D#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3353007053133919641" at="107,0,136,0" concept="6" trace="initMouseControl#(Ljavafx/scene/Group;Ljavafx/scene/Camera;)V" />
+      <scope id="3353007053137912908" at="62,69,62,69" />
+      <scope id="3353007053132416922" at="68,25,69,25" />
+      <scope id="3353007053132645300" at="81,25,82,24" />
+      <scope id="3353007053132483995" at="137,44,138,35" />
+      <scope id="3353007053137912905" at="62,0,64,0">
+        <var name="p1" id="3353007053137924990" />
+      </scope>
+      <scope id="3353007053132683140" at="87,41,89,28">
+        <var name="scene" id="3353007053132718957" />
+      </scope>
+      <scope id="3353007053136652647" at="127,53,129,63" />
+      <scope id="3353007053136666337" at="130,62,132,63" />
+      <scope id="3353007053132483992" at="137,0,140,0" />
+      <scope id="3353007053132065868" at="49,46,53,21">
+        <var name="win" id="3353007053132239423" />
+      </scope>
+      <scope id="3353007053132416918" at="67,0,71,0" />
+      <scope id="3353007053132645296" at="80,0,84,0" />
+      <scope id="3353007053132683137" at="87,0,91,0">
+        <var name="fxPanel" id="3353007053132688952" />
+      </scope>
+      <scope id="3353007053132065865" at="49,0,55,0" />
+      <scope id="3353007053135934424" at="117,51,123,34" />
+      <scope id="3353007053136605338" at="126,51,133,7" />
+      <scope id="3353007053132467847" at="74,33,84,7">
+        <var name="fxPanel" id="3353007053132524232" />
+      </scope>
+      <scope id="3353007053132467844" at="74,0,86,0" />
+      <scope id="3353007053132755425" at="92,31,104,17">
+        <var name="box" id="3353007053133063357" />
+        <var name="camera" id="3353007053133712881" />
+        <var name="group" id="3353007053132830347" />
+        <var name="scene" id="3353007053132883851" />
+      </scope>
+      <scope id="3353007053132755422" at="92,0,106,0" />
+      <scope id="3353007053132079130" at="56,65,71,7" />
+      <scope id="3353007053132079126" at="56,0,73,0">
+        <var name="editorContext" id="3353007053132084677" />
+        <var name="node" id="3353007053132084201" />
+      </scope>
+      <scope id="3353007053133919644" at="107,61,134,7">
+        <var name="translate" id="3353007053135382572" />
+        <var name="xRotate" id="3353007053135193943" />
+        <var name="yRotate" id="3353007053135284912" />
+      </scope>
+      <scope id="3353007053133919641" at="107,0,136,0">
+        <var name="camera" id="3353007053133926713" />
+        <var name="group" id="3353007053133925268" />
+      </scope>
+      <unit id="3353007053137897664" at="61,20,64,5" name="PisP.editor.PieceViewer3D$1" />
+      <unit id="3353007053132416903" at="66,35,71,5" name="PisP.editor.PieceViewer3D$2" />
+      <unit id="3353007053132645281" at="79,26,84,5" name="PisP.editor.PieceViewer3D$3" />
+      <unit id="3353007053132034889" at="32,0,141,0" name="PisP.editor.PieceViewer3D" />
+    </file>
+  </root>
   <root nodeRef="r:89c003e3-25cd-41c6-b183-280346ef2047(PisP.editor)/8802380272250681545">
     <file name="PieceViewer.java">
       <node id="8802380272250681545" at="15,47,16,35" concept="8" />
@@ -1770,19 +1906,21 @@
       <node id="8802380272250681545" at="37,159,38,50" concept="2" />
       <node id="8802380272250681545" at="38,50,39,22" concept="8" />
       <node id="3353007053116583124" at="43,28,44,66" concept="8" />
-      <node id="3353007053116570793" at="45,14,46,28" concept="8" />
-      <node id="8802380272250681545" at="51,0,52,0" concept="11" trace="lattice$e_Fj" />
+      <node id="3353007053133156294" at="45,28,46,61" concept="8" />
+      <node id="3353007053116570793" at="47,14,48,28" concept="8" />
+      <node id="8802380272250681545" at="53,0,54,0" concept="11" trace="lattice$e_Fj" />
       <node id="8802380272250681545" at="18,0,20,0" concept="3" trace="myNode" />
       <node id="8802380272250681545" at="32,0,35,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8802380272250681545" at="21,0,25,0" concept="1" trace="PieceViewer_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8802380272250681545" at="26,0,31,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8802380272250681545" at="36,0,41,0" concept="6" trace="createJComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3353007053116569683" at="41,60,47,5" concept="13" />
-      <node id="8802380272250681547" at="41,0,49,0" concept="6" trace="_QueryFunction_JComponent_ujvark_a0#()Ljavax/swing/JComponent;" />
+      <node id="3353007053116569683" at="41,60,49,5" concept="13" />
+      <node id="8802380272250681547" at="41,0,51,0" concept="6" trace="_QueryFunction_JComponent_ujvark_a0#()Ljavax/swing/JComponent;" />
       <scope id="8802380272250681545" at="28,26,29,18" />
       <scope id="8802380272250681545" at="32,39,33,32" />
       <scope id="3353007053116581881" at="43,28,44,66" />
-      <scope id="3353007053116570672" at="45,14,46,28" />
+      <scope id="3353007053133156101" at="45,28,46,61" />
+      <scope id="3353007053116570672" at="47,14,48,28" />
       <scope id="8802380272250681545" at="21,94,23,18" />
       <scope id="8802380272250681545" at="32,0,35,0" />
       <scope id="8802380272250681545" at="36,43,39,22">
@@ -1794,10 +1932,10 @@
       </scope>
       <scope id="8802380272250681545" at="26,0,31,0" />
       <scope id="8802380272250681545" at="36,0,41,0" />
-      <scope id="8802380272250681548" at="41,60,47,5" />
-      <scope id="8802380272250681547" at="41,0,49,0" />
-      <unit id="8802380272250681545" at="50,0,53,0" name="PisP.editor.PieceViewer_ComponentBuilder_a$PROPS" />
-      <unit id="8802380272250681545" at="17,0,54,0" name="PisP.editor.PieceViewer_ComponentBuilder_a" />
+      <scope id="8802380272250681548" at="41,60,49,5" />
+      <scope id="8802380272250681547" at="41,0,51,0" />
+      <unit id="8802380272250681545" at="52,0,55,0" name="PisP.editor.PieceViewer_ComponentBuilder_a$PROPS" />
+      <unit id="8802380272250681545" at="17,0,56,0" name="PisP.editor.PieceViewer_ComponentBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:89c003e3-25cd-41c6-b183-280346ef2047(PisP.editor)/8802380272257478740">

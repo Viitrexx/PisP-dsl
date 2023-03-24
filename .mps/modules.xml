@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/PisP/PisP.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/JavaFX/JavaFX.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
     </projectModules>
   </component>

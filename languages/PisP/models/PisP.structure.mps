@@ -211,7 +211,7 @@
     </node>
     <node concept="25R33" id="2U8hypqlvke" role="25R1y">
       <property role="3tVfz5" value="3353007053115618574" />
-      <property role="TrG5h" value="CubicLattoce3D" />
+      <property role="TrG5h" value="CubicLattice3D" />
       <property role="1L1pqM" value="3D cubic lattice" />
     </node>
     <node concept="25R33" id="GPbSRFPU8" role="25R1y">

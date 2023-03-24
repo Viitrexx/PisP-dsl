@@ -308,7 +308,7 @@
     <file name="EnumerationDescriptor_LatticeEnum.java">
       <node id="12618812418373423" at="14,46,15,162" concept="10" />
       <node id="12618812418373424" at="18,0,19,0" concept="2" trace="myMember_CubicLattice2D_0" />
-      <node id="3353007053115618574" at="19,0,20,0" concept="2" trace="myMember_CubicLattoce3D_0" />
+      <node id="3353007053115618574" at="19,0,20,0" concept="2" trace="myMember_CubicLattice3D_0" />
       <node id="12618812418383496" at="20,0,21,0" concept="2" trace="myMember_FCCLattice_0" />
       <node id="12618812418373423" at="22,0,23,0" concept="2" trace="myIndex" />
       <node id="12618812418373423" at="23,0,24,0" concept="2" trace="myMembers" />

@@ -42,6 +42,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     switch (SPropertyOperations.getEnum(myNode, PROPS.lattice$e_Fj).getName()) {
       case "CubicLattice2D":
         return new PieceViewer2DCubic(myNode, getEditorContext());
+      case "CubicLattice3D":
+        return new PieceViewer3D(myNode, getEditorContext());
       default:
         return new JPanel();
     }
