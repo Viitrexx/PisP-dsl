@@ -2431,6 +2431,22 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="78vyCGFVXFD" role="jymVt">
+      <property role="TrG5h" value="transZ" />
+      <node concept="3Tm6S6" id="78vyCGFVRkp" role="1B3o_S" />
+      <node concept="3uibUv" id="78vyCGFVXbD" role="1tU5fm">
+        <ref role="3uigEE" to="i1qy:~DoubleProperty" resolve="DoubleProperty" />
+      </node>
+      <node concept="2ShNRf" id="78vyCGFVYZs" role="33vP2m">
+        <node concept="1pGfFk" id="78vyCGFWj6_" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="i1qy:~SimpleDoubleProperty.&lt;init&gt;(double)" resolve="SimpleDoubleProperty" />
+          <node concept="3cmrfG" id="78vyCGFWkXR" role="37wK5m">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="2U8hyprvlw7" role="jymVt" />
     <node concept="312cEg" id="4ljIy9NcftY" role="jymVt">
       <property role="TrG5h" value="group" />
@@ -3127,6 +3143,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="78vyCGFWrnl" role="3cqZAp">
+          <node concept="2OqwBi" id="78vyCGFWChD" role="3clFbG">
+            <node concept="2OqwBi" id="78vyCGFWuGS" role="2Oq$k0">
+              <node concept="37vLTw" id="78vyCGFWrnj" role="2Oq$k0">
+                <ref role="3cqZAo" node="2U8hyprwSwG" resolve="translate" />
+              </node>
+              <node concept="liA8E" id="78vyCGFWyc8" role="2OqNvi">
+                <ref role="37wK5l" to="8avk:~Translate.zProperty()" resolve="zProperty" />
+              </node>
+            </node>
+            <node concept="liA8E" id="78vyCGFWIG5" role="2OqNvi">
+              <ref role="37wK5l" to="i1qy:~Property.bind(javafx.beans.value.ObservableValue)" resolve="bind" />
+              <node concept="37vLTw" id="78vyCGFWLCO" role="37wK5m">
+                <ref role="3cqZAo" node="78vyCGFVXFD" resolve="transZ" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2U8hypryxlo" role="3cqZAp" />
         <node concept="3clFbF" id="2U8hypryHhV" role="3cqZAp">
           <node concept="2OqwBi" id="2U8hypryKCQ" role="3clFbG">
@@ -3397,6 +3431,66 @@
                                     <ref role="3cqZAo" node="3My24E3E$6u" resolve="anchorY" />
                                   </node>
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="78vyCGFWOyg" role="3cqZAp" />
+        <node concept="3clFbF" id="78vyCGFWTDO" role="3cqZAp">
+          <node concept="2OqwBi" id="78vyCGFWXkB" role="3clFbG">
+            <node concept="37vLTw" id="78vyCGFWTDM" role="2Oq$k0">
+              <ref role="3cqZAo" node="2U8hyprrkIk" resolve="group" />
+            </node>
+            <node concept="liA8E" id="78vyCGFX2EV" role="2OqNvi">
+              <ref role="37wK5l" to="p18y:~Node.addEventHandler(javafx.event.EventType,javafx.event.EventHandler)" resolve="addEventHandler" />
+              <node concept="10M0yZ" id="78vyCGFZ4cS" role="37wK5m">
+                <ref role="3cqZAo" to="yp2m:~ScrollEvent.SCROLL" resolve="SCROLL" />
+                <ref role="1PxDUh" to="yp2m:~ScrollEvent" resolve="ScrollEvent" />
+              </node>
+              <node concept="1bVj0M" id="78vyCGFX7ZI" role="37wK5m">
+                <node concept="37vLTG" id="78vyCGFXbVU" role="1bW2Oz">
+                  <property role="TrG5h" value="event" />
+                  <node concept="3uibUv" id="78vyCGFXeYw" role="1tU5fm">
+                    <ref role="3uigEE" to="yp2m:~ScrollEvent" resolve="ScrollEvent" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="78vyCGFX7ZJ" role="1bW5cS">
+                  <node concept="3clFbF" id="78vyCGFXx7X" role="3cqZAp">
+                    <node concept="2OqwBi" id="78vyCGFZgq_" role="3clFbG">
+                      <node concept="37vLTw" id="78vyCGFY2on" role="2Oq$k0">
+                        <ref role="3cqZAo" node="78vyCGFVXFD" resolve="transZ" />
+                      </node>
+                      <node concept="liA8E" id="78vyCGFZoB3" role="2OqNvi">
+                        <ref role="37wK5l" to="8j64:~WritableDoubleValue.set(double)" resolve="set" />
+                        <node concept="2YIFZM" id="78vyCGG47qp" role="37wK5m">
+                          <ref role="37wK5l" to="wyt6:~Math.min(double,double)" resolve="min" />
+                          <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                          <node concept="3cmrfG" id="78vyCGG4gMo" role="37wK5m">
+                            <property role="3cmrfH" value="660" />
+                          </node>
+                          <node concept="3cpWs3" id="78vyCGG4Ekt" role="37wK5m">
+                            <node concept="2OqwBi" id="78vyCGG4M_b" role="3uHU7w">
+                              <node concept="37vLTw" id="78vyCGG4IlF" role="2Oq$k0">
+                                <ref role="3cqZAo" node="78vyCGFXbVU" resolve="event" />
+                              </node>
+                              <node concept="liA8E" id="78vyCGG4TtL" role="2OqNvi">
+                                <ref role="37wK5l" to="yp2m:~ScrollEvent.getDeltaY()" resolve="getDeltaY" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="78vyCGG4yfi" role="3uHU7B">
+                              <node concept="37vLTw" id="78vyCGG4uEv" role="2Oq$k0">
+                                <ref role="3cqZAo" node="78vyCGFVXFD" resolve="transZ" />
+                              </node>
+                              <node concept="liA8E" id="78vyCGG4BR4" role="2OqNvi">
+                                <ref role="37wK5l" to="8j64:~ObservableDoubleValue.get()" resolve="get" />
                               </node>
                             </node>
                           </node>

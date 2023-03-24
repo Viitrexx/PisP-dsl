@@ -25,6 +25,7 @@ import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Translate;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.MouseButton;
+import javafx.scene.input.ScrollEvent;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -52,6 +53,7 @@ public class PieceViewer3D extends JPanel {
   private DoubleProperty angleY = new SimpleDoubleProperty(0);
   private DoubleProperty transX = new SimpleDoubleProperty(0);
   private DoubleProperty transY = new SimpleDoubleProperty(0);
+  private DoubleProperty transZ = new SimpleDoubleProperty(0);
 
   private Group group;
 
@@ -124,6 +126,7 @@ public class PieceViewer3D extends JPanel {
     yRotate.angleProperty().bind(angleY);
     translate.xProperty().bind(transX);
     translate.yProperty().bind(transY);
+    translate.zProperty().bind(transZ);
 
     group.setOnMousePressed((MouseEvent event) -> {
       anchorX = event.getSceneX();
@@ -143,6 +146,8 @@ public class PieceViewer3D extends JPanel {
         transY.set(anchorTransY + anchorY - event.getSceneY());
       }
     });
+
+    group.addEventHandler(ScrollEvent.SCROLL, (ScrollEvent event) -> transZ.set(Math.min(660, transZ.get() + event.getDeltaY())));
   }
 
   protected ArrayList<ArrayList<Integer>> getLocations() {
