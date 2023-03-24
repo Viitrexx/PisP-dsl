@@ -32,7 +32,7 @@
   </registry>
   <node concept="RwHTn" id="1GW6u2kO1Dj">
     <property role="TrG5h" value="F pentomino" />
-    <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
+    <property role="RwTGL" value="GPbSRFNsK/CubicLattice2D" />
     <node concept="RwmKx" id="1GW6u2kO1Dk" role="RwHCE">
       <node concept="RwgVp" id="1GW6u2kO1Dm" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -529,44 +529,44 @@
   <node concept="RwHTn" id="1GW6u2kO2QW">
     <property role="TrG5h" value="Z pentomino" />
     <property role="RwTGL" value="GPbSRFNsK/CubicLattice" />
-    <node concept="RwmKx" id="1GW6u2kO2QX" role="RwHCE">
-      <node concept="RwgVp" id="1GW6u2kO2QZ" role="Rwzbx">
+    <node concept="RwmKx" id="2U8hyprhQBu" role="RwHCE">
+      <node concept="RwgVp" id="2U8hyprhQBv" role="Rwzbx">
+        <property role="RwgEk" value="-1" />
+      </node>
+      <node concept="RwgVp" id="2U8hyprhQBw" role="Rwzbx">
+        <property role="RwgEk" value="-1" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="2U8hyprhQB$" role="RwHCE">
+      <node concept="RwgVp" id="2U8hyprhQB_" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
-      <node concept="RwgVp" id="1GW6u2kO2R1" role="Rwzbx">
+      <node concept="RwgVp" id="2U8hyprhQBA" role="Rwzbx">
+        <property role="RwgEk" value="-1" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="2U8hyprhQBH" role="RwHCE">
+      <node concept="RwgVp" id="2U8hyprhQBI" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="2U8hyprhQBJ" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
     </node>
-    <node concept="RwmKx" id="1GW6u2kO2R4" role="RwHCE">
-      <node concept="RwgVp" id="1GW6u2kO2R9" role="Rwzbx">
-        <property role="RwgEk" value="1" />
-      </node>
-      <node concept="RwgVp" id="1GW6u2kO2Rb" role="Rwzbx">
+    <node concept="RwmKx" id="2U8hyprhQBT" role="RwHCE">
+      <node concept="RwgVp" id="2U8hyprhQBU" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
-    </node>
-    <node concept="RwmKx" id="1GW6u2kO2Re" role="RwHCE">
-      <node concept="RwgVp" id="1GW6u2kO2Rm" role="Rwzbx">
-        <property role="RwgEk" value="1" />
-      </node>
-      <node concept="RwgVp" id="1GW6u2kO2Ro" role="Rwzbx">
+      <node concept="RwgVp" id="2U8hyprhQBV" role="Rwzbx">
         <property role="RwgEk" value="1" />
       </node>
     </node>
-    <node concept="RwmKx" id="1GW6u2kO2Rr" role="RwHCE">
-      <node concept="RwgVp" id="1GW6u2kO2RA" role="Rwzbx">
+    <node concept="RwmKx" id="2U8hyprhQC8" role="RwHCE">
+      <node concept="RwgVp" id="2U8hyprhQC9" role="Rwzbx">
         <property role="RwgEk" value="1" />
       </node>
-      <node concept="RwgVp" id="1GW6u2kO2RC" role="Rwzbx">
-        <property role="RwgEk" value="2" />
-      </node>
-    </node>
-    <node concept="RwmKx" id="1GW6u2kO2RF" role="RwHCE">
-      <node concept="RwgVp" id="1GW6u2kO2RT" role="Rwzbx">
-        <property role="RwgEk" value="2" />
-      </node>
-      <node concept="RwgVp" id="1GW6u2kO2RV" role="Rwzbx">
-        <property role="RwgEk" value="2" />
+      <node concept="RwgVp" id="2U8hyprhQCa" role="Rwzbx">
+        <property role="RwgEk" value="1" />
       </node>
     </node>
   </node>
