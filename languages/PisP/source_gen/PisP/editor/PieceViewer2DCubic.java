@@ -22,7 +22,7 @@ public class PieceViewer2DCubic extends PieceViewer2D {
     super(node, editorContext);
   }
 
-  public void initMouse() {
+  protected void initMouse() {
     super.initMouse();
 
     this.addMouseListener(new MouseAdapter() {

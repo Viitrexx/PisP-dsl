@@ -21,12 +21,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SProperty;
 
 public abstract class PieceViewer2D extends JPanel {
-  public final int ATOM_SIZE = 50;
-  public final int PANEL_SIZE = 7;
-  public SNode node;
-  public EditorContext editorContext;
-  public int offsetX;
-  public int offsetY;
+  protected final int ATOM_SIZE = 50;
+  protected final int PANEL_SIZE = 7;
+  protected SNode node;
+  protected EditorContext editorContext;
+  protected int offsetX;
+  protected int offsetY;
   private int anchorX;
   private int anchorY;
   private int anchorOffsetX;
@@ -43,7 +43,7 @@ public abstract class PieceViewer2D extends JPanel {
     initMouse();
   }
 
-  public void initMouse() {
+  protected void initMouse() {
     this.addMouseListener(new MouseAdapter() {
       public void mousePressed(MouseEvent me) {
         if (me.getButton() == MouseEvent.BUTTON3) {
@@ -74,7 +74,7 @@ public abstract class PieceViewer2D extends JPanel {
     });
   }
 
-  public void handleLocation(final SNode location) {
+  protected void handleLocation(final SNode location) {
     editorContext.getRepository().getModelAccess().runWriteAction(() -> {
       final int x = SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ)).getElement(0), PROPS.coordinate$hw$O);
       final int y = SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ)).getElement(1), PROPS.coordinate$hw$O);

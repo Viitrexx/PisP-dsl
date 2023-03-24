@@ -5,24 +5,24 @@ package PisP.editor;
 import javax.swing.JPanel;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.jetbrains.mps.openapi.model.SNodeId;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
+import javafx.scene.Group;
+import java.util.ArrayList;
+import javafx.scene.shape.Shape3D;
 import org.jetbrains.mps.openapi.model.SNodeChangeListener;
 import java.awt.Window;
 import javax.swing.SwingUtilities;
 import javafx.application.Platform;
-import org.jetbrains.mps.openapi.model.SNodeChangeListenerAdapter;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.event.SPropertyChangeEvent;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.Scene;
-import javafx.scene.Group;
-import javafx.scene.shape.Box;
-import javafx.scene.paint.PhongMaterial;
-import javafx.scene.paint.Color;
 import javafx.scene.SceneAntialiasing;
+import javafx.scene.paint.Color;
 import javafx.scene.Camera;
 import javafx.scene.PerspectiveCamera;
+import javafx.scene.shape.Box;
+import javafx.scene.paint.PhongMaterial;
 import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Translate;
 import javafx.scene.input.MouseEvent;
@@ -30,8 +30,11 @@ import javafx.scene.input.MouseButton;
 import java.awt.Dimension;
 
 public class PieceViewer3D extends JPanel {
-  private SNode node;
-  private EditorContext editorContext;
+  public SNode node;
+  public EditorContext editorContext;
+  protected SNodeId id;
+
+  protected final int ATOM_SIZE = 50;
 
   private double anchorX;
   private double anchorY;
@@ -44,7 +47,10 @@ public class PieceViewer3D extends JPanel {
   private DoubleProperty transX = new SimpleDoubleProperty(0);
   private DoubleProperty transY = new SimpleDoubleProperty(0);
 
-  private SNodeChangeListener sncl;
+  private Group group;
+  protected ArrayList<Shape3D> shapes;
+
+  protected SNodeChangeListener sncl;
 
   protected void finalize() throws Throwable {
     editorContext.getModel().removeChangeListener(sncl);
@@ -56,12 +62,8 @@ public class PieceViewer3D extends JPanel {
   public PieceViewer3D(SNode node, EditorContext editorContext) {
     this.node = node;
     this.editorContext = editorContext;
+    this.id = ((SNode) node).getNodeId();
     Platform.setImplicitExit(false);
-
-    this.sncl = new SNodeChangeListenerAdapter() {
-      public void propertyChanged(@NotNull SPropertyChangeEvent p1) {
-      }
-    };
 
     SwingUtilities.invokeLater(new Runnable() {
       @Override
@@ -90,10 +92,7 @@ public class PieceViewer3D extends JPanel {
   }
 
   private Scene createScene() {
-    Group group = new Group();
-    Box box = new Box(100, 100, 100);
-    box.setMaterial(new PhongMaterial(Color.RED));
-    group.getChildren().add(box);
+    group = createGroup();
     Scene scene = new Scene(group, 400, 400, true, SceneAntialiasing.BALANCED);
     scene.setFill(Color.DARKGRAY);
     Camera camera = new PerspectiveCamera();
@@ -102,6 +101,14 @@ public class PieceViewer3D extends JPanel {
     scene.setCamera(camera);
     initMouseControl(group, camera);
     return scene;
+  }
+
+  public Group createGroup() {
+    Group group = new Group();
+    Box box = new Box(100, 100, 100);
+    box.setMaterial(new PhongMaterial(Color.RED));
+    group.getChildren().add(box);
+    return group;
   }
 
   private void initMouseControl(Group group, Camera camera) {
