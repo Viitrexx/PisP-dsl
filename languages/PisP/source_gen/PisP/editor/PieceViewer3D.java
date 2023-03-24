@@ -6,12 +6,10 @@ import javax.swing.JPanel;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNodeId;
+import org.jetbrains.mps.openapi.model.SNodeChangeListener;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.scene.Group;
-import java.util.ArrayList;
-import javafx.scene.shape.Shape3D;
-import org.jetbrains.mps.openapi.model.SNodeChangeListener;
 import java.awt.Window;
 import javax.swing.SwingUtilities;
 import javafx.application.Platform;
@@ -27,12 +25,20 @@ import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Translate;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.MouseButton;
+import java.util.ArrayList;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.awt.Dimension;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class PieceViewer3D extends JPanel {
   public SNode node;
   public EditorContext editorContext;
   protected SNodeId id;
+  protected SNodeChangeListener sncl;
 
   protected final int ATOM_SIZE = 50;
 
@@ -48,9 +54,7 @@ public class PieceViewer3D extends JPanel {
   private DoubleProperty transY = new SimpleDoubleProperty(0);
 
   private Group group;
-  protected ArrayList<Shape3D> shapes;
 
-  protected SNodeChangeListener sncl;
 
   protected void finalize() throws Throwable {
     editorContext.getModel().removeChangeListener(sncl);
@@ -103,7 +107,7 @@ public class PieceViewer3D extends JPanel {
     return scene;
   }
 
-  public Group createGroup() {
+  protected Group createGroup() {
     Group group = new Group();
     Box box = new Box(100, 100, 100);
     box.setMaterial(new PhongMaterial(Color.RED));
@@ -141,7 +145,33 @@ public class PieceViewer3D extends JPanel {
     });
   }
 
+  protected ArrayList<ArrayList<Integer>> getLocations() {
+    final ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+    editorContext.getRepository().getModelAccess().runReadAction(() -> {
+      for (SNode loc : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.locations$ChQi))) {
+        if (ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).count() >= 3) {
+          ArrayList<Integer> l = new ArrayList<Integer>();
+          l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(0), PROPS.coordinate$hw$O));
+          l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(1), PROPS.coordinate$hw$O));
+          l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(2), PROPS.coordinate$hw$O));
+          result.add(l);
+        }
+      }
+    });
+    return result;
+  }
+
+
   public Dimension getPreferredDimension() {
     return new Dimension(400, 400);
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink coordinates$48xZ = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL, 0x2cd4be37aee65fL, "coordinates");
+    /*package*/ static final SContainmentLink locations$ChQi = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, 0x2cd4be37ae0e94L, "locations");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty coordinate$hw$O = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adda67L, 0x2cd4be37adde2aL, "coordinate");
   }
 }

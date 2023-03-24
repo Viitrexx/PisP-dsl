@@ -72,5 +72,64 @@
       </node>
     </node>
   </node>
+  <node concept="RwHTn" id="78vyCGFRLuo">
+    <property role="TrG5h" value="TestFCC" />
+    <property role="RwTGL" value="GPbSRFPU8/FCCLattice" />
+    <node concept="RwmKx" id="78vyCGFTD8T" role="RwHCE">
+      <node concept="RwgVp" id="78vyCGFTD8U" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFTD8X" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFTD90" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="78vyCGFTD94" role="RwHCE">
+      <node concept="RwgVp" id="78vyCGFTD95" role="Rwzbx">
+        <property role="RwgEk" value="1" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFTD9c" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFTD9x" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="78vyCGFTD9j" role="RwHCE">
+      <node concept="RwgVp" id="78vyCGFTD9k" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFTD9_" role="Rwzbx">
+        <property role="RwgEk" value="1" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFTD9I" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="78vyCGFVFjm" role="RwHCE">
+      <node concept="RwgVp" id="78vyCGFVFjn" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFVFjA" role="Rwzbx">
+        <property role="RwgEk" value="1" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFVFjD" role="Rwzbx">
+        <property role="RwgEk" value="1" />
+      </node>
+    </node>
+    <node concept="RwmKx" id="78vyCGFVFkh" role="RwHCE">
+      <node concept="RwgVp" id="78vyCGFVFki" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFVFk_" role="Rwzbx">
+        <property role="RwgEk" value="1" />
+      </node>
+      <node concept="RwgVp" id="78vyCGFVFkC" role="Rwzbx">
+        <property role="RwgEk" value="-1" />
+      </node>
+    </node>
+  </node>
 </model>
 

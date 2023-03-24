@@ -4,90 +4,24 @@ package PisP.editor;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
-import org.jetbrains.mps.openapi.model.SNodeChangeListenerAdapter;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.event.SPropertyChangeEvent;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.baseLanguage.logging.rt.LogContext;
-import javafx.scene.shape.Shape3D;
-import javafx.scene.paint.PhongMaterial;
 import javafx.scene.Group;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import javafx.scene.shape.Box;
+import javafx.scene.paint.PhongMaterial;
 import javafx.scene.paint.Color;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SProperty;
 
 public class PieceViewer3DCubic extends PieceViewer3D {
   public PieceViewer3DCubic(SNode node, EditorContext editorContext) {
     super(node, editorContext);
 
-    this.sncl = new SNodeChangeListenerAdapter() {
-      public void propertyChanged(@NotNull SPropertyChangeEvent p1) {
-        if (p1.getProperty().getName() == "coordinate") {
-          // Get the piece ID
-          if (id == p1.getNode().getParent().getParent().getNodeId()) {
-            int counter = 0;
-            for (SNode child : Sequence.fromIterable(p1.getNode().getParent().getChildren())) {
-              if (p1.getNode().getNodeId() == child.getNodeId()) {
-                break;
-              }
-              counter++;
-            }
-            String s = "";
-            switch (counter) {
-              case 0:
-                s = "x";
-                break;
-              case 1:
-                s = "y";
-                break;
-              case 2:
-                s = "z";
-                break;
-              default:
-                break;
-            }
-            counter = 0;
-            for (SNode location : Sequence.fromIterable(p1.getNode().getParent().getParent().getChildren())) {
-              if (location.getNodeId() == p1.getNode().getParent().getNodeId()) {
-                break;
-              }
-              counter++;
-            }
-            LogContext.with(PieceViewer3DCubic.class, null, null).debug(s + " coordinate changed at location #" + counter);
-            Shape3D shape = shapes.get(counter);
-            Integer parsed = Integer.parseInt(p1.getNewValue());
-            switch (s) {
-              case "x":
-                shape.setTranslateX(parsed * ATOM_SIZE);
-                break;
-              case "y":
-                shape.setTranslateY(parsed * ATOM_SIZE);
-                break;
-              case "z":
-                shape.setTranslateZ(parsed * ATOM_SIZE);
-                break;
-              default:
-                break;
-            }
-            shape.setMaterial(new PhongMaterial(getColor(shape.getTranslateX(), shape.getTranslateY(), shape.getTranslateZ())));
-          }
-        }
-      }
-    };
-    editorContext.getModel().addChangeListener(sncl);
-
+    //  This version frequently runs into a problem when it tries to change a shape
+    //  that does not exist, because the viewer was not updated when a new location was created.
   }
 
   @Override
-  public Group createGroup() {
+  protected Group createGroup() {
     Group group = new Group();
-    shapes = new ArrayList<Shape3D>();
     ArrayList<ArrayList<Integer>> locations = getLocations();
 
     for (ArrayList<Integer> arrayList : ListSequence.fromList(locations)) {
@@ -111,7 +45,6 @@ public class PieceViewer3DCubic extends PieceViewer3D {
       }
       box.setMaterial(new PhongMaterial(getColor(box.getTranslateX(), box.getTranslateY(), box.getTranslateZ())));
       group.getChildren().add(box);
-      shapes.add(box);
     }
     return group;
   }
@@ -126,30 +59,5 @@ public class PieceViewer3DCubic extends PieceViewer3D {
     } else {
       return Color.RED;
     }
-  }
-
-  private ArrayList<ArrayList<Integer>> getLocations() {
-    final ArrayList<ArrayList<Integer>> result = new ArrayList<>();
-    editorContext.getRepository().getModelAccess().runReadAction(() -> {
-      for (SNode loc : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.locations$ChQi))) {
-        if (ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).count() >= 3) {
-          ArrayList<Integer> l = new ArrayList<Integer>();
-          l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(0), PROPS.coordinate$hw$O));
-          l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(1), PROPS.coordinate$hw$O));
-          l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(2), PROPS.coordinate$hw$O));
-          result.add(l);
-        }
-      }
-    });
-    return result;
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink coordinates$48xZ = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL, 0x2cd4be37aee65fL, "coordinates");
-    /*package*/ static final SContainmentLink locations$ChQi = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, 0x2cd4be37ae0e94L, "locations");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty coordinate$hw$O = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adda67L, 0x2cd4be37adde2aL, "coordinate");
   }
 }

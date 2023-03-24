@@ -45,6 +45,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       case "CubicLattice3D":
         return new PieceViewer3DCubic(myNode, getEditorContext());
       case "FCCLattice":
+        return new PieceViewer3DFCC(myNode, getEditorContext());
       default:
         return new JPanel();
     }
