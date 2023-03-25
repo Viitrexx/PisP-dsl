@@ -7,14 +7,21 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNodeId;
 import org.jetbrains.mps.openapi.model.SNodeChangeListener;
+import jetbrains.mps.classloading.DeployListener;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
-import javafx.scene.Group;
-import java.awt.Window;
-import javax.swing.SwingUtilities;
+import java.util.ArrayList;
+import javafx.scene.shape.Shape3D;
+import java.util.HashMap;
+import jetbrains.mps.classloading.ClassLoaderManager;
 import javafx.application.Platform;
+import java.util.Set;
+import jetbrains.mps.module.ReloadableModule;
+import org.jetbrains.mps.openapi.util.ProgressMonitor;
+import javax.swing.SwingUtilities;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.Scene;
+import javafx.scene.Group;
 import javafx.scene.SceneAntialiasing;
 import javafx.scene.paint.Color;
 import javafx.scene.Camera;
@@ -26,7 +33,6 @@ import javafx.scene.transform.Translate;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.ScrollEvent;
-import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -40,8 +46,10 @@ public class PieceViewer3D extends JPanel {
   public EditorContext editorContext;
   protected SNodeId id;
   protected SNodeChangeListener sncl;
+  protected DeployListener dl;
 
-  protected final int ATOM_SIZE = 50;
+  protected static final int ATOM_SIZE = 50;
+  private final int PANEL_SIZE = 400;
 
   private double anchorX;
   private double anchorY;
@@ -51,18 +59,20 @@ public class PieceViewer3D extends JPanel {
   private double anchorTransY = 0;
   private DoubleProperty angleX = new SimpleDoubleProperty(0);
   private DoubleProperty angleY = new SimpleDoubleProperty(0);
-  private DoubleProperty transX = new SimpleDoubleProperty(0);
-  private DoubleProperty transY = new SimpleDoubleProperty(0);
+  private DoubleProperty transX = new SimpleDoubleProperty(-PANEL_SIZE / 2);
+  private DoubleProperty transY = new SimpleDoubleProperty(-PANEL_SIZE / 2);
   private DoubleProperty transZ = new SimpleDoubleProperty(0);
 
-  private Group group;
+  protected ArrayList<Shape3D> shapes;
+  protected HashMap<Integer, Integer> locationMap;
 
 
-  protected void finalize() throws Throwable {
+
+  protected void dispose() {
     editorContext.getModel().removeChangeListener(sncl);
-    Window win = SwingUtilities.getWindowAncestor(this);
-    win.dispose();
-    super.finalize();
+    editorContext.getOperationContext().getProject().getComponent(ClassLoaderManager.class).removeListener(dl);
+    //  Exiting the platform is good for memory, but ...
+    //  it breaks JavaFX after a rebuild
   }
 
   public PieceViewer3D(SNode node, EditorContext editorContext) {
@@ -70,6 +80,19 @@ public class PieceViewer3D extends JPanel {
     this.editorContext = editorContext;
     this.id = ((SNode) node).getNodeId();
     Platform.setImplicitExit(false);
+
+    this.dl = new DeployListener() {
+      public void onUnloaded(Set<ReloadableModule> unloadedModules, ProgressMonitor monitor) {
+        dispose();
+      }
+
+      public void onUnloaded(DeployListener.ResourceTrackerCallback callback, ProgressMonitor monitor) {
+      }
+
+      public void onLoaded(Set<ReloadableModule> loadedModules, ProgressMonitor monitor) {
+      }
+    };
+    editorContext.getOperationContext().getProject().getComponent(ClassLoaderManager.class).addListener(dl);
 
     SwingUtilities.invokeLater(new Runnable() {
       @Override
@@ -98,6 +121,7 @@ public class PieceViewer3D extends JPanel {
   }
 
   private Scene createScene() {
+    Group group;
     group = createGroup();
     Scene scene = new Scene(group, 400, 400, true, SceneAntialiasing.BALANCED);
     scene.setFill(Color.DARKGRAY);
@@ -153,6 +177,9 @@ public class PieceViewer3D extends JPanel {
   protected ArrayList<ArrayList<Integer>> getLocations() {
     final ArrayList<ArrayList<Integer>> result = new ArrayList<>();
     editorContext.getRepository().getModelAccess().runReadAction(() -> {
+      int counterTotal = 0;
+      int counterAdded = 0;
+      locationMap = new HashMap<>();
       for (SNode loc : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.locations$ChQi))) {
         if (ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).count() >= 3) {
           ArrayList<Integer> l = new ArrayList<Integer>();
@@ -160,15 +187,17 @@ public class PieceViewer3D extends JPanel {
           l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(1), PROPS.coordinate$hw$O));
           l.add(SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(loc, LINKS.coordinates$48xZ)).getElement(2), PROPS.coordinate$hw$O));
           result.add(l);
+          locationMap.put(counterTotal++, counterAdded++);
+        } else {
+          locationMap.put(counterTotal++, -1);
         }
       }
     });
     return result;
   }
 
-
   public Dimension getPreferredDimension() {
-    return new Dimension(400, 400);
+    return new Dimension(PANEL_SIZE, PANEL_SIZE);
   }
 
   private static final class LINKS {

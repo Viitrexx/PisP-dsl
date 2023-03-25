@@ -4,24 +4,101 @@ package PisP.editor;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.jetbrains.mps.openapi.model.SNodeChangeListenerAdapter;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.mps.openapi.event.SNodeAddEvent;
+import org.jetbrains.mps.openapi.event.SNodeRemoveEvent;
+import org.jetbrains.mps.openapi.event.SPropertyChangeEvent;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import javafx.scene.shape.Shape3D;
+import javafx.scene.paint.PhongMaterial;
 import javafx.scene.Group;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import javafx.scene.shape.Box;
-import javafx.scene.paint.PhongMaterial;
 import javafx.scene.paint.Color;
 
 public class PieceViewer3DCubic extends PieceViewer3D {
   public PieceViewer3DCubic(SNode node, EditorContext editorContext) {
     super(node, editorContext);
 
-    //  This version frequently runs into a problem when it tries to change a shape
-    //  that does not exist, because the viewer was not updated when a new location was created.
+    // Listen to changes in model to automatically move boxes
+    this.sncl = new SNodeChangeListenerAdapter() {
+      public void nodeAdded(@NotNull SNodeAddEvent event) {
+        dispose();
+      }
+
+      public void nodeRemoved(@NotNull SNodeRemoveEvent event) {
+        dispose();
+      }
+
+      public void propertyChanged(@NotNull SPropertyChangeEvent p1) {
+        if (p1.getProperty().getName() == "coordinate") {
+          // Get the piece ID
+          if (id == p1.getNode().getParent().getParent().getNodeId()) {
+            int counter = 0;
+            for (SNode child : Sequence.fromIterable(p1.getNode().getParent().getChildren())) {
+              if (p1.getNode().getNodeId() == child.getNodeId()) {
+                break;
+              }
+              counter++;
+            }
+            String s = "";
+            switch (counter) {
+              case 0:
+                s = "x";
+                break;
+              case 1:
+                s = "y";
+                break;
+              case 2:
+                s = "z";
+                break;
+              default:
+                break;
+            }
+            counter = 0;
+            for (SNode location : Sequence.fromIterable(p1.getNode().getParent().getParent().getChildren())) {
+              if (location.getNodeId() == p1.getNode().getParent().getNodeId()) {
+                break;
+              }
+              counter++;
+            }
+            if (locationMap.containsKey(counter)) {
+              //  Not needed if listeners just get detached properly
+              //  which they do now, but I am keeping it just to be sure
+              if (locationMap.get(counter) >= 0) {
+                Shape3D shape = shapes.get(locationMap.get(counter));
+                Integer parsed = Integer.parseInt(p1.getNewValue());
+                switch (s) {
+                  case "x":
+                    shape.setTranslateX(parsed * ATOM_SIZE);
+                    break;
+                  case "y":
+                    shape.setTranslateY(parsed * ATOM_SIZE);
+                    break;
+                  case "z":
+                    shape.setTranslateZ(parsed * ATOM_SIZE);
+                    break;
+                  default:
+                    break;
+                }
+                shape.setMaterial(new PhongMaterial(getColor(shape.getTranslateX(), shape.getTranslateY(), shape.getTranslateZ())));
+
+              }
+
+            }
+          }
+        }
+      }
+    };
+    editorContext.getModel().addChangeListener(sncl);
   }
 
   @Override
   protected Group createGroup() {
     Group group = new Group();
+    shapes = new ArrayList<Shape3D>();
     ArrayList<ArrayList<Integer>> locations = getLocations();
 
     for (ArrayList<Integer> arrayList : ListSequence.fromList(locations)) {
@@ -45,6 +122,7 @@ public class PieceViewer3DCubic extends PieceViewer3D {
       }
       box.setMaterial(new PhongMaterial(getColor(box.getTranslateX(), box.getTranslateY(), box.getTranslateZ())));
       group.getChildren().add(box);
+      shapes.add(box);
     }
     return group;
   }
