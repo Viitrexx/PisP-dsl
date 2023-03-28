@@ -2196,46 +2196,55 @@
       <unit id="8802380272250681545" at="13,0,22,0" name="PisP.editor.PieceViewer" />
     </file>
     <file name="PieceViewer_ComponentBuilder_a.java">
-      <node id="8802380272250681545" at="21,94,22,19" concept="13" />
-      <node id="8802380272250681545" at="22,19,23,18" concept="3" />
-      <node id="8802380272250681545" at="28,26,29,18" concept="9" />
-      <node id="8802380272250681545" at="32,39,33,32" concept="9" />
-      <node id="8802380272250681545" at="36,43,37,159" concept="8" />
-      <node id="8802380272250681545" at="37,159,38,50" concept="3" />
-      <node id="8802380272250681545" at="38,50,39,22" concept="9" />
-      <node id="3353007053116583124" at="43,28,44,66" concept="9" />
-      <node id="3353007053133156294" at="45,28,46,66" concept="9" />
-      <node id="8223443774942977486" at="47,24,48,64" concept="9" />
-      <node id="3353007053116570793" at="49,14,50,28" concept="9" />
-      <node id="8802380272250681545" at="55,0,56,0" concept="12" trace="lattice$e_Fj" />
-      <node id="8802380272250681545" at="18,0,20,0" concept="4" trace="myNode" />
-      <node id="8802380272250681545" at="32,0,35,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8802380272250681545" at="21,0,25,0" concept="2" trace="PieceViewer_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8802380272250681545" at="26,0,31,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8802380272250681545" at="36,0,41,0" concept="7" trace="createJComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3353007053116569683" at="41,60,51,5" concept="14" />
-      <node id="8802380272250681547" at="41,0,53,0" concept="7" trace="_QueryFunction_JComponent_ujvark_a0#()Ljavax/swing/JComponent;" />
-      <scope id="8802380272250681545" at="28,26,29,18" />
-      <scope id="8802380272250681545" at="32,39,33,32" />
-      <scope id="3353007053116581881" at="43,28,44,66" />
-      <scope id="3353007053133156101" at="45,28,46,66" />
-      <scope id="194254226996985948" at="47,24,48,64" />
-      <scope id="3353007053116570672" at="49,14,50,28" />
-      <scope id="8802380272250681545" at="21,94,23,18" />
-      <scope id="8802380272250681545" at="32,0,35,0" />
-      <scope id="8802380272250681545" at="36,43,39,22">
+      <node id="8802380272250681545" at="22,94,23,19" concept="13" />
+      <node id="8802380272250681545" at="23,19,24,18" concept="3" />
+      <node id="8802380272250681545" at="29,26,30,18" concept="9" />
+      <node id="8802380272250681545" at="33,39,34,32" concept="9" />
+      <node id="8802380272250681545" at="37,43,38,159" concept="8" />
+      <node id="8802380272250681545" at="38,159,39,50" concept="3" />
+      <node id="8802380272250681545" at="39,50,40,22" concept="9" />
+      <node id="7684354715560116084" at="42,60,43,22" concept="8" />
+      <node id="7684354715560155264" at="45,13,46,68" concept="3" />
+      <node id="7684354715560155264" at="46,68,47,14" concept="1" />
+      <node id="7684354715560169285" at="48,13,49,68" concept="3" />
+      <node id="7684354715560169285" at="49,68,50,14" concept="1" />
+      <node id="7684354715560178344" at="51,13,52,66" concept="3" />
+      <node id="7684354715560178344" at="52,66,53,14" concept="1" />
+      <node id="7684354715560186187" at="54,14,55,30" concept="3" />
+      <node id="7684354715560186187" at="55,30,56,14" concept="1" />
+      <node id="7684354715560121614" at="57,5,58,18" concept="9" />
+      <node id="8802380272250681545" at="60,0,61,0" concept="12" trace="enumSwitchIndex" />
+      <node id="8802380272250681545" at="63,0,64,0" concept="12" trace="lattice$e_Fj" />
+      <node id="8802380272250681545" at="19,0,21,0" concept="4" trace="myNode" />
+      <node id="8802380272250681545" at="33,0,36,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="8802380272250681545" at="22,0,26,0" concept="2" trace="PieceViewer_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8802380272250681545" at="27,0,32,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8802380272250681545" at="37,0,42,0" concept="7" trace="createJComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7684354715560083251" at="43,22,57,5" concept="14" />
+      <node id="8802380272250681547" at="42,0,60,0" concept="7" trace="_QueryFunction_JComponent_ujvark_a0#()Ljavax/swing/JComponent;" />
+      <scope id="8802380272250681545" at="29,26,30,18" />
+      <scope id="8802380272250681545" at="33,39,34,32" />
+      <scope id="8802380272250681545" at="22,94,24,18" />
+      <scope id="7684354715560155264" at="45,13,47,14" />
+      <scope id="7684354715560169285" at="48,13,50,14" />
+      <scope id="7684354715560178344" at="51,13,53,14" />
+      <scope id="7684354715560186187" at="54,14,56,14" />
+      <scope id="8802380272250681545" at="33,0,36,0" />
+      <scope id="8802380272250681545" at="37,43,40,22">
         <var name="editorCell" id="8802380272250681545" />
       </scope>
-      <scope id="8802380272250681545" at="21,0,25,0">
+      <scope id="8802380272250681545" at="22,0,26,0">
         <var name="context" id="8802380272250681545" />
         <var name="node" id="8802380272250681545" />
       </scope>
-      <scope id="8802380272250681545" at="26,0,31,0" />
-      <scope id="8802380272250681545" at="36,0,41,0" />
-      <scope id="8802380272250681548" at="41,60,51,5" />
-      <scope id="8802380272250681547" at="41,0,53,0" />
-      <unit id="8802380272250681545" at="54,0,57,0" name="PisP.editor.PieceViewer_ComponentBuilder_a$PROPS" />
-      <unit id="8802380272250681545" at="17,0,58,0" name="PisP.editor.PieceViewer_ComponentBuilder_a" />
+      <scope id="8802380272250681545" at="27,0,32,0" />
+      <scope id="8802380272250681545" at="37,0,42,0" />
+      <scope id="8802380272250681548" at="42,60,58,18">
+        <var name="result" id="7684354715560116085" />
+      </scope>
+      <scope id="8802380272250681547" at="42,0,60,0" />
+      <unit id="8802380272250681545" at="62,0,65,0" name="PisP.editor.PieceViewer_ComponentBuilder_a$PROPS" />
+      <unit id="8802380272250681545" at="18,0,66,0" name="PisP.editor.PieceViewer_ComponentBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:89c003e3-25cd-41c6-b183-280346ef2047(PisP.editor)/8802380272257478740">

@@ -1,8 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,20,0" name="PisP.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,29,0" name="PisP.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e4166e58-2bc3-45b4-b0d8-22761db76233(PisP.constraints)/7684354715558123304">
+    <file name="PieceReference_Constraints.java">
+      <node id="7684354715558123304" at="20,39,21,38" concept="8" />
+      <node id="7684354715558123435" at="25,67,26,68" concept="8" />
+      <node id="7684354715558123435" at="29,109,30,100" concept="4" />
+      <node id="7684354715558123435" at="31,53,32,145" concept="1" />
+      <node id="7684354715558123435" at="33,7,34,20" concept="5" />
+      <node id="7684354715558124573" at="36,82,37,31" concept="5" />
+      <node id="7684354715558123304" at="41,84,42,119" concept="4" />
+      <node id="7684354715558123435" at="42,119,43,77" concept="1" />
+      <node id="7684354715558123304" at="43,77,44,22" concept="5" />
+      <node id="7684354715558123304" at="48,0,49,0" concept="6" trace="PieceReference$hr" />
+      <node id="7684354715558123304" at="52,0,53,0" concept="6" trace="multiplicity$Equw" />
+      <node id="7684354715558123304" at="20,0,23,0" concept="0" trace="PieceReference_Constraints#()V" />
+      <node id="7684354715558123435" at="25,0,28,0" concept="0" trace="Multiplicity_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7684354715558123435" at="30,100,33,7" concept="2" />
+      <node id="7684354715558123435" at="36,0,39,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="7684354715558123304" at="40,0,46,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="7684354715558123435" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="7684354715558123304" at="20,39,21,38" />
+      <scope id="7684354715558123435" at="25,67,26,68" />
+      <scope id="7684354715558123435" at="31,53,32,145" />
+      <scope id="7684354715558124074" at="36,82,37,31" />
+      <scope id="7684354715558123304" at="20,0,23,0" />
+      <scope id="7684354715558123435" at="25,0,28,0">
+        <var name="container" id="7684354715558123435" />
+      </scope>
+      <scope id="7684354715558123435" at="36,0,39,0">
+        <var name="node" id="7684354715558123435" />
+        <var name="propertyValue" id="7684354715558123435" />
+      </scope>
+      <scope id="7684354715558123304" at="41,84,44,22">
+        <var name="properties" id="7684354715558123304" />
+      </scope>
+      <scope id="7684354715558123435" at="29,109,34,20">
+        <var name="result" id="7684354715558123435" />
+      </scope>
+      <scope id="7684354715558123304" at="40,0,46,0" />
+      <scope id="7684354715558123435" at="28,0,36,0">
+        <var name="checkingNodeContext" id="7684354715558123435" />
+        <var name="node" id="7684354715558123435" />
+        <var name="propertyValue" id="7684354715558123435" />
+      </scope>
+      <unit id="7684354715558123304" at="47,0,50,0" name="PisP.constraints.PieceReference_Constraints$CONCEPTS" />
+      <unit id="7684354715558123304" at="51,0,54,0" name="PisP.constraints.PieceReference_Constraints$PROPS" />
+      <unit id="7684354715558123435" at="24,0,40,0" name="PisP.constraints.PieceReference_Constraints$Multiplicity_Property" />
+      <unit id="7684354715558123304" at="19,0,55,0" name="PisP.constraints.PieceReference_Constraints" />
     </file>
   </root>
 </debug-info>

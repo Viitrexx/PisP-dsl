@@ -16,7 +16,6 @@
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -150,16 +149,6 @@
       <property role="TrG5h" value="coordinate" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="GPbSRFv6T">
-    <property role="EcuMT" value="12618812418290105" />
-    <property role="TrG5h" value="Lattice" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="GPbSRFKep" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="asaX9" id="GPbSRFPkD" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="GPbSRFwaX">
     <property role="EcuMT" value="12618812418294461" />

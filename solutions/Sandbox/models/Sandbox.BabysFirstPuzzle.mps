@@ -4,9 +4,7 @@
   <languages>
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="-1" />
   </languages>
-  <imports>
-    <import index="y4b7" ref="r:6dda05dc-402d-46cf-b626-30db9e9d8d9b(Sandbox.LatticeCollection)" />
-  </imports>
+  <imports />
   <registry>
     <language id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP">
       <concept id="1962471989986079278" name="PisP.structure.DescriptionComment" flags="ng" index="2fYyJe">
@@ -72,6 +70,14 @@
   <node concept="Rwn1s" id="GPbSRFLs0">
     <property role="TrG5h" value="2x2 Square" />
     <property role="RwSO1" value="GPbSRFNsK/CubicLattice2D" />
+    <node concept="RwmKx" id="6E$jYpXzRjy" role="RwhAl">
+      <node concept="RwgVp" id="6E$jYpXzRjz" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+      <node concept="RwgVp" id="6E$jYpXzRk9" role="Rwzbx">
+        <property role="RwgEk" value="0" />
+      </node>
+    </node>
     <node concept="RwmKx" id="GPbSRFM4D" role="RwhAl">
       <node concept="RwgVp" id="GPbSRFM4F" role="Rwzbx">
         <property role="RwgEk" value="0" />
@@ -96,14 +102,6 @@
         <property role="RwgEk" value="1" />
       </node>
     </node>
-    <node concept="RwmKx" id="GPbSRFM6a" role="RwhAl">
-      <node concept="RwgVp" id="GPbSRFM6o" role="Rwzbx">
-        <property role="RwgEk" value="0" />
-      </node>
-      <node concept="RwgVp" id="GPbSRFM6q" role="Rwzbx">
-        <property role="RwgEk" value="1" />
-      </node>
-    </node>
   </node>
   <node concept="RwHTn" id="1GW6u2kL80m">
     <property role="TrG5h" value=". Piece" />
@@ -111,11 +109,11 @@
     <node concept="2fYyJe" id="1GW6u2kMzDj" role="lGtFl">
       <property role="2fY_cM" value="Singular atom" />
     </node>
-    <node concept="RwmKx" id="2U8hypqZ2qc" role="RwHCE">
-      <node concept="RwgVp" id="2U8hypqZ2qd" role="Rwzbx">
+    <node concept="RwmKx" id="6E$jYpXw4N0" role="RwHCE">
+      <node concept="RwgVp" id="6E$jYpXw4N1" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
-      <node concept="RwgVp" id="2U8hypqZ2qe" role="Rwzbx">
+      <node concept="RwgVp" id="6E$jYpXw4NV" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
     </node>

@@ -1,3 +1,604 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,40,0" name="PisP.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715555264603">
+    <file name="TypesystemDescriptor.java">
+      <node id="7684354715555264603" at="18,5,19,108" concept="8" />
+      <node id="7684354715555264603" at="19,108,20,55" concept="3" />
+      <node id="7684354715555264603" at="17,5,21,5" concept="0" />
+      <scope id="7684354715555264603" at="18,5,20,55">
+        <var name="nonTypesystemRule" id="7684354715555264603" />
+      </scope>
+    </file>
+    <file name="locationDimensionMatchesLattice_NonTypesystemRule.java">
+      <node id="7684354715547554890" at="25,121,26,90" concept="8" />
+      <node id="7684354715554474625" at="26,90,27,32" concept="8" />
+      <node id="7684354715560194485" at="27,32,28,96" concept="10" />
+      <node id="7684354715554483496" at="29,93,30,158" concept="3" />
+      <node id="7684354715554506221" at="31,100,32,158" concept="3" />
+      <node id="7684354715555318339" at="33,5,34,24" concept="8" />
+      <node id="7684354715560207928" at="34,24,35,58" concept="10" />
+      <node id="7684354715555320143" at="37,28,38,25" concept="3" />
+      <node id="7684354715555284963" at="38,25,39,14" concept="1" />
+      <node id="7684354715555329940" at="40,28,41,25" concept="3" />
+      <node id="7684354715555332845" at="41,25,42,14" concept="1" />
+      <node id="7684354715555333324" at="43,24,44,25" concept="3" />
+      <node id="7684354715555284345" at="44,25,45,14" concept="1" />
+      <node id="7684354715555283958" at="46,14,47,14" concept="1" />
+      <node id="7684354715555290166" at="50,7,51,66" concept="8" />
+      <node id="7684354715555290166" at="51,66,52,272" concept="8" />
+      <node id="7684354715555264603" at="56,50,57,32" concept="9" />
+      <node id="7684354715555264603" at="59,68,60,102" concept="9" />
+      <node id="7684354715555264603" at="62,30,63,17" concept="9" />
+      <node id="7684354715555264603" at="67,0,68,0" concept="11" trace="coordinates$48xZ" />
+      <node id="7684354715555264603" at="71,0,72,0" concept="11" trace="Piece$gT" />
+      <node id="7684354715555264603" at="72,0,73,0" concept="11" trace="Shape$CN" />
+      <node id="7684354715555264603" at="73,0,74,0" concept="11" trace="Location$bq" />
+      <node id="7684354715555264603" at="77,0,78,0" concept="11" trace="lattice$e_Fj" />
+      <node id="7684354715555264603" at="78,0,79,0" concept="11" trace="lattice$dZUe" />
+      <node id="7684354715555264603" at="23,0,25,0" concept="2" trace="locationDimensionMatchesLattice_NonTypesystemRule#()V" />
+      <node id="7684354715555264603" at="56,0,59,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7684354715555264603" at="59,0,62,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7684354715555264603" at="62,0,65,0" concept="7" trace="overrides#()Z" />
+      <node id="7684354715555290166" at="49,18,53,7" concept="0" />
+      <node id="7684354715554459711" at="28,96,33,5" concept="6" />
+      <node id="7684354715555349204" at="48,5,54,5" concept="6" />
+      <node id="7684354715546147775" at="35,58,48,5" concept="12" />
+      <node id="7684354715555264603" at="25,0,56,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7684354715555264603" at="23,62,23,62" />
+      <scope id="7684354715554459713" at="29,93,30,158" />
+      <scope id="7684354715554490775" at="31,100,32,158" />
+      <scope id="7684354715546154061" at="46,14,47,14" />
+      <scope id="7684354715555264603" at="56,50,57,32" />
+      <scope id="7684354715555264603" at="59,68,60,102" />
+      <scope id="7684354715555264603" at="62,30,63,17" />
+      <scope id="7684354715555264603" at="23,0,25,0" />
+      <scope id="7684354715547091220" at="37,28,39,14" />
+      <scope id="7684354715555289849" at="40,28,42,14" />
+      <scope id="7684354715547099769" at="43,24,45,14" />
+      <scope id="7684354715555290166" at="50,7,52,272">
+        <var name="_reporter_2309309498" id="7684354715555290166" />
+        <var name="errorTarget" id="7684354715555290166" />
+      </scope>
+      <scope id="7684354715555264603" at="56,0,59,0" />
+      <scope id="7684354715555264603" at="59,0,62,0">
+        <var name="argument" id="7684354715555264603" />
+      </scope>
+      <scope id="7684354715555264603" at="62,0,65,0" />
+      <scope id="7684354715555349206" at="49,18,53,7" />
+      <scope id="7684354715555264604" at="25,121,54,5">
+        <var name="ancestorLattice" id="7684354715554474626" />
+        <var name="dims" id="7684354715547554893" />
+        <var name="okay" id="7684354715555318340" />
+      </scope>
+      <scope id="7684354715555264603" at="25,0,56,0">
+        <var name="location" id="7684354715555264603" />
+        <var name="status" id="7684354715555264603" />
+        <var name="typeCheckingContext" id="7684354715555264603" />
+      </scope>
+      <unit id="7684354715555264603" at="66,0,69,0" name="PisP.typesystem.locationDimensionMatchesLattice_NonTypesystemRule$LINKS" />
+      <unit id="7684354715555264603" at="76,0,80,0" name="PisP.typesystem.locationDimensionMatchesLattice_NonTypesystemRule$PROPS" />
+      <unit id="7684354715555264603" at="70,0,75,0" name="PisP.typesystem.locationDimensionMatchesLattice_NonTypesystemRule$CONCEPTS" />
+      <unit id="7684354715555264603" at="22,0,81,0" name="PisP.typesystem.locationDimensionMatchesLattice_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715555779375">
+    <file name="TypesystemDescriptor.java">
+      <node id="7684354715555779375" at="14,5,15,102" concept="8" />
+      <node id="7684354715555779375" at="15,102,16,55" concept="3" />
+      <node id="7684354715555779375" at="13,5,17,5" concept="0" />
+      <scope id="7684354715555779375" at="14,5,16,55">
+        <var name="nonTypesystemRule" id="7684354715555779375" />
+      </scope>
+    </file>
+    <file name="bopPiecesAreOnSameLattice_NonTypesystemRule.java">
+      <node id="7684354715555862032" at="26,124,27,65" concept="10" />
+      <node id="7684354715555783777" at="30,158,31,229" concept="8" />
+      <node id="7684354715555857785" at="35,17,36,76" concept="8" />
+      <node id="7684354715555857785" at="36,76,37,260" concept="8" />
+      <node id="7684354715555779375" at="46,50,47,35" concept="9" />
+      <node id="7684354715555779375" at="49,68,50,102" concept="9" />
+      <node id="7684354715555779375" at="52,30,53,17" concept="9" />
+      <node id="7684354715555779375" at="57,0,58,0" concept="11" trace="pieces$2_Tv" />
+      <node id="7684354715555779375" at="58,0,59,0" concept="11" trace="piece$jZYy" />
+      <node id="7684354715555779375" at="62,0,63,0" concept="11" trace="lattice$e_Fj" />
+      <node id="7684354715555779375" at="66,0,67,0" concept="11" trace="BagOfPieces$L0" />
+      <node id="7684354715555779375" at="24,0,26,0" concept="2" trace="bopPiecesAreOnSameLattice_NonTypesystemRule#()V" />
+      <node id="7684354715555779375" at="46,0,49,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7684354715555779375" at="49,0,52,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7684354715555779375" at="52,0,55,0" concept="7" trace="overrides#()Z" />
+      <node id="7684354715555857785" at="34,148,38,17" concept="0" />
+      <node id="7684354715555847253" at="33,77,39,15" concept="6" />
+      <node id="7684354715555843741" at="32,114,40,13" concept="6" />
+      <node id="7684354715555840867" at="31,229,41,11" concept="5" />
+      <node id="7684354715557659712" at="29,111,42,9" concept="6" />
+      <node id="7684354715557207914" at="28,78,43,7" concept="6" />
+      <node id="7684354715555784157" at="27,65,44,5" concept="6" />
+      <node id="7684354715555779375" at="26,0,46,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7684354715555779375" at="24,56,24,56" />
+      <scope id="7684354715555779375" at="46,50,47,35" />
+      <scope id="7684354715555779375" at="49,68,50,102" />
+      <scope id="7684354715555779375" at="52,30,53,17" />
+      <scope id="7684354715555779375" at="24,0,26,0" />
+      <scope id="7684354715555857785" at="35,17,37,260">
+        <var name="_reporter_2309309498" id="7684354715555857785" />
+        <var name="errorTarget" id="7684354715555857785" />
+      </scope>
+      <scope id="7684354715555779375" at="46,0,49,0" />
+      <scope id="7684354715555779375" at="49,0,52,0">
+        <var name="argument" id="7684354715555779375" />
+      </scope>
+      <scope id="7684354715555779375" at="52,0,55,0" />
+      <scope id="7684354715555847255" at="34,148,38,17" />
+      <scope id="7684354715555843743" at="33,77,39,15" />
+      <scope id="7684354715555840873" at="32,114,40,13" />
+      <scope id="7684354715555840867" at="31,229,41,11">
+        <var name="piece" id="7684354715555840869" />
+      </scope>
+      <scope id="7684354715557659714" at="30,158,41,11">
+        <var name="assumedLattice" id="7684354715555783778" />
+      </scope>
+      <scope id="7684354715557207916" at="29,111,42,9" />
+      <scope id="7684354715555784159" at="28,78,43,7" />
+      <scope id="7684354715555779376" at="26,124,44,5" />
+      <scope id="7684354715555779375" at="26,0,46,0">
+        <var name="bagOfPieces" id="7684354715555779375" />
+        <var name="status" id="7684354715555779375" />
+        <var name="typeCheckingContext" id="7684354715555779375" />
+      </scope>
+      <unit id="7684354715555779375" at="61,0,64,0" name="PisP.typesystem.bopPiecesAreOnSameLattice_NonTypesystemRule$PROPS" />
+      <unit id="7684354715555779375" at="65,0,68,0" name="PisP.typesystem.bopPiecesAreOnSameLattice_NonTypesystemRule$CONCEPTS" />
+      <unit id="7684354715555779375" at="56,0,60,0" name="PisP.typesystem.bopPiecesAreOnSameLattice_NonTypesystemRule$LINKS" />
+      <unit id="7684354715555779375" at="23,0,69,0" name="PisP.typesystem.bopPiecesAreOnSameLattice_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715558571346">
+    <file name="TypesystemDescriptor.java">
+      <node id="7684354715558571346" at="10,5,11,101" concept="8" />
+      <node id="7684354715558571346" at="11,101,12,55" concept="3" />
+      <node id="7684354715558571346" at="9,33,13,5" concept="0" />
+      <scope id="7684354715558571346" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="7684354715558571346" />
+      </scope>
+    </file>
+    <file name="bopAndShapeOnSameLattice_NonTypesystemRule.java">
+      <node id="7684354715558590707" at="26,119,27,112" concept="10" />
+      <node id="7684354715558621667" at="28,76,29,73" concept="10" />
+      <node id="7684354715558592016" at="29,73,30,267" concept="8" />
+      <node id="7684354715558634425" at="33,11,34,70" concept="8" />
+      <node id="7684354715558634425" at="34,70,35,256" concept="8" />
+      <node id="7684354715558571346" at="41,50,42,29" concept="9" />
+      <node id="7684354715558571346" at="44,68,45,102" concept="9" />
+      <node id="7684354715558571346" at="47,30,48,17" concept="9" />
+      <node id="7684354715558571346" at="52,0,53,0" concept="11" trace="bagofpieces$Ua4q" />
+      <node id="7684354715558571346" at="53,0,54,0" concept="11" trace="pieces$2_Tv" />
+      <node id="7684354715558571346" at="54,0,55,0" concept="11" trace="piece$jZYy" />
+      <node id="7684354715558571346" at="55,0,56,0" concept="11" trace="shape$f2Vs" />
+      <node id="7684354715558571346" at="59,0,60,0" concept="11" trace="lattice$e_Fj" />
+      <node id="7684354715558571346" at="60,0,61,0" concept="11" trace="lattice$dZUe" />
+      <node id="7684354715558571346" at="64,0,65,0" concept="11" trace="Puzzle$V" />
+      <node id="7684354715558571346" at="24,0,26,0" concept="2" trace="bopAndShapeOnSameLattice_NonTypesystemRule#()V" />
+      <node id="7684354715558571346" at="41,0,44,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7684354715558571346" at="44,0,47,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7684354715558571346" at="47,0,50,0" concept="7" trace="overrides#()Z" />
+      <node id="7684354715558634425" at="32,139,36,11" concept="0" />
+      <node id="7684354715558626905" at="31,72,37,9" concept="6" />
+      <node id="7684354715558622837" at="30,267,38,7" concept="6" />
+      <node id="7684354715558592679" at="27,112,39,5" concept="6" />
+      <node id="7684354715558571346" at="26,0,41,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7684354715558571346" at="24,55,24,55" />
+      <scope id="7684354715558571346" at="41,50,42,29" />
+      <scope id="7684354715558571346" at="44,68,45,102" />
+      <scope id="7684354715558571346" at="47,30,48,17" />
+      <scope id="7684354715558571346" at="24,0,26,0" />
+      <scope id="7684354715558634425" at="33,11,35,256">
+        <var name="_reporter_2309309498" id="7684354715558634425" />
+        <var name="errorTarget" id="7684354715558634425" />
+      </scope>
+      <scope id="7684354715558571346" at="41,0,44,0" />
+      <scope id="7684354715558571346" at="44,0,47,0">
+        <var name="argument" id="7684354715558571346" />
+      </scope>
+      <scope id="7684354715558571346" at="47,0,50,0" />
+      <scope id="7684354715558626907" at="32,139,36,11" />
+      <scope id="7684354715558622839" at="31,72,37,9" />
+      <scope id="7684354715558592681" at="28,76,38,7">
+        <var name="bopLattice" id="7684354715558592017" />
+      </scope>
+      <scope id="7684354715558571347" at="26,119,39,5" />
+      <scope id="7684354715558571346" at="26,0,41,0">
+        <var name="puzzle" id="7684354715558571346" />
+        <var name="status" id="7684354715558571346" />
+        <var name="typeCheckingContext" id="7684354715558571346" />
+      </scope>
+      <unit id="7684354715558571346" at="63,0,66,0" name="PisP.typesystem.bopAndShapeOnSameLattice_NonTypesystemRule$CONCEPTS" />
+      <unit id="7684354715558571346" at="58,0,62,0" name="PisP.typesystem.bopAndShapeOnSameLattice_NonTypesystemRule$PROPS" />
+      <unit id="7684354715558571346" at="51,0,57,0" name="PisP.typesystem.bopAndShapeOnSameLattice_NonTypesystemRule$LINKS" />
+      <unit id="7684354715558571346" at="23,0,67,0" name="PisP.typesystem.bopAndShapeOnSameLattice_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715559976482">
+    <file name="TypesystemDescriptor.java">
+      <node id="7684354715559976482" at="22,5,23,111" concept="8" />
+      <node id="7684354715559976482" at="23,111,24,55" concept="3" />
+      <node id="7684354715559976482" at="21,5,25,5" concept="0" />
+      <scope id="7684354715559976482" at="22,5,24,55">
+        <var name="nonTypesystemRule" id="7684354715559976482" />
+      </scope>
+    </file>
+    <file name="numberOfAtomsBoPAndShapeAreTheSame_NonTypesystemRule.java">
+      <node id="7684354715559981537" at="26,119,27,23" concept="8" />
+      <node id="7684354715559982343" at="28,70,29,129" concept="3" />
+      <node id="7684354715560257281" at="30,5,31,21" concept="8" />
+      <node id="7684354715560263341" at="33,159,34,200" concept="3" />
+      <node id="7684354715560425143" at="38,7,39,66" concept="8" />
+      <node id="7684354715560425143" at="39,66,40,254" concept="8" />
+      <node id="7684354715559976482" at="44,50,45,29" concept="9" />
+      <node id="7684354715559976482" at="47,68,48,102" concept="9" />
+      <node id="7684354715559976482" at="50,30,51,17" concept="9" />
+      <node id="7684354715559976482" at="55,0,56,0" concept="11" trace="shape$f2Vs" />
+      <node id="7684354715559976482" at="56,0,57,0" concept="11" trace="locations$c$Xv" />
+      <node id="7684354715559976482" at="57,0,58,0" concept="11" trace="piece$jZYy" />
+      <node id="7684354715559976482" at="58,0,59,0" concept="11" trace="locations$ChQi" />
+      <node id="7684354715559976482" at="59,0,60,0" concept="11" trace="bagofpieces$Ua4q" />
+      <node id="7684354715559976482" at="60,0,61,0" concept="11" trace="pieces$2_Tv" />
+      <node id="7684354715559976482" at="64,0,65,0" concept="11" trace="multiplicity$Equw" />
+      <node id="7684354715559976482" at="68,0,69,0" concept="11" trace="Puzzle$V" />
+      <node id="7684354715559976482" at="24,0,26,0" concept="2" trace="numberOfAtomsBoPAndShapeAreTheSame_NonTypesystemRule#()V" />
+      <node id="7684354715559977956" at="27,23,30,5" concept="6" />
+      <node id="7684354715560255983" at="32,76,35,7" concept="5" />
+      <node id="7684354715559976482" at="44,0,47,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7684354715559976482" at="47,0,50,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7684354715559976482" at="50,0,53,0" concept="7" trace="overrides#()Z" />
+      <node id="7684354715560425143" at="37,33,41,7" concept="0" />
+      <node id="7684354715560216339" at="31,21,36,5" concept="6" />
+      <node id="7684354715560414194" at="36,5,42,5" concept="6" />
+      <node id="7684354715559976482" at="26,0,44,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7684354715559976482" at="24,65,24,65" />
+      <scope id="7684354715559977958" at="28,70,29,129" />
+      <scope id="7684354715560255986" at="33,159,34,200" />
+      <scope id="7684354715559976482" at="44,50,45,29" />
+      <scope id="7684354715559976482" at="47,68,48,102" />
+      <scope id="7684354715559976482" at="50,30,51,17" />
+      <scope id="7684354715559976482" at="24,0,26,0" />
+      <scope id="7684354715560425143" at="38,7,40,254">
+        <var name="_reporter_2309309498" id="7684354715560425143" />
+        <var name="errorTarget" id="7684354715560425143" />
+      </scope>
+      <scope id="7684354715560216341" at="32,76,35,7" />
+      <scope id="7684354715560255983" at="32,76,35,7">
+        <var name="pieceRef" id="7684354715560255984" />
+      </scope>
+      <scope id="7684354715559976482" at="44,0,47,0" />
+      <scope id="7684354715559976482" at="47,0,50,0">
+        <var name="argument" id="7684354715559976482" />
+      </scope>
+      <scope id="7684354715559976482" at="50,0,53,0" />
+      <scope id="7684354715560414196" at="37,33,41,7" />
+      <scope id="7684354715559976483" at="26,119,42,5">
+        <var name="bopAtoms" id="7684354715560257284" />
+        <var name="shapeAtoms" id="7684354715559981540" />
+      </scope>
+      <scope id="7684354715559976482" at="26,0,44,0">
+        <var name="puzzle" id="7684354715559976482" />
+        <var name="status" id="7684354715559976482" />
+        <var name="typeCheckingContext" id="7684354715559976482" />
+      </scope>
+      <unit id="7684354715559976482" at="63,0,66,0" name="PisP.typesystem.numberOfAtomsBoPAndShapeAreTheSame_NonTypesystemRule$PROPS" />
+      <unit id="7684354715559976482" at="67,0,70,0" name="PisP.typesystem.numberOfAtomsBoPAndShapeAreTheSame_NonTypesystemRule$CONCEPTS" />
+      <unit id="7684354715559976482" at="54,0,62,0" name="PisP.typesystem.numberOfAtomsBoPAndShapeAreTheSame_NonTypesystemRule$LINKS" />
+      <unit id="7684354715559976482" at="23,0,71,0" name="PisP.typesystem.numberOfAtomsBoPAndShapeAreTheSame_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715562311564">
+    <file name="TypesystemDescriptor.java">
+      <node id="7684354715562311564" at="26,5,27,97" concept="8" />
+      <node id="7684354715562311564" at="27,97,28,55" concept="3" />
+      <node id="7684354715562311564" at="25,5,29,5" concept="0" />
+      <scope id="7684354715562311564" at="26,5,28,55">
+        <var name="nonTypesystemRule" id="7684354715562311564" />
+      </scope>
+    </file>
+    <file name="repeatLocationsPiece_NonTypesystemRule.java">
+      <node id="7684354715562519099" at="25,118,26,62" concept="8" />
+      <node id="7684354715562607988" at="27,108,28,37" concept="8" />
+      <node id="7684354715562678353" at="28,37,29,30" concept="8" />
+      <node id="7684354715567051412" at="30,117,31,82" concept="8" />
+      <node id="7684354715562625161" at="32,42,33,48" concept="3" />
+      <node id="7684354715562679329" at="34,16,35,25" concept="3" />
+      <node id="7684354715562626853" at="35,25,36,30" concept="3" />
+      <node id="7684354715562629238" at="36,30,37,48" concept="3" />
+      <node id="7684354715562682600" at="41,9,42,68" concept="8" />
+      <node id="7684354715562682600" at="42,68,43,216" concept="8" />
+      <node id="7684354715562311564" at="48,50,49,29" concept="9" />
+      <node id="7684354715562311564" at="51,68,52,102" concept="9" />
+      <node id="7684354715562311564" at="54,30,55,17" concept="9" />
+      <node id="7684354715562311564" at="59,0,60,0" concept="11" trace="coordinate$hw$O" />
+      <node id="7684354715562311564" at="63,0,64,0" concept="11" trace="coordinates$48xZ" />
+      <node id="7684354715562311564" at="64,0,65,0" concept="11" trace="locations$ChQi" />
+      <node id="7684354715562311564" at="68,0,69,0" concept="11" trace="Piece$gT" />
+      <node id="7684354715562311564" at="23,0,25,0" concept="2" trace="repeatLocationsPiece_NonTypesystemRule#()V" />
+      <node id="7684354715562311564" at="48,0,51,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7684354715562311564" at="51,0,54,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7684354715562311564" at="54,0,57,0" concept="7" trace="overrides#()Z" />
+      <node id="7684354715562626251" at="34,14,38,9" concept="0" />
+      <node id="7684354715562682600" at="40,23,44,9" concept="0" />
+      <node id="7684354715562681775" at="39,7,45,7" concept="6" />
+      <node id="7684354715562623681" at="31,82,38,9" concept="6" />
+      <node id="7684354715562609510" at="29,30,39,7" concept="5" />
+      <node id="7684354715562313928" at="26,62,46,5" concept="5" />
+      <node id="7684354715562311564" at="25,0,48,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7684354715562311564" at="23,51,23,51" />
+      <scope id="7684354715562623683" at="32,42,33,48" />
+      <scope id="7684354715562311564" at="48,50,49,29" />
+      <scope id="7684354715562311564" at="51,68,52,102" />
+      <scope id="7684354715562311564" at="54,30,55,17" />
+      <scope id="7684354715562311564" at="23,0,25,0" />
+      <scope id="7684354715562682600" at="41,9,43,216">
+        <var name="_reporter_2309309498" id="7684354715562682600" />
+        <var name="errorTarget" id="7684354715562682600" />
+      </scope>
+      <scope id="7684354715562626252" at="34,16,37,48" />
+      <scope id="7684354715562311564" at="48,0,51,0" />
+      <scope id="7684354715562311564" at="51,0,54,0">
+        <var name="argument" id="7684354715562311564" />
+      </scope>
+      <scope id="7684354715562311564" at="54,0,57,0" />
+      <scope id="7684354715562681777" at="40,23,44,9" />
+      <scope id="7684354715562609516" at="30,117,38,9">
+        <var name="c" id="7684354715567051415" />
+      </scope>
+      <scope id="7684354715562609510" at="29,30,39,7">
+        <var name="coordinate" id="7684354715562609512" />
+      </scope>
+      <scope id="7684354715562313931" at="27,108,45,7">
+        <var name="current" id="7684354715562607989" />
+        <var name="madeNew" id="7684354715562678354" />
+      </scope>
+      <scope id="7684354715562313928" at="26,62,46,5">
+        <var name="location" id="7684354715562313929" />
+      </scope>
+      <scope id="7684354715562311565" at="25,118,46,5">
+        <var name="root" id="7684354715562519100" />
+      </scope>
+      <scope id="7684354715562311564" at="25,0,48,0">
+        <var name="piece" id="7684354715562311564" />
+        <var name="status" id="7684354715562311564" />
+        <var name="typeCheckingContext" id="7684354715562311564" />
+      </scope>
+      <unit id="7684354715562311564" at="58,0,61,0" name="PisP.typesystem.repeatLocationsPiece_NonTypesystemRule$PROPS" />
+      <unit id="7684354715562311564" at="67,0,70,0" name="PisP.typesystem.repeatLocationsPiece_NonTypesystemRule$CONCEPTS" />
+      <unit id="7684354715562311564" at="62,0,66,0" name="PisP.typesystem.repeatLocationsPiece_NonTypesystemRule$LINKS" />
+      <unit id="7684354715562311564" at="22,0,71,0" name="PisP.typesystem.repeatLocationsPiece_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715562356472">
+    <file name="MultiLinkedList.java">
+      <node id="7684354715562357200" at="16,0,17,0" concept="4" trace="data" />
+      <node id="7684354715562358781" at="17,0,18,0" concept="4" trace="children" />
+      <node id="7684354715562361472" at="18,0,19,0" concept="4" trace="parent" />
+      <node id="7684354715562363004" at="20,34,21,21" concept="3" />
+      <node id="7684354715562414155" at="24,47,25,26" concept="3" />
+      <node id="7684354715562434514" at="25,26,26,29" concept="3" />
+      <node id="7684354715562392558" at="29,32,30,62" concept="8" />
+      <node id="7684354715562395741" at="30,62,31,28" concept="3" />
+      <node id="7684354715562420775" at="34,49,35,25" concept="3" />
+      <node id="7684354715562429562" at="38,38,39,18" concept="9" />
+      <node id="7684354715562487651" at="42,49,43,72" concept="8" />
+      <node id="7684354715562490331" at="43,72,44,84" concept="3" />
+      <node id="7684354715562513663" at="44,84,45,24" concept="9" />
+      <node id="7684354715562552917" at="48,57,49,87" concept="8" />
+      <node id="7684354715562588013" at="51,31,52,29" concept="3" />
+      <node id="7684354715562598355" at="54,7,55,24" concept="9" />
+      <node id="7684354715562362249" at="20,0,23,0" concept="2" trace="MultiLinkedList#(null)V" />
+      <node id="7684354715562418849" at="34,0,37,0" concept="7" trace="setParent#(LPisP/typesystem/MultiLinkedList;)V" />
+      <node id="7684354715562428577" at="38,0,41,0" concept="7" trace="getParent#()LPisP/typesystem/MultiLinkedList;" />
+      <node id="7684354715562575108" at="50,49,53,7" concept="6" />
+      <node id="7684354715562409808" at="24,0,28,0" concept="7" trace="addChild#(LPisP/typesystem/MultiLinkedList;)V" />
+      <node id="7684354715562387932" at="29,0,33,0" concept="7" trace="addChild#(null)V" />
+      <node id="7684354715562457155" at="42,0,47,0" concept="7" trace="hasChildWithData#(null)Ljava/lang/Boolean;" />
+      <node id="7684354715562602017" at="49,87,54,7" concept="3" />
+      <node id="7684354715562533467" at="48,0,57,0" concept="7" trace="getChildWithData#(null)LPisP/typesystem/MultiLinkedList;" />
+      <scope id="7684354715562362253" at="20,34,21,21" />
+      <scope id="7684354715562418852" at="34,49,35,25" />
+      <scope id="7684354715562428580" at="38,38,39,18" />
+      <scope id="7684354715562575110" at="51,31,52,29" />
+      <scope id="7684354715562409811" at="24,47,26,29" />
+      <scope id="7684354715562387935" at="29,32,31,28">
+        <var name="newChild" id="7684354715562392559" />
+      </scope>
+      <scope id="7684354715562362249" at="20,0,23,0">
+        <var name="type" id="7684354715562362577" />
+      </scope>
+      <scope id="7684354715562418849" at="34,0,37,0">
+        <var name="parent" id="7684354715562419605" />
+      </scope>
+      <scope id="7684354715562428577" at="38,0,41,0" />
+      <scope id="7684354715562457158" at="42,49,45,24">
+        <var name="result" id="7684354715562487652" />
+      </scope>
+      <scope id="7684354715562568374" at="50,49,53,7" />
+      <scope id="7684354715562409808" at="24,0,28,0">
+        <var name="child" id="7684354715562411295" />
+      </scope>
+      <scope id="7684354715562387932" at="29,0,33,0">
+        <var name="data" id="7684354715562389177" />
+      </scope>
+      <scope id="7684354715562457155" at="42,0,47,0">
+        <var name="data" id="7684354715562458346" />
+      </scope>
+      <scope id="7684354715562533470" at="48,57,55,24">
+        <var name="result" id="7684354715562552918" />
+      </scope>
+      <scope id="7684354715562533467" at="48,0,57,0">
+        <var name="data" id="7684354715562537757" />
+      </scope>
+      <unit id="7684354715562356472" at="15,0,58,0" name="PisP.typesystem.MultiLinkedList" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715568029134">
+    <file name="TypesystemDescriptor.java">
+      <node id="7684354715568029134" at="30,5,31,97" concept="8" />
+      <node id="7684354715568029134" at="31,97,32,55" concept="3" />
+      <node id="7684354715568029134" at="29,5,33,5" concept="0" />
+      <scope id="7684354715568029134" at="30,5,32,55">
+        <var name="nonTypesystemRule" id="7684354715568029134" />
+      </scope>
+    </file>
+    <file name="repeatLocationsShape_NonTypesystemRule.java">
+      <node id="7684354715568042214" at="25,118,26,49" concept="10" />
+      <node id="7684354715568035679" at="26,49,27,62" concept="8" />
+      <node id="7684354715568035692" at="28,108,29,37" concept="8" />
+      <node id="7684354715568035696" at="29,37,30,30" concept="8" />
+      <node id="7684354715568035706" at="31,117,32,82" concept="8" />
+      <node id="7684354715568035718" at="33,42,34,48" concept="3" />
+      <node id="7684354715568035727" at="35,16,36,25" concept="3" />
+      <node id="7684354715568035731" at="36,25,37,30" concept="3" />
+      <node id="7684354715568035736" at="37,30,38,48" concept="3" />
+      <node id="7684354715568035746" at="42,9,43,68" concept="8" />
+      <node id="7684354715568035746" at="43,68,44,216" concept="8" />
+      <node id="7684354715568029134" at="49,50,50,29" concept="9" />
+      <node id="7684354715568029134" at="52,68,53,102" concept="9" />
+      <node id="7684354715568029134" at="55,30,56,17" concept="9" />
+      <node id="7684354715568029134" at="60,0,61,0" concept="11" trace="coordinate$hw$O" />
+      <node id="7684354715568029134" at="64,0,65,0" concept="11" trace="coordinates$48xZ" />
+      <node id="7684354715568029134" at="65,0,66,0" concept="11" trace="locations$c$Xv" />
+      <node id="7684354715568029134" at="69,0,70,0" concept="11" trace="Shape$CN" />
+      <node id="7684354715568029134" at="23,0,25,0" concept="2" trace="repeatLocationsShape_NonTypesystemRule#()V" />
+      <node id="7684354715568029134" at="49,0,52,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7684354715568029134" at="52,0,55,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7684354715568029134" at="55,0,58,0" concept="7" trace="overrides#()Z" />
+      <node id="7684354715568035725" at="35,14,39,9" concept="0" />
+      <node id="7684354715568035746" at="41,23,45,9" concept="0" />
+      <node id="7684354715568035744" at="40,7,46,7" concept="6" />
+      <node id="7684354715568035712" at="32,82,39,9" concept="6" />
+      <node id="7684354715568035700" at="30,30,40,7" concept="5" />
+      <node id="7684354715568035686" at="27,62,47,5" concept="5" />
+      <node id="7684354715568029134" at="25,0,49,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7684354715568029134" at="23,51,23,51" />
+      <scope id="7684354715568035717" at="33,42,34,48" />
+      <scope id="7684354715568029134" at="49,50,50,29" />
+      <scope id="7684354715568029134" at="52,68,53,102" />
+      <scope id="7684354715568029134" at="55,30,56,17" />
+      <scope id="7684354715568029134" at="23,0,25,0" />
+      <scope id="7684354715568035746" at="42,9,44,216">
+        <var name="_reporter_2309309498" id="7684354715568035746" />
+        <var name="errorTarget" id="7684354715568035746" />
+      </scope>
+      <scope id="7684354715568035726" at="35,16,38,48" />
+      <scope id="7684354715568029134" at="49,0,52,0" />
+      <scope id="7684354715568029134" at="52,0,55,0">
+        <var name="argument" id="7684354715568029134" />
+      </scope>
+      <scope id="7684354715568029134" at="55,0,58,0" />
+      <scope id="7684354715568035745" at="41,23,45,9" />
+      <scope id="7684354715568035705" at="31,117,39,9">
+        <var name="c" id="7684354715568035707" />
+      </scope>
+      <scope id="7684354715568035700" at="30,30,40,7">
+        <var name="coordinate" id="7684354715568035701" />
+      </scope>
+      <scope id="7684354715568035691" at="28,108,46,7">
+        <var name="current" id="7684354715568035693" />
+        <var name="madeNew" id="7684354715568035697" />
+      </scope>
+      <scope id="7684354715568035686" at="27,62,47,5">
+        <var name="location" id="7684354715568035687" />
+      </scope>
+      <scope id="7684354715568029135" at="25,118,47,5">
+        <var name="root" id="7684354715568035680" />
+      </scope>
+      <scope id="7684354715568029134" at="25,0,49,0">
+        <var name="shape" id="7684354715568029134" />
+        <var name="status" id="7684354715568029134" />
+        <var name="typeCheckingContext" id="7684354715568029134" />
+      </scope>
+      <unit id="7684354715568029134" at="59,0,62,0" name="PisP.typesystem.repeatLocationsShape_NonTypesystemRule$PROPS" />
+      <unit id="7684354715568029134" at="68,0,71,0" name="PisP.typesystem.repeatLocationsShape_NonTypesystemRule$CONCEPTS" />
+      <unit id="7684354715568029134" at="63,0,67,0" name="PisP.typesystem.repeatLocationsShape_NonTypesystemRule$LINKS" />
+      <unit id="7684354715568029134" at="22,0,72,0" name="PisP.typesystem.repeatLocationsShape_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:bc41e529-dea7-4ee8-b55b-85ab02ac5dbd(PisP.typesystem)/7684354715568577854">
+    <file name="TypesystemDescriptor.java">
+      <node id="7684354715568577854" at="34,5,35,89" concept="8" />
+      <node id="7684354715568577854" at="35,89,36,55" concept="3" />
+      <node id="7684354715568577854" at="33,5,37,5" concept="0" />
+      <scope id="7684354715568577854" at="34,5,36,55">
+        <var name="nonTypesystemRule" id="7684354715568577854" />
+      </scope>
+    </file>
+    <file name="repeatPieces_NonTypesystemRule.java">
+      <node id="7684354715568579346" at="27,124,28,45" concept="8" />
+      <node id="7684354715568619100" at="32,11,33,70" concept="8" />
+      <node id="7684354715568619100" at="33,70,34,215" concept="8" />
+      <node id="7684354715568623351" at="36,16,37,109" concept="3" />
+      <node id="7684354715568577854" at="42,50,43,35" concept="9" />
+      <node id="7684354715568577854" at="45,68,46,102" concept="9" />
+      <node id="7684354715568577854" at="48,30,49,17" concept="9" />
+      <node id="7684354715568577854" at="53,0,54,0" concept="11" trace="piece$jZYy" />
+      <node id="7684354715568577854" at="54,0,55,0" concept="11" trace="pieces$2_Tv" />
+      <node id="7684354715568577854" at="58,0,59,0" concept="11" trace="BagOfPieces$L0" />
+      <node id="7684354715568577854" at="25,0,27,0" concept="2" trace="repeatPieces_NonTypesystemRule#()V" />
+      <node id="7684354715568622995" at="36,14,38,9" concept="0" />
+      <node id="7684354715568577854" at="42,0,45,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7684354715568577854" at="45,0,48,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7684354715568577854" at="48,0,51,0" concept="7" trace="overrides#()Z" />
+      <node id="7684354715568619100" at="31,111,35,11" concept="0" />
+      <node id="7684354715568602685" at="30,93,38,9" concept="6" />
+      <node id="7684354715568595344" at="29,111,39,7" concept="6" />
+      <node id="7684354715568592122" at="28,45,40,5" concept="5" />
+      <node id="7684354715568577854" at="27,0,42,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7684354715568577854" at="25,43,25,43" />
+      <scope id="7684354715568622996" at="36,16,37,109" />
+      <scope id="7684354715568577854" at="42,50,43,35" />
+      <scope id="7684354715568577854" at="45,68,46,102" />
+      <scope id="7684354715568577854" at="48,30,49,17" />
+      <scope id="7684354715568577854" at="25,0,27,0" />
+      <scope id="7684354715568619100" at="32,11,34,215">
+        <var name="_reporter_2309309498" id="7684354715568619100" />
+        <var name="errorTarget" id="7684354715568619100" />
+      </scope>
+      <scope id="7684354715568577854" at="42,0,45,0" />
+      <scope id="7684354715568577854" at="45,0,48,0">
+        <var name="argument" id="7684354715568577854" />
+      </scope>
+      <scope id="7684354715568577854" at="48,0,51,0" />
+      <scope id="7684354715568602687" at="31,111,35,11" />
+      <scope id="7684354715568595346" at="30,93,38,9" />
+      <scope id="7684354715568592128" at="29,111,39,7" />
+      <scope id="7684354715568592122" at="28,45,40,5">
+        <var name="pieceRef" id="7684354715568592124" />
+      </scope>
+      <scope id="7684354715568577855" at="27,124,40,5">
+        <var name="setOfPieces" id="7684354715568579349" />
+      </scope>
+      <scope id="7684354715568577854" at="27,0,42,0">
+        <var name="bagOfPieces" id="7684354715568577854" />
+        <var name="status" id="7684354715568577854" />
+        <var name="typeCheckingContext" id="7684354715568577854" />
+      </scope>
+      <unit id="7684354715568577854" at="57,0,60,0" name="PisP.typesystem.repeatPieces_NonTypesystemRule$CONCEPTS" />
+      <unit id="7684354715568577854" at="52,0,56,0" name="PisP.typesystem.repeatPieces_NonTypesystemRule$LINKS" />
+      <unit id="7684354715568577854" at="24,0,61,0" name="PisP.typesystem.repeatPieces_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
 

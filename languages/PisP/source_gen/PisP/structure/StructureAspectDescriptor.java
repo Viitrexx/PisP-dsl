@@ -20,7 +20,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCoordinate = createDescriptorForCoordinate();
   /*package*/ final ConceptDescriptor myConceptDescriptionComment = createDescriptorForDescriptionComment();
   /*package*/ final ConceptDescriptor myConceptIDescriptionComment = createDescriptorForIDescriptionComment();
-  /*package*/ final ConceptDescriptor myConceptLattice = createDescriptorForLattice();
   /*package*/ final ConceptDescriptor myConceptLocation = createDescriptorForLocation();
   /*package*/ final ConceptDescriptor myConceptPiece = createDescriptorForPiece();
   /*package*/ final ConceptDescriptor myConceptPieceReference = createDescriptorForPieceReference();
@@ -41,7 +40,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBagOfPieces, myConceptCoordinate, myConceptDescriptionComment, myConceptIDescriptionComment, myConceptLattice, myConceptLocation, myConceptPiece, myConceptPieceReference, myConceptPuzzle, myConceptShape);
+    return Arrays.asList(myConceptBagOfPieces, myConceptCoordinate, myConceptDescriptionComment, myConceptIDescriptionComment, myConceptLocation, myConceptPiece, myConceptPieceReference, myConceptPuzzle, myConceptShape);
   }
 
   @Override
@@ -56,8 +55,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDescriptionComment;
       case LanguageConceptSwitch.IDescriptionComment:
         return myConceptIDescriptionComment;
-      case LanguageConceptSwitch.Lattice:
-        return myConceptLattice;
       case LanguageConceptSwitch.Location:
         return myConceptLocation;
       case LanguageConceptSwitch.Piece:
@@ -114,14 +111,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "IDescriptionComment", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c62282L);
     b.interface_();
     b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/1962471989986075266");
-    b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForLattice() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP", "Lattice", 0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adf1b9L);
-    b.class_(false, false, true);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:c0c44ecb-4459-46b9-b227-3b76e96cebff(PisP.structure)/12618812418290105");
     b.version(3);
     return b.create();
   }

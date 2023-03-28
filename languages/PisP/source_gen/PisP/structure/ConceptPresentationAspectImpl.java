@@ -13,7 +13,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Coordinate;
   private ConceptPresentation props_DescriptionComment;
   private ConceptPresentation props_IDescriptionComment;
-  private ConceptPresentation props_Lattice;
   private ConceptPresentation props_Location;
   private ConceptPresentation props_Piece;
   private ConceptPresentation props_PieceReference;
@@ -52,14 +51,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IDescriptionComment = cpb.create();
         }
         return props_IDescriptionComment;
-      case LanguageConceptSwitch.Lattice:
-        if (props_Lattice == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.deprecated(true);
-          cpb.presentationByName();
-          props_Lattice = cpb.create();
-        }
-        return props_Lattice;
       case LanguageConceptSwitch.Location:
         if (props_Location == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
