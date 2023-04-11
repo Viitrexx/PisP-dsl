@@ -3,6 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="-1" />
+    <use id="9fa16abd-1fdf-4ff2-bb53-74e097c5d44a" name="PisP.gen.xmldump" version="0" />
+    <engage id="9fa16abd-1fdf-4ff2-bb53-74e097c5d44a" name="PisP.gen.xmldump" />
   </languages>
   <imports />
   <registry>
@@ -47,7 +49,7 @@
   </registry>
   <node concept="RxM8_" id="GPbSRFLrY">
     <property role="TrG5h" value="My Easy Test Puzzle" />
-    <ref role="RwjzG" node="GPbSRFLs0" resolve="2x2x1 Square" />
+    <ref role="RwjzG" node="GPbSRFLs0" resolve="2x2 Square" />
     <ref role="RwjUE" node="GPbSRFNpd" resolve="Easy Test Pieces" />
     <node concept="2fYyJe" id="1GW6u2kO1Dh" role="lGtFl">
       <property role="2fY_cM" value="This puzzle has 4 symmetric solutions uniquely determined by the placement of the dot piece" />

@@ -184,7 +184,7 @@
       <ref role="20lvS9" node="GPbSRFryv" resolve="Location" />
     </node>
     <node concept="PrWs8" id="GPbSRFJBF" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" />
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="1GW6u2kLyta" role="PzmwI">
       <ref role="PrY4T" node="1GW6u2kLya2" resolve="IDescriptionComment" />

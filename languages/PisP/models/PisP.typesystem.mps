@@ -511,7 +511,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="6E$jYpWLt5d" role="37vLTJ">
-                  <ref role="3cqZAo" node="6E$jYpWLsD4" resolve="error" />
+                  <ref role="3cqZAo" node="6E$jYpWLsD4" resolve="okay" />
                 </node>
               </node>
             </node>
@@ -537,7 +537,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="6E$jYpWLvui" role="37vLTJ">
-                  <ref role="3cqZAo" node="6E$jYpWLsD4" resolve="error" />
+                  <ref role="3cqZAo" node="6E$jYpWLsD4" resolve="okay" />
                 </node>
               </node>
             </node>
@@ -560,7 +560,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="6E$jYpWLwja" role="37vLTJ">
-                  <ref role="3cqZAo" node="6E$jYpWLsD4" resolve="error" />
+                  <ref role="3cqZAo" node="6E$jYpWLsD4" resolve="okay" />
                 </node>
               </node>
             </node>
@@ -1394,7 +1394,7 @@
       <node concept="3uibUv" id="6E$jYpXcjdy" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="6E$jYpXcjlg" role="11_B2D">
-          <ref role="3uigEE" node="6E$jYpXciVS" resolve="Tree" />
+          <ref role="3uigEE" node="6E$jYpXciVS" resolve="MultiLinkedList" />
         </node>
       </node>
       <node concept="2ShNRf" id="6E$jYpXcjxZ" role="33vP2m">
@@ -1408,7 +1408,7 @@
       <property role="TrG5h" value="parent" />
       <node concept="3Tm6S6" id="6E$jYpXcjUP" role="1B3o_S" />
       <node concept="3uibUv" id="6E$jYpXck0D" role="1tU5fm">
-        <ref role="3uigEE" node="6E$jYpXciVS" resolve="Tree" />
+        <ref role="3uigEE" node="6E$jYpXciVS" resolve="MultiLinkedList" />
       </node>
       <node concept="10Nm6u" id="6E$jYpXckel" role="33vP2m" />
     </node>
@@ -1425,7 +1425,7 @@
             <node concept="2OqwBi" id="6E$jYpXckLd" role="37vLTJ">
               <node concept="Xjq3P" id="6E$jYpXckxV" role="2Oq$k0" />
               <node concept="2OwXpG" id="6E$jYpXcl2j" role="2OqNvi">
-                <ref role="2Oxat5" node="6E$jYpXcj7g" resolve="type" />
+                <ref role="2Oxat5" node="6E$jYpXcj7g" resolve="data" />
               </node>
             </node>
           </node>
@@ -1487,7 +1487,7 @@
           <node concept="3cpWsn" id="6E$jYpXcrJJ" role="3cpWs9">
             <property role="TrG5h" value="newChild" />
             <node concept="3uibUv" id="6E$jYpXcrJG" role="1tU5fm">
-              <ref role="3uigEE" node="6E$jYpXciVS" resolve="Tree" />
+              <ref role="3uigEE" node="6E$jYpXciVS" resolve="MultiLinkedList" />
               <node concept="16syzq" id="6E$jYpXcrKe" role="11_B2D">
                 <ref role="16sUi3" node="6E$jYpXciZm" resolve="T" />
               </node>
@@ -1495,7 +1495,7 @@
             <node concept="2ShNRf" id="6E$jYpXcs25" role="33vP2m">
               <node concept="1pGfFk" id="6E$jYpXcsdL" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="6E$jYpXckm9" resolve="Tree" />
+                <ref role="37wK5l" node="6E$jYpXckm9" resolve="MultiLinkedList" />
                 <node concept="37vLTw" id="6E$jYpXcskk" role="37wK5m">
                   <ref role="3cqZAo" node="6E$jYpXcqUT" resolve="data" />
                 </node>

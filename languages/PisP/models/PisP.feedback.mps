@@ -57,7 +57,7 @@
     <ref role="3Z9TSV" to="r6rf:GPbSRFwaX" resolve="PieceReference" />
     <node concept="3QByp$" id="6E$jYpWWbve" role="3QBEN7">
       <node concept="1GjwBS" id="6E$jYpWWbui" role="3JXyrO">
-        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" resolve="FailingPropertyConstraints" />
         <ref role="1Gj$d9" to="r6rf:GPbSRFwii" resolve="multiplicity" />
       </node>
       <node concept="16I2mz" id="6E$jYpWWbvi" role="16N$OO">

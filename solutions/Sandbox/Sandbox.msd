@@ -13,6 +13,7 @@
   <sourcePath />
   <languageVersions>
     <language slang="l:9ea5405c-cd50-4139-8b08-11b78b688cf5:PisP" version="0" />
+    <language slang="l:9fa16abd-1fdf-4ff2-bb53-74e097c5d44a:PisP.gen.xmldump" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
