@@ -1,0 +1,538 @@
+<Puzzle name="Zoltan 6x10">
+  <Shape name="6x10 rectangle" lattice="GPbSRFNsK/CubicLattice2D">
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="4"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="5"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="6"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="7"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="8"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="9"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="4"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="5"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="6"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="7"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="8"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="9"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="4"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="5"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="6"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="7"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="8"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="9"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="4"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="5"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="6"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="7"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="8"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="9"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="4"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="5"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="6"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="7"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="8"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="9"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="4"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="5"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="6"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="7"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="8"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="5"></Coordinate>
+      <Coordinate coordinate="9"></Coordinate>
+    </Location>
+  </Shape>
+  <BagOfPieces name="All 12 pentominoes">
+    <PieceReference multiplicity="1">
+      <Piece name="F pentomino" lattice="GPbSRFNsK/CubicLattice2D">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="-1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <DescriptionComment comment="Alternate name: R"></DescriptionComment>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="I pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="-2"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="-1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="2"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <DescriptionComment comment="Alternate name: O"></DescriptionComment>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="L pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="2"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="3"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="3"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <DescriptionComment comment="ALternate name: Q"></DescriptionComment>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="N pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="2"></Coordinate>
+        </Location>
+        <DescriptionComment comment="Alternate name: S"></DescriptionComment>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="P pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="2"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="T pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="2"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="2"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="U pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="-1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="-1"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="V pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="2"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="2"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="W pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="2"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="2"></Coordinate>
+          <Coordinate coordinate="2"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="X pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="-1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="Y pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="2"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="3"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="Z pentomino" lattice="GPbSRFNsK/CubicLattice">
+        <Location>
+          <Coordinate coordinate="-1"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="-1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+  </BagOfPieces>
+</Puzzle>
