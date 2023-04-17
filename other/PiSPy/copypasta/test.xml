@@ -1,0 +1,94 @@
+<Puzzle name="test">
+  <BagOfPieces name="bop">
+    <PieceReference multiplicity="1">
+      <Piece name="A" lattice="2U8hypqlvke/CubicLattice3D">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="B" lattice="2U8hypqlvke/CubicLattice3D">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+  </BagOfPieces>
+  <Shape name="2x2x2" lattice="2U8hypqlvke/CubicLattice3D">
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+  </Shape>
+</Puzzle>

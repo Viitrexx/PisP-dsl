@@ -1,0 +1,6 @@
+https://learn.microsoft.com/en-us/windows/wsl/install
+
+wsl --install
+
+user:vii
+pass:<space>

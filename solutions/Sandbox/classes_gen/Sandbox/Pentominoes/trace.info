@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <root nodeRef="r:769dd344-9c70-4d39-8839-21fa5bdacd27(Sandbox.Pentominoes)/2818266186242344566">
+    <file name="Figure 1 Puzzle.xml">
+      <unit id="2818266186242344566" at="1,0,227,9" name="Sandbox.Pentominoes.Figure 1 Puzzle" />
+    </file>
+  </root>
+  <root nodeRef="r:769dd344-9c70-4d39-8839-21fa5bdacd27(Sandbox.Pentominoes)/2818266186242353259">
+    <file name="Zoltan 6x10.xml">
+      <unit id="2818266186242353259" at="1,0,538,9" name="Sandbox.Pentominoes.Zoltan 6x10" />
+    </file>
+  </root>
+</debug-info>
 

@@ -1,0 +1,66 @@
+<Puzzle name="Zoltan">
+  <BagOfPieces name="bop">
+    <PieceReference multiplicity="1">
+      <Piece name="A" lattice="GPbSRFNsK/CubicLattice2D">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="B" lattice="GPbSRFNsK/CubicLattice2D">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="C" lattice="GPbSRFNsK/CubicLattice2D">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+  </BagOfPieces>
+  <Shape name="3x2" lattice="GPbSRFNsK/CubicLattice2D">
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+  </Shape>
+</Puzzle>

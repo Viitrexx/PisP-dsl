@@ -1,0 +1,26 @@
+/bin/bash -c "$(curl -fsSL https://exaloop.io/install.sh)"
+
+sudo vim ~/.bashrc
+export PATH=/home/vii/.codon/bin:$PATH
+export CODON_PYTHON=/usr/lib/x86_64-linux-gnu/libpython3.10.so.1.0
+
+sudo apt-get install gcc
+sudo apt-get install zlib1g-dev
+
+cd /mnt/c/Users/s162254/Documents/GitHub/PisP-dsl/other/codon
+
+# compile and run the program
+codon run analyze.py
+
+# compile and run the program with optimizations enabled
+codon run -release analyze.py
+codon run -release -DINT_BITS=128 analyze.py
+
+# compile to executable with optimizations enabled
+codon build -release -exe analyze.py
+codon build -release -exe -DINT_BITS=128 analyze.py
+./analyze
+
+# compile to LLVM IR file with optimizations enabled
+codon build -release -llvm analyze.py
+# outputs file analyze.ll

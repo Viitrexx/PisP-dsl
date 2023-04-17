@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:76caef5c-65da-4729-806f-6c6ef258296d(Sandbox.testModel)/2818266186242345530">
+    <file name="test.xml">
+      <unit id="2818266186242345530" at="1,0,94,9" name="Sandbox.testModel.test" />
+    </file>
+  </root>
+</debug-info>
+
