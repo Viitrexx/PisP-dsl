@@ -1,8 +1,9 @@
 from PisPy import *
 import time
 import sys
+import random
 
-file = "./../PisPy/copypasta/Zoltan 6x10.xml"
+file = "./../PisPy/copypasta/Soma Cube.xml"
 myPuzzle = PuzzleParser().loadFromFile(file)
 print("Generating embeddings...")
 e = generateEmbeddings(myPuzzle)
@@ -10,7 +11,7 @@ aspects = [p.name + str(i) for p in myPuzzle.bagOfPieces for i in range(p.multip
 print(aspects)
 # UInt here has to have as many bits as len(aspects)
 # INT_BITS : Static[int] = 64 # larger number -> slower program
-assert len(aspects) <= INT_BITS
+assert len(aspects) <= INT_BITS, f"Not enough INT_BITS to encode {len(aspects)} aspects."
 encoding = {a:UInt[INT_BITS](UInt[INT_BITS](1) << UInt[INT_BITS](i)) for i,a in enumerate(aspects)}
 decoding = {UInt[INT_BITS](UInt[INT_BITS](1) << UInt[INT_BITS](i)):a for i,a in enumerate(aspects)}
 encode = lambda e: sum([encoding[k] for k in e], UInt[INT_BITS](0))
@@ -27,85 +28,46 @@ for p in [p.name + str(i) for p in myPuzzle.bagOfPieces for i in range(p.multipl
             counter += 1
     print(p, ":", counter)    
 
-# Inefficient solver
-"""
-A = set(aspects)
-E = list(embeddings)
-p = set()
-S = []
-t = []
-counter = 0
-
-def canAdd(e, p):
-    return p.isdisjoint(e)
-
-def covers(p, A):
-    return len(p) == len(A)
-
-S.append((p, E, t))
-print("Solving...")
-while len(S) > 0:
-    pp, EE, t = S[-1]
-    S.pop()
-    if covers(pp, A):
-        print(f"Solution {counter}: ", t)
-        counter += 1
-    elif len(EE) > 0:
-        e = EE[0]
-        S.append((pp, EE[1:], t))
-        if canAdd(e, pp):
-            S.append((pp.union(e), EE[1:], t + [e]))
-"""
-
-# Bitwise version of above (with optimisations
-#fixed = ['A0', 4, 5, 8, 17]
-#fixed = ['B0', 12, 13, 16, 25]
-A = (UInt[INT_BITS](UInt[INT_BITS](1) << UInt[INT_BITS]((len(aspects)))) - UInt[INT_BITS](1))
-E = sorted(list(set(encodedEmbeddings)), reverse=True) # You could make a bitset encoding this to save space but I think it's slower
-print(len(E), "embeddings")
-#E = [e for e in E if len(set(decode(e)).intersection(fixed)) == 0]
-# from random import shuffle; shuffle(E)
-p = UInt[INT_BITS](0)
-#p = encode(fixed)
-S = []
-t = UInt[INT_BITS](-1)
-#t = [encode(fixed)]
-counter = 0
-visits = 0 # risk of overflowing
-
-S.append((p, [e for e in E if p & e == UInt[INT_BITS](0)], t))
-#S.append((p, Ei, t))
-print("Solving bitwise...")
+print(f"Analyzing {myPuzzle.name}...")
+#random.seed(1915344095) # number stolen from legacy program, who knows whether it has a meaning or not
+num_samples = 10**4
+estimate = UInt[128](0)
 seconds = time.time()
-while len(S) > 0:
-    visits += 1
-    pp, EE, t = S[-1]
-    S.pop()
-    if pp == A:
-        counter += 1
-        #print(f"Solution {counter}: ", sorted(decode(e) for e in list(list(zip(*S))[2][1:] + (t,))))
-        #sol = []
-        #for _,_,s in S[1:]:
-        #    sol.append(decode(s))
-        #print(f"Solution {counter} :", sol + [decode(t)])
-        print(f"\r{counter}", end="")
-        sys.stdout.flush()
-    elif len(EE) > 0:
+# Knuth random probing 1975
+for sample_num in range(num_samples):
+    print(f"\r{sample_num}/{num_samples}", end="")
+    sys.stdout.flush()
+    
+    A = (UInt[INT_BITS](UInt[INT_BITS](1) << UInt[INT_BITS]((len(aspects)))) - UInt[INT_BITS](1))
+    E = sorted(list(set(encodedEmbeddings)), reverse=True)
+    p = UInt[INT_BITS](0)
+    S = []
+    level = 0
+    
+    while True: # This is a bad loop condition, the if with the break does all the work
+        level += 1
         # Zero-fit-cutoff (methode 2 Tonneijk)
-        c = pp
-        for e in EE:
-            if e & pp == UInt[INT_BITS](0):
+        c = p
+        for e in E:
+            if e & p == UInt[INT_BITS](0):
                 c = e | c
-        if c != A:
-            continue # prune
-        # Find first fitting now instead of by using stack
-        # -> make sure first one is guaranteed to fit
-        e = EE[0]
-        if e & pp == UInt[INT_BITS](0):
-            S.append((pp, EE[1:], t))
-            # Pre-emptively prune
-            S.append((pp | e, [ee for ee in EE[1:] if (pp | e) & ee == UInt[INT_BITS](0)], e))
-        else:
-            assert False
+        if p == A or len(E) == 0 or c != A: # no more fits, random walk ends here
+            est = 1
+            for dk in reversed(S):
+                est = 1 + dk * est
+            #print(f"Sample {sample_num}: {est}, reached level {level}.")
+            estimate += UInt[128](est)
+            break
+        elif len(E) > 0:
+            # Choose a random part of the tree to walk into
+            ei = random.randint(0, len(E)-1)
+            e = E[ei]
+            if e & p == UInt[INT_BITS](0):
+                # Pre-emptively prune
+                S.append(len(E))
+                p = p | e
+                E = [ee for ee in E[ei+1:] if p & ee == UInt[INT_BITS](0)]
+            else:
+                assert False
 
-print(f"\rFound {counter} solutions in {time.time() - seconds} seconds while visiting {visits} nodes.")
+print(f"\rEstimated size of search space is {int(estimate/UInt[128](num_samples))}, estimated in {time.time() - seconds} seconds using {num_samples} samples.")
