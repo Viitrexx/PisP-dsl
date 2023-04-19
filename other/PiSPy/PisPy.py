@@ -219,7 +219,7 @@ def isometries2DCubic():
         yield eye
         
 def isometriesFCC():
-    # untested
+    # barely tested
     legacy = """  ( 0, 1, 0)/( 0, 0, 1)/(-1,-1,-1) -1
   ( 0, 0, 1)/( 0, 1, 0)/(-1,-1,-1)  1
   ( 0, 0,-1)/( 0,-1, 0)/(-1, 0, 0)  1
@@ -269,4 +269,7 @@ def isometriesFCC():
   ( 0, 0,-1)/( 0,-1, 0)/( 1, 1, 1) -1
   ( 0,-1, 0)/( 0, 0,-1)/( 1, 1, 1)  1"""
     for m in legacy.split("\n"):
-        yield np.array([list(map(lambda s: int(s), n[2:len(n)-1].split(","))) for n in m[2:len(m)-3].split("/")])
+        print(m[2:len(m)-3].split("/"))
+        b = np.transpose(np.array([list(map(lambda s: int(s), n[1:len(n)-1].split(","))) for n in m[2:len(m)-3].split("/")]))
+        if np.linalg.det(b) == 1:
+            yield b

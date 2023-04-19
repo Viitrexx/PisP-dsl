@@ -1,7 +1,7 @@
 from PisPy import *
 import time
 
-file = "./copypasta/Soma Cube.xml"
+file = "./copypasta/3-1 pyramid.xml"
 myPuzzle = PuzzleParser().loadFromFile(file)
 e = generateEmbeddings(myPuzzle)
 aspects = [p.name + str(i) for p in myPuzzle.bagOfPieces for i in range(p.multiplicity)] + [i for i in range(len(myPuzzle.shape.locations))]

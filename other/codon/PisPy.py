@@ -140,9 +140,13 @@ def isometriesFCC():
   ( 0, 1, 0)/( 0, 0, 1)/( 1, 0, 0)  1
   ( 0, 0, 1)/( 0, 1, 0)/( 1, 0, 0) -1
   ( 0, 0,-1)/( 0,-1, 0)/( 1, 1, 1) -1
-  ( 0,-1, 0)/( 0, 0,-1)/( 1, 1, 1)  1"""
+  ( 0,-1, 0)/( 0, 0,-1)/( 1, 1, 1)  1 """
     for m in legacy.split("\n"):
-        yield np.array([list(map(lambda s: int(s), n[2:len(n)-1].split(","))) for n in m[2:len(m)-3].split("/")])
+        # There is some variation in behaviour between Codon and Python here, so the -3 is a -4
+        # and there is an extra space at the end of legacy
+        b = np.transpose(np.array([list(map(lambda s: int(s), n[1:len(n)-1].split(","))) for n in m[2:len(m)-4].split("/")]))
+        if np.linalg.det(b) == 1:
+            yield b
 
 def generateOrientations(piece, lattice):
     match lattice:

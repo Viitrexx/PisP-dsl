@@ -2,7 +2,7 @@ from PisPy import *
 import time
 import sys
 
-file = "./../PisPy/copypasta/Soma Cube.xml"
+file = "./../PisPy/copypasta/3-1 pyramid.xml"
 myPuzzle = PuzzleParser().loadFromFile(file)
 print("Generating embeddings...")
 e = generateEmbeddings(myPuzzle)

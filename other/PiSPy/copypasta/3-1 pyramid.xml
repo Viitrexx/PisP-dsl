@@ -1,0 +1,54 @@
+<Puzzle name="3-1 pyramid">
+  <BagOfPieces name="baseball">
+    <PieceReference multiplicity="1">
+      <Piece name="base" lattice="GPbSRFPU8/FCCLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+    <PieceReference multiplicity="1">
+      <Piece name="ball" lattice="GPbSRFPU8/FCCLattice">
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+  </BagOfPieces>
+  <Shape name="smallest pyramid" lattice="GPbSRFPU8/FCCLattice">
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+  </Shape>
+</Puzzle>
