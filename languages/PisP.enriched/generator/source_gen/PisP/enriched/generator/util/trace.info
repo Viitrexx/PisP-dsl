@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:ced1f2e0-c800-4580-9efd-401535dc478d(PisP.enriched.generator.util)/2711120962127160239">
+    <file name="OrientationGenerator.java">
+      <node id="2711120962134930052" at="20,0,21,0" concept="4" trace="m" />
+      <node id="2711120962132239584" at="22,31,23,77" concept="3" />
+      <node id="2711120962135891180" at="26,35,27,17" concept="3" />
+      <node id="2711120962139031035" at="30,30,31,19" concept="3" />
+      <node id="2711120962132463560" at="34,29,35,68" concept="9" />
+      <node id="2711120962132467480" at="35,68,36,0" concept="12" />
+      <node id="2711120962132489389" at="37,101,38,38" concept="11" />
+      <node id="2711120962132489704" at="38,38,39,144" concept="9" />
+      <node id="2711120962132512139" at="39,144,40,18" concept="9" />
+      <node id="2711120962132511440" at="41,107,42,80" concept="3" />
+      <node id="2711120962147996414" at="43,9,44,49" concept="3" />
+      <node id="2711120962132520766" at="45,7,46,17" concept="3" />
+      <node id="2711120962132264015" at="49,38,50,29" concept="9" />
+      <node id="2711120962132266931" at="50,29,51,26" concept="9" />
+      <node id="2711120962132371204" at="51,26,52,68" concept="9" />
+      <node id="2711120962132275356" at="52,68,53,14" concept="11" />
+      <node id="2711120962132276888" at="53,14,54,28" concept="11" />
+      <node id="2711120962132293796" at="55,66,56,30" concept="11" />
+      <node id="2711120962146599894" at="56,30,57,100" concept="3" />
+      <node id="2711120962132312790" at="58,81,59,24" concept="11" />
+      <node id="2711120962132342542" at="59,24,60,22" concept="9" />
+      <node id="2711120962132344868" at="61,70,62,105" concept="3" />
+      <node id="2711120962146868336" at="63,11,64,58" concept="3" />
+      <node id="2711120962132713260" at="66,7,67,27" concept="10" />
+      <node id="2711120962132781214" at="70,38,71,71" concept="9" />
+      <node id="2711120962133393001" at="71,71,72,48" concept="11" />
+      <node id="2711120962133475264" at="73,30,74,172" concept="9" />
+      <node id="2711120962133669838" at="75,25,76,176" concept="9" />
+      <node id="2711120962133711527" at="76,176,77,68" concept="3" />
+      <node id="2711120962133601574" at="77,68,78,106" concept="3" />
+      <node id="2711120962136991569" at="79,9,80,52" concept="3" />
+      <node id="2711120962132827920" at="81,7,82,18" concept="10" />
+      <node id="2711120962151429742" at="88,28,89,64" concept="10" />
+      <node id="2711120962155659296" at="90,28,91,64" concept="10" />
+      <node id="2711120962159823076" at="92,24,93,60" concept="10" />
+      <node id="2711120962132537323" at="94,14,95,193" concept="3" />
+      <node id="2711120962136804417" at="95,193,96,21" concept="0" />
+      <node id="2711120962151485035" at="97,5,98,16" concept="10" />
+      <node id="2711120962151115819" at="101,82,102,77" concept="9" />
+      <node id="2711120962151084954" at="102,77,103,33" concept="9" />
+      <node id="2711120962151084960" at="103,33,104,14" concept="9" />
+      <node id="2711120962151084967" at="105,56,106,182" concept="9" />
+      <node id="2711120962151084973" at="106,182,107,62" concept="3" />
+      <node id="2711120962151084979" at="107,62,108,116" concept="3" />
+      <node id="2711120962151084987" at="108,116,109,114" concept="3" />
+      <node id="2711120962151084998" at="109,114,110,146" concept="3" />
+      <node id="2711120962151085010" at="110,146,111,56" concept="3" />
+      <node id="2711120962151142975" at="112,5,113,24" concept="10" />
+      <node id="2711120962132548285" at="116,44,117,73" concept="9" />
+      <node id="2711120962132922184" at="117,73,118,37" concept="9" />
+      <node id="2711120962132869179" at="118,37,119,37" concept="9" />
+      <node id="2711120962132995488" at="119,37,120,40" concept="9" />
+      <node id="2711120962133061454" at="120,40,121,37" concept="9" />
+      <node id="2711120962133099498" at="121,37,122,40" concept="9" />
+      <node id="2711120962133172440" at="122,40,123,37" concept="9" />
+      <node id="2711120962132548330" at="124,33,125,34" concept="3" />
+      <node id="2711120962132548337" at="125,34,126,54" concept="3" />
+      <node id="2711120962132548350" at="127,5,128,32" concept="3" />
+      <node id="2711120962132548359" at="129,33,130,34" concept="3" />
+      <node id="2711120962132548366" at="130,34,131,54" concept="3" />
+      <node id="2711120962132548379" at="132,5,133,18" concept="10" />
+      <node id="2711120962151709897" at="136,44,137,73" concept="9" />
+      <node id="2711120962151840031" at="137,73,138,91" concept="9" />
+      <node id="2711120962152491617" at="138,91,139,75" concept="11" />
+      <node id="2711120962152727887" at="142,23,143,19" concept="2" />
+      <node id="2711120962152837102" at="146,37,147,21" concept="2" />
+      <node id="2711120962154915120" at="151,51,152,39" concept="9" />
+      <node id="2711120962154992018" at="152,39,153,44" concept="9" />
+      <node id="2711120962155294281" at="154,40,155,28" concept="3" />
+      <node id="2711120962155434985" at="157,31,158,65" concept="11" />
+      <node id="2711120962153294517" at="158,65,159,63" concept="9" />
+      <node id="2711120962153475855" at="159,63,160,63" concept="9" />
+      <node id="2711120962153528095" at="160,63,161,63" concept="9" />
+      <node id="2711120962153926403" at="161,63,162,64" concept="9" />
+      <node id="2711120962155179891" at="162,64,163,74" concept="3" />
+      <node id="2711120962156136917" at="170,5,171,55" concept="0" />
+      <node id="2711120962151747079" at="171,55,172,18" concept="10" />
+      <node id="2711120962154327233" at="175,36,176,33" concept="9" />
+      <node id="2711120962154481673" at="178,19,179,17" concept="3" />
+      <node id="2711120962154688404" at="179,17,180,17" concept="2" />
+      <node id="2711120962154759314" at="182,26,183,21" concept="10" />
+      <node id="2711120962154792988" at="184,7,185,15" concept="3" />
+      <node id="2711120962154851337" at="186,5,187,16" concept="10" />
+      <node id="2711120962158549304" at="190,40,191,73" concept="9" />
+      <node id="2711120962157901245" at="191,73,192,35" concept="11" />
+      <node id="2711120962158070473" at="192,35,193,112" concept="11" />
+      <node id="2711120962157595640" at="193,112,194,1822" concept="9" />
+      <node id="2711120962158139195" at="195,43,196,49" concept="9" />
+      <node id="2711120962158315460" at="196,49,197,46" concept="9" />
+      <node id="2711120962158452745" at="198,21,199,70" concept="9" />
+      <node id="2711120962160758097" at="199,70,200,56" concept="3" />
+      <node id="2711120962160839703" at="200,56,201,56" concept="3" />
+      <node id="2711120962160839870" at="201,56,202,56" concept="3" />
+      <node id="2711120962161008583" at="202,56,203,18" concept="9" />
+      <node id="2711120962159053000" at="204,51,205,20" concept="9" />
+      <node id="2711120962159533481" at="206,74,207,83" concept="3" />
+      <node id="2711120962161279930" at="207,83,208,16" concept="3" />
+      <node id="2711120962161311239" at="209,11,210,14" concept="3" />
+      <node id="2711120962158671612" at="211,9,212,64" concept="3" />
+      <node id="2711120962160061369" at="214,5,215,55" concept="0" />
+      <node id="2711120962158625496" at="215,55,216,18" concept="10" />
+      <node id="2711120962127160239" at="220,0,221,0" concept="13" trace="coordinates$48xZ" />
+      <node id="2711120962127160239" at="221,0,222,0" concept="13" trace="locations$ChQi" />
+      <node id="2711120962127160239" at="225,0,226,0" concept="13" trace="coordinate$hw$O" />
+      <node id="2711120962127160239" at="226,0,227,0" concept="13" trace="lattice$e_Fj" />
+      <node id="2711120962127160239" at="227,0,228,0" concept="13" trace="allowed$EpHE" />
+      <node id="2711120962127160239" at="228,0,229,0" concept="13" trace="name$MnvL" />
+      <node id="2711120962132239231" at="22,0,25,0" concept="1" trace="Matrix#([[I)V" />
+      <node id="2711120962135868649" at="26,0,29,0" concept="1" trace="Matrix#(Ljava/util/List;)V" />
+      <node id="2711120962139021917" at="30,0,33,0" concept="1" trace="Matrix#(LPisP/enriched/generator/util/OrientationGenerator/Matrix;)V" />
+      <node id="2711120962132459606" at="40,18,43,9" concept="6" />
+      <node id="2711120962132313998" at="60,22,63,11" concept="5" />
+      <node id="2711120962152673992" at="141,38,144,9" concept="7" />
+      <node id="2711120962152735713" at="145,40,148,11" concept="7" />
+      <node id="2711120962155113934" at="153,44,156,17" concept="7" />
+      <node id="2711120962154700686" at="181,7,184,7" concept="7" />
+      <node id="2711120962132548328" at="123,37,127,5" concept="5" />
+      <node id="2711120962132548357" at="128,32,132,5" concept="5" />
+      <node id="2711120962154435006" at="177,22,181,7" concept="7" />
+      <node id="2711120962159102359" at="205,20,209,11" concept="6" />
+      <node id="2711120962133575224" at="74,172,79,9" concept="6" />
+      <node id="2711120962132295419" at="57,100,65,9" concept="5" />
+      <node id="2711120962151084964" at="104,14,112,5" concept="6" />
+      <node id="2711120962155353526" at="156,17,164,17" concept="7" />
+      <node id="2711120962158769409" at="203,18,211,9" concept="6" />
+      <node id="2711120962132457466" at="36,0,45,7" concept="6" />
+      <node id="2711120962133405474" at="72,48,81,7" concept="6" />
+      <node id="2711120962154397727" at="176,33,186,5" concept="6" />
+      <node id="2711120962132537191" at="86,56,97,5" concept="14" />
+      <node id="2711120962132277998" at="54,28,66,7" concept="5" />
+      <node id="2711120962132454513" at="34,0,48,0" concept="1" trace="Matrix#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2711120962132756973" at="70,0,84,0" concept="8" trace="toLocations#()Ljava/util/List;" />
+      <node id="2711120962132537181" at="86,0,100,0" concept="8" trace="generateOrientations#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="2711120962151085027" at="101,0,115,0" concept="8" trace="generateOrientations#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/List;)Ljava/util/List;" />
+      <node id="2711120962154289962" at="175,0,189,0" concept="8" trace="isLoop#([I)Z" />
+      <node id="2711120962153011838" at="150,49,165,15" concept="5" />
+      <node id="2711120962158418932" at="197,46,213,7" concept="7" />
+      <node id="2711120962152994157" at="149,47,166,13" concept="5" />
+      <node id="2711120962132548282" at="116,0,135,0" concept="8" trace="isometries2DCubic#()Ljava/util/List;" />
+      <node id="2711120962152864474" at="148,11,167,11" concept="5" />
+      <node id="2711120962132238789" at="49,0,69,0" concept="8" trace="multiply#(LPisP/enriched/generator/util/OrientationGenerator/Matrix;)LPisP/enriched/generator/util/OrientationGenerator/Matrix;" />
+      <node id="2711120962157954773" at="194,1822,214,5" concept="6" />
+      <node id="2711120962152590852" at="144,9,168,9" concept="5" />
+      <node id="2711120962157579711" at="190,0,218,0" concept="8" trace="isometriesFCC#()Ljava/util/List;" />
+      <node id="2711120962152503813" at="140,36,169,7" concept="5" />
+      <node id="2711120962152322801" at="139,75,170,5" concept="5" />
+      <node id="2711120962151695147" at="136,0,174,0" concept="8" trace="isometries3DCubic#()Ljava/util/List;" />
+      <scope id="2711120962132239235" at="22,31,23,77" />
+      <scope id="2711120962135868653" at="26,35,27,17" />
+      <scope id="2711120962139021921" at="30,30,31,19" />
+      <scope id="2711120962132459609" at="41,107,42,80" />
+      <scope id="2711120962132314000" at="61,70,62,105" />
+      <scope id="2711120962132537198" at="88,28,89,64" />
+      <scope id="2711120962132537335" at="90,28,91,64" />
+      <scope id="2711120962132537338" at="92,24,93,60" />
+      <scope id="2711120962152673994" at="142,23,143,19" />
+      <scope id="2711120962152735715" at="146,37,147,21" />
+      <scope id="2711120962155113936" at="154,40,155,28" />
+      <scope id="2711120962154700688" at="182,26,183,21" />
+      <scope id="2711120962132537322" at="94,14,96,21" />
+      <scope id="2711120962132548329" at="124,33,126,54" />
+      <scope id="2711120962132548358" at="129,33,131,54" />
+      <scope id="2711120962154435008" at="178,19,180,17" />
+      <scope id="2711120962159102365" at="206,74,208,16" />
+      <scope id="2711120962132239231" at="22,0,25,0">
+        <var name="m" id="2711120962132239364" />
+      </scope>
+      <scope id="2711120962135868649" at="26,0,29,0">
+        <var name="m" id="2711120962135882674" />
+      </scope>
+      <scope id="2711120962139021917" at="30,0,33,0">
+        <var name="M" id="2711120962139029137" />
+      </scope>
+      <scope id="2711120962132459606" at="40,18,43,9">
+        <var name="coo" id="2711120962132459607" />
+      </scope>
+      <scope id="2711120962132313998" at="60,22,63,11">
+        <var name="i" id="2711120962132314001" />
+      </scope>
+      <scope id="2711120962133575230" at="75,25,78,106">
+        <var name="coo" id="2711120962133669841" />
+      </scope>
+      <scope id="2711120962132548328" at="123,37,127,5">
+        <var name="i" id="2711120962132548342" />
+      </scope>
+      <scope id="2711120962132548357" at="128,32,132,5">
+        <var name="i" id="2711120962132548371" />
+      </scope>
+      <scope id="2711120962159102359" at="205,20,209,11">
+        <var name="c" id="2711120962159102361" />
+      </scope>
+      <scope id="2711120962133575224" at="74,172,79,9">
+        <var name="c" id="2711120962133575226" />
+      </scope>
+      <scope id="2711120962132295421" at="58,81,64,58">
+        <var name="dot" id="2711120962132342545" />
+      </scope>
+      <scope id="2711120962151084966" at="105,56,111,56">
+        <var name="o" id="2711120962151084968" />
+      </scope>
+      <scope id="2711120962155353528" at="157,31,163,74">
+        <var name="a" id="2711120962153294520" />
+        <var name="b" id="2711120962153475856" />
+        <var name="c" id="2711120962153528096" />
+        <var name="m" id="2711120962153926406" />
+      </scope>
+      <scope id="2711120962158769415" at="204,51,210,14">
+        <var name="i" id="2711120962159053003" />
+      </scope>
+      <scope id="2711120962132457469" at="37,101,44,49">
+        <var name="i" id="2711120962132512142" />
+        <var name="row" id="2711120962132489707" />
+      </scope>
+      <scope id="2711120962133405480" at="73,30,80,52">
+        <var name="loc" id="2711120962133475267" />
+      </scope>
+      <scope id="2711120962132295419" at="57,100,65,9">
+        <var name="c" id="2711120962132295422" />
+      </scope>
+      <scope id="2711120962151084964" at="104,14,112,5">
+        <var name="m" id="2711120962151084965" />
+      </scope>
+      <scope id="2711120962154397733" at="177,22,185,15" />
+      <scope id="2711120962158769409" at="203,18,211,9">
+        <var name="col" id="2711120962158769411" />
+      </scope>
+      <scope id="2711120962132457466" at="36,0,45,7">
+        <var name="loc" id="2711120962132457467" />
+      </scope>
+      <scope id="2711120962133405474" at="72,48,81,7">
+        <var name="r" id="2711120962133405476" />
+      </scope>
+      <scope id="2711120962132278000" at="55,66,65,9" />
+      <scope id="2711120962154397727" at="176,33,186,5">
+        <var name="n" id="2711120962154397729" />
+      </scope>
+      <scope id="2711120962132454517" at="34,29,46,17">
+        <var name="A" id="2711120962132463566" />
+      </scope>
+      <scope id="2711120962132277998" at="54,28,66,7">
+        <var name="r" id="2711120962132278001" />
+      </scope>
+      <scope id="2711120962132756976" at="70,38,82,18">
+        <var name="locs" id="2711120962132781217" />
+      </scope>
+      <scope id="2711120962132537183" at="86,56,98,16" />
+      <scope id="2711120962151084953" at="101,82,113,24">
+        <var name="i" id="2711120962151084961" />
+        <var name="orientations" id="2711120962151115820" />
+        <var name="p" id="2711120962151084955" />
+      </scope>
+      <scope id="2711120962154289965" at="175,36,187,16">
+        <var name="prev" id="2711120962154327236" />
+      </scope>
+      <scope id="2711120962153011839" at="151,51,164,17">
+        <var name="coeffs" id="2711120962154992024" />
+        <var name="det" id="2711120962154915123" />
+      </scope>
+      <scope id="2711120962132454513" at="34,0,48,0">
+        <var name="p" id="2711120962132455891" />
+      </scope>
+      <scope id="2711120962132756973" at="70,0,84,0" />
+      <scope id="2711120962132537181" at="86,0,100,0">
+        <var name="piece" id="2711120962132537343" />
+      </scope>
+      <scope id="2711120962151085027" at="101,0,115,0">
+        <var name="isometries" id="2711120962151235018" />
+        <var name="piece" id="2711120962151085016" />
+      </scope>
+      <scope id="2711120962154289962" at="175,0,189,0">
+        <var name="ns" id="2711120962154306644" />
+      </scope>
+      <scope id="2711120962158418934" at="198,21,212,64">
+        <var name="j" id="2711120962161008586" />
+        <var name="m" id="2711120962158452748" />
+      </scope>
+      <scope id="2711120962152994158" at="150,49,165,15" />
+      <scope id="2711120962153011838" at="150,49,165,15">
+        <var name="sz" id="2711120962153011841" />
+      </scope>
+      <scope id="2711120962132548284" at="116,44,133,18">
+        <var name="basis" id="2711120962132869180" />
+        <var name="ref" id="2711120962133172441" />
+        <var name="result" id="2711120962132548286" />
+        <var name="rot" id="2711120962133061455" />
+        <var name="tempB" id="2711120962132922190" />
+        <var name="tempRef" id="2711120962133099504" />
+        <var name="tempRot" id="2711120962132995491" />
+      </scope>
+      <scope id="2711120962152864476" at="149,47,166,13" />
+      <scope id="2711120962152994157" at="149,47,166,13">
+        <var name="sy" id="2711120962152994160" />
+      </scope>
+      <scope id="2711120962132238792" at="49,38,67,27">
+        <var name="A" id="2711120962132264018" />
+        <var name="B" id="2711120962132266937" />
+        <var name="C" id="2711120962132371207" />
+      </scope>
+      <scope id="2711120962157954779" at="195,43,213,7">
+        <var name="det" id="2711120962158315463" />
+        <var name="matr_det" id="2711120962158139198" />
+      </scope>
+      <scope id="2711120962132548282" at="116,0,135,0" />
+      <scope id="2711120962152864474" at="148,11,167,11">
+        <var name="sx" id="2711120962152864477" />
+      </scope>
+      <scope id="2711120962132238789" at="49,0,69,0">
+        <var name="m" id="2711120962132238997" />
+      </scope>
+      <scope id="2711120962157954773" at="194,1822,214,5">
+        <var name="line" id="2711120962157954775" />
+      </scope>
+      <scope id="2711120962152590854" at="145,40,167,11" />
+      <scope id="2711120962152590852" at="144,9,168,9">
+        <var name="iz" id="2711120962152590855" />
+      </scope>
+      <scope id="2711120962157579714" at="190,40,216,18">
+        <var name="legacy" id="2711120962157595643" />
+        <var name="result" id="2711120962158549307" />
+      </scope>
+      <scope id="2711120962152503815" at="141,38,168,9" />
+      <scope id="2711120962157579711" at="190,0,218,0" />
+      <scope id="2711120962152322803" at="140,36,169,7" />
+      <scope id="2711120962152503813" at="140,36,169,7">
+        <var name="iy" id="2711120962152503816" />
+      </scope>
+      <scope id="2711120962152322801" at="139,75,170,5">
+        <var name="ix" id="2711120962152322804" />
+      </scope>
+      <scope id="2711120962151695150" at="136,44,172,18">
+        <var name="basisi" id="2711120962151840037" />
+        <var name="result" id="2711120962151709900" />
+      </scope>
+      <scope id="2711120962151695147" at="136,0,174,0" />
+      <unit id="2711120962127160239" at="219,0,223,0" name="PisP.enriched.generator.util.OrientationGenerator$LINKS" />
+      <unit id="2711120962127160239" at="224,0,230,0" name="PisP.enriched.generator.util.OrientationGenerator$PROPS" />
+      <unit id="2711120962132236785" at="19,0,85,0" name="PisP.enriched.generator.util.OrientationGenerator$Matrix" />
+      <unit id="2711120962127160239" at="18,0,231,0" name="PisP.enriched.generator.util.OrientationGenerator" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="147,0,150,0" name="PisP.enriched.generator.templates.QueriesGenerated$CONCEPTS" />
+      <unit at="142,0,146,0" name="PisP.enriched.generator.templates.QueriesGenerated$PROPS" />
+      <unit at="136,0,141,0" name="PisP.enriched.generator.templates.QueriesGenerated$LINKS" />
+      <unit at="69,0,84,0" name="PisP.enriched.generator.templates.QueriesGenerated$RRC" />
+      <unit at="120,0,135,0" name="PisP.enriched.generator.templates.QueriesGenerated$MNQ" />
+      <unit at="94,0,110,0" name="PisP.enriched.generator.templates.QueriesGenerated$RTQ" />
+      <unit at="34,0,151,0" name="PisP.enriched.generator.templates.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)/2711120962126620464">
+    <file name="QueriesGenerated.java">
+      <node id="2711120962138843123" at="39,83,40,22" concept="3" />
+      <node id="2711120962150923434" at="40,22,41,16" concept="2" />
+      <node id="2711120962138611754" at="43,103,44,173" concept="2" />
+      <node id="2711120962138611462" at="60,14,61,56" concept="0" />
+      <node id="2711120962138611462" at="77,15,78,58" concept="2" />
+      <node id="2711120962138611462" at="85,3,86,60" concept="0" />
+      <node id="2711120962138611462" at="103,15,104,80" concept="2" />
+      <node id="2711120962138611463" at="43,0,46,0" concept="4" trace="referenceReduction_GetReferent_0_zu1o_a0#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="2711120962138730058" at="39,0,43,0" concept="4" trace="rule_Condition_0_0#(Ljetbrains/mps/generator/template/BaseMappingRuleContext;)Z" />
+      <scope id="2711120962138611464" at="43,103,44,173" />
+      <scope id="2711120962138611462" at="77,15,78,58" />
+      <scope id="2711120962138611462" at="103,15,104,80" />
+      <scope id="2711120962138730059" at="39,83,41,16" />
+      <scope id="2711120962138611463" at="43,0,46,0">
+        <var name="_context" id="2711120962138611463" />
+      </scope>
+      <scope id="2711120962138730058" at="39,0,43,0">
+        <var name="_context" id="2711120962138730058" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)/2711120962130425186">
+    <file name="QueriesGenerated.java">
+      <node id="2711120962131498876" at="46,78,47,186" concept="1" />
+      <node id="2711120962131505083" at="47,186,48,120" concept="0" />
+      <node id="2711120962131510865" at="48,120,49,128" concept="0" />
+      <node id="2711120962132594042" at="49,128,50,57" concept="1" />
+      <node id="2711120962131578835" at="50,57,51,164" concept="0" />
+      <node id="2711120962157540589" at="51,164,52,52" concept="3" />
+      <node id="2711120962157231062" at="52,52,53,179" concept="0" />
+      <node id="2711120962142835773" at="53,179,54,46" concept="3" />
+      <node id="2711120962131514307" at="54,46,55,187" concept="0" />
+      <node id="2711120962131501212" at="55,187,56,14" concept="2" />
+      <node id="2711120962131496569" at="111,3,112,54" concept="0" />
+      <node id="2711120962131496569" at="128,15,129,59" concept="2" />
+      <node id="2711120962131496569" at="46,0,58,0" concept="4" trace="mapSrcMacro_map_1_0#(Ljetbrains/mps/generator/template/MapSrcMacroContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2711120962131496569" at="128,15,129,59" />
+      <scope id="2711120962131496570" at="46,78,56,14">
+        <var name="og" id="2711120962132594043" />
+        <var name="op" id="2711120962131498879" />
+      </scope>
+      <scope id="2711120962131496569" at="46,0,58,0">
+        <var name="_context" id="2711120962131496569" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

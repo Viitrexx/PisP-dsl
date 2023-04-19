@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,38,0" name="PisP.enriched.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,30,0" name="PisP.enriched.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="15,0,74,0" name="PisP.enriched.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:0d90c54f-398c-4ca6-95f7-2a978f823a6d(PisP.enriched.structure)/2711120962126620466">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2711120962126620466" at="13,0,14,0" concept="1" trace="props_OrientationPiece" />
+      <node id="2711120962126620466" at="28,45,29,76" concept="3" />
+      <node id="2711120962126620466" at="29,76,30,35" concept="0" />
+      <node id="2711120962126620466" at="30,35,31,48" concept="0" />
+      <node id="2711120962126620466" at="32,9,33,38" concept="4" />
+      <node id="2711120962126620466" at="27,50,32,9" concept="2" />
+      <scope id="2711120962126620466" at="28,45,31,48">
+        <var name="cpb" id="2711120962126620466" />
+      </scope>
+      <scope id="2711120962126620466" at="27,50,33,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2711120962126620466" at="13,0,14,0" concept="6" trace="OrientationPiece" />
+      <node id="2711120962126620466" at="17,50,18,55" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2711120962126620466" at="17,0,18,0" concept="1" trace="myConceptOrientationPiece" />
+      <node id="2711120962126620466" at="41,50,42,41" concept="4" />
+      <node id="2711120962126620466" at="63,74,64,164" concept="3" />
+      <node id="2711120962126620466" at="64,164,65,33" concept="0" />
+      <node id="2711120962126620466" at="65,33,66,36" concept="5" />
+      <node id="2711120962126620466" at="66,36,67,74" concept="0" />
+      <node id="2711120962126620466" at="67,74,68,100" concept="0" />
+      <node id="2711120962126620466" at="68,100,69,17" concept="0" />
+      <node id="2711120962126730571" at="69,17,70,204" concept="0" />
+      <node id="2711120962126620466" at="70,204,71,22" concept="4" />
+      <node id="2711120962126620466" at="63,0,73,0" concept="7" trace="createDescriptorForOrientationPiece#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2711120962126620466" at="41,50,42,41" />
+      <scope id="2711120962126620466" at="63,74,71,22">
+        <var name="b" id="2711120962126620466" />
+      </scope>
+      <scope id="2711120962126620466" at="63,0,73,0" />
+    </file>
+  </root>
+  <root nodeRef="r:0d90c54f-398c-4ca6-95f7-2a978f823a6d(PisP.enriched.structure)/2711120962126732290">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2711120962126732290" at="12,0,13,0" concept="1" trace="props_Orientation" />
+      <node id="2711120962126732290" at="21,40,22,76" concept="3" />
+      <node id="2711120962126732290" at="22,76,23,35" concept="0" />
+      <node id="2711120962126732290" at="23,35,24,43" concept="0" />
+      <node id="2711120962126732290" at="25,9,26,33" concept="4" />
+      <node id="2711120962126732290" at="20,45,25,9" concept="2" />
+      <scope id="2711120962126732290" at="21,40,24,43">
+        <var name="cpb" id="2711120962126732290" />
+      </scope>
+      <scope id="2711120962126732290" at="20,45,26,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2711120962126732290" at="12,0,13,0" concept="6" trace="Orientation" />
+      <node id="2711120962126732290" at="16,116,17,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2711120962126732290" at="16,0,17,0" concept="1" trace="myConceptOrientation" />
+      <node id="2711120962126732290" at="39,45,40,36" concept="4" />
+      <node id="2711120962126732290" at="53,69,54,159" concept="3" />
+      <node id="2711120962126732290" at="54,159,55,33" concept="0" />
+      <node id="2711120962126732290" at="55,33,56,36" concept="5" />
+      <node id="2711120962126732290" at="56,36,57,74" concept="0" />
+      <node id="2711120962126732290" at="57,74,58,100" concept="0" />
+      <node id="2711120962126732290" at="58,100,59,17" concept="0" />
+      <node id="2711120962126733932" at="59,17,60,114" concept="0" />
+      <node id="2711120962126732290" at="60,114,61,22" concept="4" />
+      <node id="2711120962126732290" at="53,0,63,0" concept="7" trace="createDescriptorForOrientation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2711120962126732290" at="39,45,40,36" />
+      <scope id="2711120962126732290" at="53,69,61,22">
+        <var name="b" id="2711120962126732290" />
+      </scope>
+      <scope id="2711120962126732290" at="53,0,63,0" />
+    </file>
+  </root>
+</debug-info>
+

@@ -4,7 +4,7 @@
   <languages>
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="-1" />
     <use id="9fa16abd-1fdf-4ff2-bb53-74e097c5d44a" name="PisP.gen.xmldump" version="0" />
-    <engage id="9fa16abd-1fdf-4ff2-bb53-74e097c5d44a" name="PisP.gen.xmldump" />
+    <engage id="31e3a3f9-3c6d-4ff3-835b-963db6c69f0a" name="PisP.enriched" />
   </languages>
   <imports />
   <registry>

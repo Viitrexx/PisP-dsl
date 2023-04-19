@@ -1,0 +1,435 @@
+<Puzzle name="Nx16">
+  <BagOfPieces name="Nx16">
+    <PieceReference multiplicity="16">
+      <Piece name="N" lattice="2U8hypqlvke/CubicLattice3D">
+        <Location>
+          <Coordinate coordinate="-2"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="-1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="0"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+        <Location>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="1"></Coordinate>
+          <Coordinate coordinate="0"></Coordinate>
+        </Location>
+      </Piece>
+    </PieceReference>
+  </BagOfPieces>
+  <Shape name="5x4x4" lattice="2U8hypqlvke/CubicLattice3D">
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="0"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="1"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="2"></Coordinate>
+    </Location>
+    <Location>
+      <Coordinate coordinate="4"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+      <Coordinate coordinate="3"></Coordinate>
+    </Location>
+  </Shape>
+</Puzzle>
