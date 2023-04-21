@@ -3,11 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="0" />
-    <engage id="9fa16abd-1fdf-4ff2-bb53-74e097c5d44a" name="PisP.gen.xmldump" />
+    <engage id="31e3a3f9-3c6d-4ff3-835b-963db6c69f0a" name="PisP.enriched" />
   </languages>
   <imports />
   <registry>
     <language id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP">
+      <concept id="1962471989986079278" name="PisP.structure.DescriptionComment" flags="ng" index="2fYyJe">
+        <property id="1962471989986085586" name="comment" index="2fY_cM" />
+      </concept>
       <concept id="12618812418284135" name="PisP.structure.Coordinate" flags="ng" index="RwgVp">
         <property id="12618812418285098" name="coordinate" index="RwgEk" />
       </concept>
@@ -35,6 +38,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -90,6 +96,9 @@
       <node concept="RwgVp" id="2mvPyq$DFTL" role="Rwzbx">
         <property role="RwgEk" value="0" />
       </node>
+    </node>
+    <node concept="2fYyJe" id="2mvPyq$UbkZ" role="lGtFl">
+      <property role="2fY_cM" value="It's just a ball" />
     </node>
   </node>
   <node concept="Rwnif" id="2mvPyq$DFTP">

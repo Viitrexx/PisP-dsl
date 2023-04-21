@@ -57,7 +57,22 @@
         <module reference="3a834b8c-c345-4030-a611-4f5caf72e453(PisP.enriched.generator)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="3a834b8c-c345-4030-a611-4f5caf72e453(PisP.enriched.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)" nodeID="2711120962126620464" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="3a834b8c-c345-4030-a611-4f5caf72e453(PisP.enriched.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)" nodeID="2711120962166261839" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
