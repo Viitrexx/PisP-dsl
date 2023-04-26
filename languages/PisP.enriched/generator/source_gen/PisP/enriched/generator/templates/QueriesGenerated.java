@@ -17,6 +17,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import PisP.enriched.generator.util.OrientationGenerator;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
+import jetbrains.mps.generator.template.MapSrcMacroPostProcContext;
 import java.util.Map;
 import jetbrains.mps.generator.impl.query.ReductionRuleCondition;
 import java.util.HashMap;
@@ -29,6 +30,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.generator.impl.query.ReferenceTargetQuery;
 import jetbrains.mps.generator.impl.query.MapNodeQuery;
+import jetbrains.mps.generator.impl.query.MapPostProcessor;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -41,18 +43,14 @@ public class QueriesGenerated extends QueryProviderBase {
   public static boolean rule_Condition_3_0(final BaseMappingRuleContext _context) {
     return !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy), CONCEPTS.OrientationPiece$PO)) && (SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy) != null);
   }
-  public static boolean rule_Condition_3_1(final BaseMappingRuleContext _context) {
-    // Apply only once
-    return true;
-  }
   public static Object propertyMacro_GetValue_2_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.multiplicity$Equw);
   }
   public static Object referenceMacro_GetReferent_2_0(final ReferenceMacroContext _context) {
-    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy), "orientationpiece");
-  }
-  public static Object referenceReduction_GetReferent_3_a2dkg7_a0(final ReferenceMacroContext _context) {
-    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy), "orientationpiece");
+    SNode node2 = _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy), "orientationpiece");
+    _context.showWarningMessage(_context.getNode(), "Input");
+    _context.showWarningMessage(node2, "Output " + SNodeOperations.getPointer(node2));
+    return node2;
   }
   public static SNode mapSrcMacro_map_1_0(final MapSrcMacroContext _context) {
     SNode op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2ac2732L, "PisP.enriched.structure.OrientationPiece"));
@@ -78,12 +76,18 @@ public class QueriesGenerated extends QueryProviderBase {
       }
       ListSequence.fromList(SLinkOperations.getChildren(op, LINKS.locations$ChQi)).addElement(new_location);
     }
+    _context.showWarningMessage(_context.getNode(), "map_Piece Input");
+    _context.showWarningMessage(op, "map_Piece Output");
     return op;
+  }
+  public static void mapSrcMacro_post_1_0(final MapSrcMacroPostProcContext _context) {
+    _context.registerMappingLabel(_context.getNode(), "orientationpiece", _context.getOutputNode());
+    _context.showWarningMessage(_context.getOutputNode(), "map_Piece post outputNode");
   }
   private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
   {
     int i = 0;
-    rrcMethods.put("2711120962138611462", new RRC(i++));
+    rrcMethods.put("2711120962161552125", new RRC(i++));
   }
   @Override
   @NotNull
@@ -100,7 +104,7 @@ public class QueriesGenerated extends QueryProviderBase {
     public boolean check(ReductionRuleQueryContext ctx) throws GenerationFailureException {
       switch (methodKey) {
         case 0:
-          return QueriesGenerated.rule_Condition_3_1(ctx);
+          return QueriesGenerated.rule_Condition_3_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -136,7 +140,6 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, ReferenceTargetQuery> rtqMethods = new HashMap<String, ReferenceTargetQuery>();
   {
     rtqMethods.put("2711120962161553513", new RTQ(0, null));
-    rtqMethods.put("2711120962138611462", new RTQ(1, null));
   }
   @NotNull
   @Override
@@ -155,8 +158,6 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.referenceMacro_GetReferent_2_0(ctx);
-        case 1:
-          return QueriesGenerated.referenceReduction_GetReferent_3_a2dkg7_a0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -182,6 +183,31 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.mapSrcMacro_map_1_0(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+  private final Map<String, MapPostProcessor> mppMethods = new HashMap<String, MapPostProcessor>();
+  {
+    mppMethods.put("2711120962131495872", new PPQ(0));
+  }
+  @NotNull
+  @Override
+  public MapPostProcessor getMapPostProcessor(@NotNull QueryKey queryKey) {
+    MapPostProcessor query = queryKey.forTemplateNode(mppMethods);
+    return (query != null ? query : super.getMapPostProcessor(queryKey));
+  }
+  private static class PPQ implements MapPostProcessor {
+    private final int methodKey;
+    /*package*/ PPQ(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    public void invoke(@NotNull MapSrcMacroPostProcContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          QueriesGenerated.mapSrcMacro_post_1_0(ctx);
+          return;
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
