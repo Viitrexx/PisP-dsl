@@ -4,18 +4,21 @@ package PisP.enriched.generator.templates;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.impl.query.QueryProviderBase;
-import jetbrains.mps.generator.template.BaseMappingRuleContext;
+import jetbrains.mps.generator.template.DropRootRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.lang.core.behavior.INamedConcept__BehaviorDescriptor;
 import jetbrains.mps.generator.template.MapSrcMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import PisP.enriched.generator.util.OrientationGenerator;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.generator.template.MapSrcMacroPostProcContext;
 import java.util.Map;
@@ -25,20 +28,24 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.generator.impl.query.QueryKey;
 import jetbrains.mps.generator.template.ReductionRuleQueryContext;
 import jetbrains.mps.generator.impl.GenerationFailureException;
+import jetbrains.mps.generator.impl.query.DropRuleCondition;
 import jetbrains.mps.generator.impl.query.PropertyValueQuery;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.generator.impl.query.ReferenceTargetQuery;
 import jetbrains.mps.generator.impl.query.MapNodeQuery;
 import jetbrains.mps.generator.impl.query.MapPostProcessor;
+import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import org.jetbrains.mps.openapi.language.SConcept;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
   public QueriesGenerated() {
     super(1);
+  }
+  public static boolean dropRootRule_Condition_4_0(final DropRootRuleContext _context) {
+    return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.OrientationPiece$PO));
   }
   public static boolean rule_Condition_3_0(final BaseMappingRuleContext _context) {
     return !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy), CONCEPTS.OrientationPiece$PO)) && (SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy) != null);
@@ -47,10 +54,14 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.multiplicity$Equw);
   }
   public static Object referenceMacro_GetReferent_2_0(final ReferenceMacroContext _context) {
-    SNode node2 = _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy), "orientationpiece");
-    _context.showWarningMessage(_context.getNode(), "Input");
-    _context.showWarningMessage(node2, "Output " + SNodeOperations.getPointer(node2));
-    return node2;
+    SNode orig = (SNode) _context.getOriginalCopiedInputNode(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy));
+    // O(n) instead of O(1) but I don't care because it works
+    for (SNode root : ListSequence.fromList(SModelOperations.roots(SNodeOperations.getModel(_context.getNode()), CONCEPTS.OrientationPiece$PO))) {
+      if (INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(orig).equals(INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(root))) {
+        return root;
+      }
+    }
+    return null;
   }
   public static SNode mapSrcMacro_map_1_0(final MapSrcMacroContext _context) {
     SNode op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2ac2732L, "PisP.enriched.structure.OrientationPiece"));
@@ -76,13 +87,10 @@ public class QueriesGenerated extends QueryProviderBase {
       }
       ListSequence.fromList(SLinkOperations.getChildren(op, LINKS.locations$ChQi)).addElement(new_location);
     }
-    _context.showWarningMessage(_context.getNode(), "map_Piece Input");
-    _context.showWarningMessage(op, "map_Piece Output");
+    _context.registerMappingLabel((SNode) _context.getOriginalCopiedInputNode(_context.getNode()), "orientationpiece", op);
     return op;
   }
   public static void mapSrcMacro_post_1_0(final MapSrcMacroPostProcContext _context) {
-    _context.registerMappingLabel(_context.getNode(), "orientationpiece", _context.getOutputNode());
-    _context.showWarningMessage(_context.getOutputNode(), "map_Piece post outputNode");
   }
   private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
   {
@@ -105,6 +113,32 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.rule_Condition_3_0(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+  private final Map<String, DropRuleCondition> drcMethods = new HashMap<String, DropRuleCondition>();
+  {
+    int i = 0;
+    drcMethods.put("791979041763040319", new DRC(i++));
+  }
+  @Override
+  @NotNull
+  public DropRuleCondition getDropRuleCondition(@NotNull QueryKey identity) {
+    DropRuleCondition query = identity.forTemplateNode(drcMethods);
+    return (query != null ? query : super.getDropRuleCondition(identity));
+  }
+  private static class DRC implements DropRuleCondition {
+    private final int methodKey;
+    public DRC(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @Override
+    public boolean check(@NotNull DropRootRuleContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return QueriesGenerated.dropRootRule_Condition_4_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -214,16 +248,16 @@ public class QueriesGenerated extends QueryProviderBase {
     }
   }
 
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept OrientationPiece$PO = MetaAdapterFactory.getConcept(0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2ac2732L, "PisP.enriched.structure.OrientationPiece");
+    /*package*/ static final SConcept DescriptionComment$tN = MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c6322eL, "PisP.structure.DescriptionComment");
+  }
+
   private static final class LINKS {
     /*package*/ static final SReferenceLink piece$jZYy = MetaAdapterFactory.getReferenceLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae02bdL, 0x2cd4be37ae080fL, "piece");
     /*package*/ static final SContainmentLink orientations$BxMn = MetaAdapterFactory.getContainmentLink(0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2ac2732L, 0x259fd626a2add54bL, "orientations");
     /*package*/ static final SContainmentLink coordinates$48xZ = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL, 0x2cd4be37aee65fL, "coordinates");
     /*package*/ static final SContainmentLink locations$ChQi = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, 0x2cd4be37ae0e94L, "locations");
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept OrientationPiece$PO = MetaAdapterFactory.getConcept(0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2ac2732L, "PisP.enriched.structure.OrientationPiece");
-    /*package*/ static final SConcept DescriptionComment$tN = MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c6322eL, "PisP.structure.DescriptionComment");
   }
 
   private static final class PROPS {

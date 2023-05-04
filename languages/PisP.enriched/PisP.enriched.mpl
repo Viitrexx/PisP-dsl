@@ -72,6 +72,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="3a834b8c-c345-4030-a611-4f5caf72e453(PisP.enriched.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)" nodeID="2711120962166261839" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="3a834b8c-c345-4030-a611-4f5caf72e453(PisP.enriched.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)" nodeID="791979041763040318" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
