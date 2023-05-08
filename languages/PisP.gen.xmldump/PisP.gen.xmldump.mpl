@@ -27,6 +27,7 @@
       <dependencies>
         <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+        <dependency reexport="false">f18355ad-2d42-4a0a-a785-66932d080030(PisP.embeddings)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -54,6 +55,7 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="9ea5405c-cd50-4139-8b08-11b78b688cf5(PisP)" version="0" />
+        <module reference="f18355ad-2d42-4a0a-a785-66932d080030(PisP.embeddings)" version="0" />
         <module reference="9fa16abd-1fdf-4ff2-bb53-74e097c5d44a(PisP.gen.xmldump)" version="0" />
         <module reference="f4b66cb7-ba05-4a69-92bf-df33ba59dc04(PisP.gen.xmldump.generator)" version="0" />
         <module reference="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" version="0" />

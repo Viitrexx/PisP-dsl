@@ -4,6 +4,7 @@
   <languages>
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="0" />
     <engage id="31e3a3f9-3c6d-4ff3-835b-963db6c69f0a" name="PisP.enriched" />
+    <engage id="f18355ad-2d42-4a0a-a785-66932d080030" name="PisP.embeddings" />
     <engage id="9fa16abd-1fdf-4ff2-bb53-74e097c5d44a" name="PisP.gen.xmldump" />
   </languages>
   <imports />
@@ -164,7 +165,7 @@
   <node concept="RxM8_" id="2mvPyq$DFW7">
     <property role="TrG5h" value="3-1 pyramid" />
     <ref role="RwjUE" node="2mvPyq$DFTP" resolve="baseball" />
-    <ref role="RwjzG" node="2mvPyq$DFTV" resolve="smallestpyramid" />
+    <ref role="RwjzG" node="2mvPyq$DFTV" resolve="smallest pyramid" />
   </node>
 </model>
 

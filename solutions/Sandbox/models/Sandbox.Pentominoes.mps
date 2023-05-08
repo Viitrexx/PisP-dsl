@@ -4,6 +4,7 @@
   <languages>
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="0" />
     <engage id="31e3a3f9-3c6d-4ff3-835b-963db6c69f0a" name="PisP.enriched" />
+    <engage id="f18355ad-2d42-4a0a-a785-66932d080030" name="PisP.embeddings" />
   </languages>
   <imports />
   <registry>
@@ -816,7 +817,7 @@
   <node concept="RxM8_" id="2ssvyCxu4pQ">
     <property role="TrG5h" value="Figure 1 Puzzle" />
     <ref role="RwjUE" node="2ssvyCxu4px" resolve="Figure 1 pieces" />
-    <ref role="RwjzG" node="2ssvyCxu46x" resolve="5x5" />
+    <ref role="RwjzG" node="2ssvyCxu46x" resolve="5x5 square" />
   </node>
   <node concept="Rwn1s" id="2ssvyCxu50b">
     <property role="TrG5h" value="6x10 rectangle" />

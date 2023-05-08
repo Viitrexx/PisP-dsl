@@ -12,6 +12,7 @@
   <uses module="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt+dp" />
   <uses module="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="dp" />
   <uses module="9ea5405c-cd50-4139-8b08-11b78b688cf5(PisP)" kind="dp" />
+  <uses module="f18355ad-2d42-4a0a-a785-66932d080030(PisP.embeddings)" kind="dp" />
   <uses module="f4b66cb7-ba05-4a69-92bf-df33ba59dc04(PisP.gen.xmldump.generator)" kind="dp" />
   <uses module="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />

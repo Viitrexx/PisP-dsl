@@ -242,7 +242,7 @@
   <node concept="RxM8_" id="2ssvyCxu4CU">
     <property role="TrG5h" value="test" />
     <ref role="RwjUE" node="2ssvyCxu4CO" resolve="bop" />
-    <ref role="RwjzG" node="2ssvyCxu4BB" resolve="2x2x1" />
+    <ref role="RwjzG" node="2ssvyCxu4BB" resolve="2x2x2" />
   </node>
 </model>
 

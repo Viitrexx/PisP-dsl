@@ -129,16 +129,16 @@
       </scope>
     </file>
   </root>
-  <root nodeRef="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)/791979041763040318">
+  <root nodeRef="r:a1827696-0b85-4082-ad3c-c28dccdcdd02(PisP.enriched.generator.templates@generator)/2729515537029465502">
     <file name="QueriesGenerated.java">
-      <node id="791979041763040637" at="47,88,48,93" concept="4" />
-      <node id="791979041763040319" at="123,14,124,55" concept="0" />
-      <node id="791979041763040319" at="140,15,141,66" concept="4" />
-      <node id="791979041763040325" at="47,0,50,0" concept="6" trace="dropRootRule_Condition_4_0#(Ljetbrains/mps/generator/template/DropRootRuleContext;)Z" />
-      <scope id="791979041763040326" at="47,88,48,93" />
-      <scope id="791979041763040319" at="140,15,141,66" />
-      <scope id="791979041763040325" at="47,0,50,0">
-        <var name="_context" id="791979041763040325" />
+      <node id="2729515537029472814" at="47,88,48,93" concept="4" />
+      <node id="2729515537029465505" at="123,14,124,56" concept="0" />
+      <node id="2729515537029465505" at="140,15,141,66" concept="4" />
+      <node id="2729515537029465509" at="47,0,50,0" concept="6" trace="dropRootRule_Condition_4_0#(Ljetbrains/mps/generator/template/DropRootRuleContext;)Z" />
+      <scope id="2729515537029465510" at="47,88,48,93" />
+      <scope id="2729515537029465505" at="140,15,141,66" />
+      <scope id="2729515537029465509" at="47,0,50,0">
+        <var name="_context" id="2729515537029465509" />
       </scope>
     </file>
   </root>

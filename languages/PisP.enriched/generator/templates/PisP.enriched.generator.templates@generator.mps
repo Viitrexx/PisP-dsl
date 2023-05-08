@@ -1043,18 +1043,18 @@
       </node>
     </node>
   </node>
-  <node concept="bUwia" id="FXFbSdPLKY">
-    <property role="TrG5h" value="piece_dropper" />
-    <node concept="aNPBN" id="FXFbSdPLKZ" role="aQYdv">
+  <node concept="bUwia" id="2nxbYHpzgmu">
+    <property role="TrG5h" value="root_dropper" />
+    <node concept="aNPBN" id="2nxbYHpzgmx" role="aQYdv">
       <ref role="aOQi4" to="r6rf:GPbSRFwFD" resolve="Piece" />
-      <node concept="aO8KQ" id="FXFbSdPLL5" role="aOLnb">
-        <node concept="3clFbS" id="FXFbSdPLL6" role="2VODD2">
-          <node concept="3clFbF" id="FXFbSdPLPX" role="3cqZAp">
-            <node concept="3fqX7Q" id="FXFbSdPMsf" role="3clFbG">
-              <node concept="2OqwBi" id="FXFbSdPMsh" role="3fr31v">
-                <node concept="30H73N" id="FXFbSdPMsi" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="FXFbSdPMsj" role="2OqNvi">
-                  <node concept="chp4Y" id="FXFbSdPMsk" role="cj9EA">
+      <node concept="aO8KQ" id="2nxbYHpzgm_" role="aOLnb">
+        <node concept="3clFbS" id="2nxbYHpzgmA" role="2VODD2">
+          <node concept="3clFbF" id="2nxbYHpzi8I" role="3cqZAp">
+            <node concept="3fqX7Q" id="2nxbYHpzjda" role="3clFbG">
+              <node concept="2OqwBi" id="2nxbYHpzjid" role="3fr31v">
+                <node concept="30H73N" id="2nxbYHpzjdf" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="2nxbYHpzjsL" role="2OqNvi">
+                  <node concept="chp4Y" id="2nxbYHpzj$h" role="cj9EA">
                     <ref role="cht4Q" to="lngz:2mvPyqyF2sM" resolve="OrientationPiece" />
                   </node>
                 </node>

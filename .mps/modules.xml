@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/PisP.embeddings/PisP.embeddings.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/PisP.enriched/PisP.enriched.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/PisP.gen.xmldump/PisP.gen.xmldump.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/PisP/PisP.mpl" folder="" />

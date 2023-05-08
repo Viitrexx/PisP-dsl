@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <root nodeRef="r:9ff4ffe0-1ebc-4fb5-bde4-2583f01c94a4(Sandbox.Nx16)/8295180273236636203">
+  <root>
     <file name="Nx16.xml">
-      <unit id="8295180273236636203" at="1,0,435,9" name="Sandbox.Nx16.Nx16" />
+      <unit at="1,0,56418,17" name="Sandbox.Nx16.Nx16" />
     </file>
   </root>
 </debug-info>
