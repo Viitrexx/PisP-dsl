@@ -5,6 +5,7 @@
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="0" />
     <engage id="31e3a3f9-3c6d-4ff3-835b-963db6c69f0a" name="PisP.enriched" />
     <engage id="f18355ad-2d42-4a0a-a785-66932d080030" name="PisP.embeddings" />
+    <engage id="ce3f5ec5-9da3-4041-b8b2-6d8457facab5" name="PisP.gen.embed2solver" />
   </languages>
   <imports />
   <registry>
