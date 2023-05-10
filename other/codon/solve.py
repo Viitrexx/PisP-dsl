@@ -2,12 +2,12 @@ from PisPy import *
 import time
 import sys
 
-file = "./../PisPy/copypasta/Soma Cube.xml"
+file = "./../PisPy/copypasta/Zoltan 6x10.xml"
 myPuzzle = PuzzleParser().loadFromFile(file)
 print("Generating embeddings...")
 e = generateEmbeddings(myPuzzle)
 aspects = [p.name + str(i) for p in myPuzzle.bagOfPieces for i in range(p.multiplicity)] + [str(i) for i in range(len(myPuzzle.shape.locations))]
-print(aspects)
+#print(aspects)
 # UInt here has to have as many bits as len(aspects)
 # INT_BITS : Static[int] = 64 # larger number -> slower program
 assert len(aspects) <= INT_BITS, f"Not enough INT_BITS to encode {len(aspects)} aspects."
@@ -20,12 +20,12 @@ encodedEmbeddings = [encode(ee) for ee in e]
 embeddings = [decode(ee) for ee in set(encodedEmbeddings)]
 #print(len(embeddings))
 #print(sorted(embeddings))
-for p in [p.name + str(i) for p in myPuzzle.bagOfPieces for i in range(p.multiplicity)]:
-    counter = 0
-    for embed in embeddings:
-        if p in embed:
-            counter += 1
-    print(p, ":", counter)    
+#for p in [p.name + str(i) for p in myPuzzle.bagOfPieces for i in range(p.multiplicity)]:
+    #counter = 0
+    #for embed in embeddings:
+        #if p in embed:
+            #counter += 1
+    #print(p, ":", counter)    
 
 # Inefficient solver
 """
@@ -57,7 +57,7 @@ while len(S) > 0:
             S.append((pp.union(e), EE[1:], t + [e]))
 """
 
-# Bitwise version of above (with optimisations
+# Bitwise version of above (with optimisations)
 #fixed = ['A0', 4, 5, 8, 17]
 #fixed = ['B0', 12, 13, 16, 25]
 A = (UInt[INT_BITS](UInt[INT_BITS](1) << UInt[INT_BITS]((len(aspects)))) - UInt[INT_BITS](1))

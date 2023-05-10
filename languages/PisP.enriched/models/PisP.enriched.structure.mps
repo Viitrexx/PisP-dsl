@@ -59,7 +59,6 @@
   <node concept="1TIwiD" id="2mvPyqyFtK2">
     <property role="EcuMT" value="2711120962126732290" />
     <property role="TrG5h" value="Orientation" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="r6rf:GPbSRFwFD" resolve="Piece" />
     <node concept="1TJgyi" id="2mvPyqyFu9G" role="1TKVEl">
       <property role="IQ2nx" value="2711120962126733932" />

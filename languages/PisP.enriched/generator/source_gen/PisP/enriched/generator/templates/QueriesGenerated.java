@@ -8,11 +8,12 @@ import jetbrains.mps.generator.template.DropRootRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.generator.template.PropertyMacroContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.generator.template.ReferenceMacroContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.generator.template.PropertyMacroContext;
+import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.core.behavior.INamedConcept__BehaviorDescriptor;
 import jetbrains.mps.generator.template.MapSrcMacroContext;
@@ -20,6 +21,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import PisP.enriched.generator.util.OrientationGenerator;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
+import jetbrains.mps.references.BLOperations;
 import jetbrains.mps.generator.template.MapSrcMacroPostProcContext;
 import java.util.Map;
 import jetbrains.mps.generator.impl.query.ReductionRuleCondition;
@@ -49,6 +51,71 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   public static boolean rule_Condition_3_0(final BaseMappingRuleContext _context) {
     return !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy), CONCEPTS.OrientationPiece$PO)) && (SLinkOperations.getTarget(_context.getNode(), LINKS.piece$jZYy) != null);
+  }
+  public static boolean rule_Condition_4_0(final BaseMappingRuleContext _context) {
+    SNode sibling = (SNode) SNodeOperations.getNextSibling(_context.getNode());
+    while (true) {
+      boolean copy = true;
+      for (final SNode location : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.locations$ChQi))) {
+        // if not location in sibling location
+        // this will only work if the pieces are semi-normalised... (sort not needed)
+        // -> least element is origin
+        if (!(ListSequence.fromList(SLinkOperations.getChildren(sibling, LINKS.locations$ChQi)).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            for (int i = 0; i < ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ)).count(); i++) {
+              if (SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.coordinates$48xZ)).getElement(i), PROPS.coordinate$hw$O) != SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ)).getElement(i), PROPS.coordinate$hw$O)) {
+                return false;
+              }
+            }
+            return true;
+          }
+        }))) {
+          copy = false;
+        }
+      }
+      if (copy) {
+        return true;
+      }
+      if (!(SNodeOperations.getNextSibling(sibling) != null)) {
+        break;
+      }
+      sibling = (SNode) SNodeOperations.getNextSibling(sibling);
+    }
+    return false;
+  }
+  public static boolean rule_Condition_5_0(final BaseMappingRuleContext _context) {
+    // if not normalised
+    // iff least element is not origin
+    int[] least = new int[ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.locations$ChQi)).first(), LINKS.coordinates$48xZ)).count()];
+    for (int i = 0; i < least.length; i++) {
+      least[i] = Integer.MAX_VALUE;
+    }
+    for (SNode location : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.locations$ChQi))) {
+      int i = 0;
+      boolean new_least = false;
+      for (SNode coordinate : ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ))) {
+        if (SPropertyOperations.getInteger(coordinate, PROPS.coordinate$hw$O) < least[i]) {
+          // Strictly smaller means guaranteed new least
+          new_least = true;
+          break;
+        } else if (SPropertyOperations.getInteger(coordinate, PROPS.coordinate$hw$O) > least[i]) {
+          // Strictly larger means never new least
+          break;
+        }
+        i++;
+      }
+      if (new_least) {
+        for (int j = 0; j < least.length; j++) {
+          least[j] = SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ)).getElement(j), PROPS.coordinate$hw$O);
+        }
+      }
+    }
+    for (int i : least) {
+      if (i != 0) {
+        return true;
+      }
+    }
+    return false;
   }
   public static Object propertyMacro_GetValue_2_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.multiplicity$Equw);
@@ -90,12 +157,46 @@ public class QueriesGenerated extends QueryProviderBase {
     _context.registerMappingLabel((SNode) _context.getOriginalCopiedInputNode(_context.getNode()), "orientationpiece", op);
     return op;
   }
+  public static SNode mapSrcMacro_map_6_0(final MapSrcMacroContext _context) {
+    int[] least = new int[ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.locations$ChQi)).first(), LINKS.coordinates$48xZ)).count()];
+    for (int i = 0; i < least.length; i++) {
+      least[i] = Integer.MAX_VALUE;
+    }
+    for (SNode location : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.locations$ChQi))) {
+      int i = 0;
+      boolean new_least = false;
+      for (SNode coordinate : ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ))) {
+        if (SPropertyOperations.getInteger(coordinate, PROPS.coordinate$hw$O) < least[i]) {
+          // Strictly smaller means guaranteed new least
+          new_least = true;
+          break;
+        } else if (SPropertyOperations.getInteger(coordinate, PROPS.coordinate$hw$O) > least[i]) {
+          // Strictly larger means never new least
+          break;
+        }
+        i++;
+      }
+      if (new_least) {
+        for (int j = 0; j < least.length; j++) {
+          least[j] = SPropertyOperations.getInteger(ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ)).getElement(j), PROPS.coordinate$hw$O);
+        }
+      }
+    }
+    for (SNode location : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.locations$ChQi))) {
+      for (int i = 0; i < least.length; i++) {
+        BLOperations.minusAssign(SPropertyOperations.intPropRef(ListSequence.fromList(SLinkOperations.getChildren(location, LINKS.coordinates$48xZ)).getElement(i), PROPS.coordinate$hw$O), least[i]);
+      }
+    }
+    return _context.getNode();
+  }
   public static void mapSrcMacro_post_1_0(final MapSrcMacroPostProcContext _context) {
   }
   private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
   {
     int i = 0;
     rrcMethods.put("2711120962161552125", new RRC(i++));
+    rrcMethods.put("221773630124158532", new RRC(i++));
+    rrcMethods.put("221773630126338078", new RRC(i++));
   }
   @Override
   @NotNull
@@ -113,6 +214,10 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.rule_Condition_3_0(ctx);
+        case 1:
+          return QueriesGenerated.rule_Condition_4_0(ctx);
+        case 2:
+          return QueriesGenerated.rule_Condition_5_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -200,6 +305,7 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, MapNodeQuery> mnqMethods = new HashMap<String, MapNodeQuery>();
   {
     mnqMethods.put("2711120962131495872", new MNQ(0));
+    mnqMethods.put("221773630126390226", new MNQ(1));
   }
   @NotNull
   @Override
@@ -217,6 +323,8 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.mapSrcMacro_map_1_0(ctx);
+        case 1:
+          return QueriesGenerated.mapSrcMacro_map_6_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -255,16 +363,16 @@ public class QueriesGenerated extends QueryProviderBase {
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink piece$jZYy = MetaAdapterFactory.getReferenceLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae02bdL, 0x2cd4be37ae080fL, "piece");
-    /*package*/ static final SContainmentLink orientations$BxMn = MetaAdapterFactory.getContainmentLink(0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2ac2732L, 0x259fd626a2add54bL, "orientations");
-    /*package*/ static final SContainmentLink coordinates$48xZ = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL, 0x2cd4be37aee65fL, "coordinates");
     /*package*/ static final SContainmentLink locations$ChQi = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, 0x2cd4be37ae0e94L, "locations");
+    /*package*/ static final SContainmentLink coordinates$48xZ = MetaAdapterFactory.getContainmentLink(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adb89fL, 0x2cd4be37aee65fL, "coordinates");
+    /*package*/ static final SContainmentLink orientations$BxMn = MetaAdapterFactory.getContainmentLink(0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2ac2732L, 0x259fd626a2add54bL, "orientations");
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty coordinate$hw$O = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adda67L, 0x2cd4be37adde2aL, "coordinate");
     /*package*/ static final SProperty multiplicity$Equw = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae02bdL, 0x2cd4be37ae0492L, "multiplicity");
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty lattice$e_Fj = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, 0x2cd4be37af4f8fL, "lattice");
     /*package*/ static final SProperty comment$q88u = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x1b3c19e094c6322eL, 0x1b3c19e094c64ad2L, "comment");
-    /*package*/ static final SProperty coordinate$hw$O = MetaAdapterFactory.getProperty(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37adda67L, 0x2cd4be37adde2aL, "coordinate");
   }
 }

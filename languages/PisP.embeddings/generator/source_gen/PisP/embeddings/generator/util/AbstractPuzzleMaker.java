@@ -152,20 +152,13 @@ public class AbstractPuzzleMaker {
 
   private boolean check_orientation_fit_at_loc_with_fix(List<Integer> loc, List<Integer> orient, List<Integer> fix, List<Integer> location) {
     // np.array_equal(np.add(loc, np.subtract(orient, fix)), np.array(location))
-    List<Integer> orient_minus_fix = ListSequence.fromList(new ArrayList<Integer>());
-    assert ListSequence.fromList(orient).count() == ListSequence.fromList(fix).count();
+    int[] loc_plus_orient_minus_fix = new int[ListSequence.fromList(orient).count()];
     for (int i = 0; i < ListSequence.fromList(orient).count(); i++) {
-      ListSequence.fromList(orient_minus_fix).addElement(ListSequence.fromList(orient).getElement(i) - ListSequence.fromList(fix).getElement(i));
+      loc_plus_orient_minus_fix[i] = ListSequence.fromList(orient).getElement(i) - ListSequence.fromList(fix).getElement(i) + ListSequence.fromList(loc).getElement(i);
     }
-    List<Integer> loc_plus_omf = ListSequence.fromList(new ArrayList<Integer>());
-    assert ListSequence.fromList(loc).count() == ListSequence.fromList(orient_minus_fix).count();
-    for (int i = 0; i < ListSequence.fromList(loc).count(); i++) {
-      ListSequence.fromList(loc_plus_omf).addElement(ListSequence.fromList(loc).getElement(i) + ListSequence.fromList(orient_minus_fix).getElement(i));
-    }
-    // Oh no is this going to be super slow?
-    assert ListSequence.fromList(loc_plus_omf).count() == ListSequence.fromList(location).count();
-    for (int i = 0; i < ListSequence.fromList(loc_plus_omf).count(); i++) {
-      if (ListSequence.fromList(loc_plus_omf).getElement(i) != ListSequence.fromList(location).getElement(i)) {
+    // Oh no is this going to be super slow? Surprisingly, no.
+    for (int i = 0; i < loc_plus_orient_minus_fix.length; i++) {
+      if (loc_plus_orient_minus_fix[i] != ListSequence.fromList(location).getElement(i)) {
         return false;
       }
     }

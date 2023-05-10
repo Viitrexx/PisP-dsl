@@ -17,14 +17,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import PisP.embeddings.generator.util.AbstractPuzzleMaker;
 import PisP.embeddings.generator.util.AbstractPuzzle;
 import java.util.Map;
-import jetbrains.mps.generator.impl.query.ReductionRuleCondition;
+import jetbrains.mps.generator.impl.query.MapNodeQuery;
 import java.util.HashMap;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.generator.impl.query.QueryKey;
-import jetbrains.mps.generator.template.ReductionRuleQueryContext;
-import jetbrains.mps.generator.impl.GenerationFailureException;
-import jetbrains.mps.generator.impl.query.MapNodeQuery;
 import org.jetbrains.annotations.Nullable;
+import jetbrains.mps.generator.impl.GenerationFailureException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SProperty;
 
@@ -64,32 +62,6 @@ public class QueriesGenerated extends QueryProviderBase {
     ListSequence.fromList(SLinkOperations.getChildren(ap, LINKS.aspects$bIOZ)).addSequence(ListSequence.fromList(apJava.aspects));
     ListSequence.fromList(SLinkOperations.getChildren(ap, LINKS.embeddings$iT2w)).addSequence(ListSequence.fromList(apJava.embeddings));
     return ap;
-  }
-  private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
-  {
-    int i = 0;
-    rrcMethods.put("2729515537033554988", new RRC(i++));
-  }
-  @Override
-  @NotNull
-  public ReductionRuleCondition getReductionRuleCondition(@NotNull QueryKey identity) {
-    ReductionRuleCondition query = identity.forTemplateNode(rrcMethods);
-    return (query != null ? query : super.getReductionRuleCondition(identity));
-  }
-  private static class RRC implements ReductionRuleCondition {
-    private final int methodKey;
-    public RRC(int methodKey) {
-      this.methodKey = methodKey;
-    }
-    @Override
-    public boolean check(ReductionRuleQueryContext ctx) throws GenerationFailureException {
-      switch (methodKey) {
-        case 0:
-          return QueriesGenerated.rule_Condition_3_0(ctx);
-        default:
-          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
-      }
-    }
   }
   private final Map<String, MapNodeQuery> mnqMethods = new HashMap<String, MapNodeQuery>();
   {

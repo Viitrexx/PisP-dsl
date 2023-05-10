@@ -861,9 +861,7 @@
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.class_(boolean,boolean,boolean)" resolve="class_" />
               <node concept="3clFbT" id="4f" role="37wK5m" />
               <node concept="3clFbT" id="4g" role="37wK5m" />
-              <node concept="3clFbT" id="4h" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+              <node concept="3clFbT" id="4h" role="37wK5m" />
             </node>
           </node>
         </node>

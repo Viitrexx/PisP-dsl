@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <root>
-    <file name="Nx16.xml">
-      <unit at="1,0,56418,17" name="Sandbox.Nx16.Nx16" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 

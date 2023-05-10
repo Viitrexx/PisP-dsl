@@ -52,7 +52,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   private static ConceptDescriptor createDescriptorForOrientation() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PisP.enriched", "Orientation", 0x31e3a3f93c6d4ff3L, 0x835b963db6c69f0aL, 0x259fd626a2addc02L);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     // extends: PisP.structure.Piece
     b.super_(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L);
     b.origin("r:0d90c54f-398c-4ca6-95f7-2a978f823a6d(PisP.enriched.structure)/2711120962126732290");
