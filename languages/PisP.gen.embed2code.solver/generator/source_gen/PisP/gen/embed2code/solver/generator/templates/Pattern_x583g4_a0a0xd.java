@@ -5,8 +5,8 @@ package PisP.gen.embed2code.solver.generator.templates;
 import jetbrains.mps.lang.pattern.GeneratedMatcher;
 import org.jetbrains.mps.openapi.model.SNode;
 
-/*package*/ class Pattern_x583g4_a0a0of extends GeneratedMatcher {
-  public Pattern_x583g4_a0a0of(SNode patternNode) {
+/*package*/ class Pattern_x583g4_a0a0xd extends GeneratedMatcher {
+  public Pattern_x583g4_a0a0xd(SNode patternNode) {
     super(patternNode, false);
 
 
