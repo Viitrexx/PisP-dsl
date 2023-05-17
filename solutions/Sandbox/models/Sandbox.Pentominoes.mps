@@ -5,7 +5,6 @@
     <use id="9ea5405c-cd50-4139-8b08-11b78b688cf5" name="PisP" version="0" />
     <engage id="31e3a3f9-3c6d-4ff3-835b-963db6c69f0a" name="PisP.enriched" />
     <engage id="f18355ad-2d42-4a0a-a785-66932d080030" name="PisP.embeddings" />
-    <engage id="0ca29447-9381-4823-a206-2594a57130c7" name="PisP.gen.embed2code.solver" />
   </languages>
   <imports />
   <registry>
@@ -1304,11 +1303,6 @@
       </node>
     </node>
   </node>
-  <node concept="RxM8_" id="2ssvyCxu6xF">
-    <property role="TrG5h" value="Zoltan 6x10" />
-    <ref role="RwjzG" node="2ssvyCxu50b" resolve="6x10 rectangle" />
-    <ref role="RwjUE" node="2ssvyCxu6xG" resolve="All 12 pentominoes" />
-  </node>
   <node concept="Rwnif" id="2ssvyCxu6xG">
     <property role="TrG5h" value="All 12 pentominoes" />
     <node concept="RwHo3" id="2ssvyCxu6xH" role="Rwwkt">
@@ -1359,6 +1353,11 @@
       <property role="RwH0G" value="1" />
       <ref role="RwHML" node="1GW6u2kO2QW" resolve="Z pentomino" />
     </node>
+  </node>
+  <node concept="RxM8_" id="2ssvyCxu6xF">
+    <property role="TrG5h" value="Zoltan 6x10" />
+    <ref role="RwjzG" node="2ssvyCxu50b" resolve="6x10 rectangle" />
+    <ref role="RwjUE" node="2ssvyCxu6xG" resolve="All 12 pentominoes" />
   </node>
 </model>
 

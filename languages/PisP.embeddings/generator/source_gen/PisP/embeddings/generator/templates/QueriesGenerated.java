@@ -101,6 +101,8 @@ public class QueriesGenerated extends QueryProviderBase {
       curr = next;
       next = (SNode) SNodeOperations.getNextSibling(curr);
     }
+    _context.showWarningMessage(null, "#Aspects: " + ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$bIOZ)).count());
+    _context.showWarningMessage(null, "#Embeddings: " + ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.embeddings$iT2w)).count());
     return false;
   }
   public static Object propertyMacro_GetValue_5_0(final PropertyMacroContext _context) {

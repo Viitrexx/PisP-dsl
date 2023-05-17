@@ -1415,6 +1415,48 @@
               <node concept="rvlfL" id="cjTv4fUtCz" role="2OqNvi" />
             </node>
           </node>
+          <node concept="3clFbF" id="6hFzgtFCsDM" role="3cqZAp">
+            <node concept="2OqwBi" id="6hFzgtFCtcT" role="3clFbG">
+              <node concept="1iwH7S" id="6hFzgtFCsDL" role="2Oq$k0" />
+              <node concept="2kEO4f" id="6hFzgtFCtvj" role="2OqNvi">
+                <node concept="3cpWs3" id="6hFzgtFC$e1" role="2k5Stb">
+                  <node concept="Xl_RD" id="6hFzgtFC$s3" role="3uHU7B">
+                    <property role="Xl_RC" value="#Aspects: " />
+                  </node>
+                  <node concept="2OqwBi" id="6hFzgtFCwqR" role="3uHU7w">
+                    <node concept="2OqwBi" id="6hFzgtFCtYL" role="2Oq$k0">
+                      <node concept="30H73N" id="6hFzgtFCtG7" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="6hFzgtFCujV" role="2OqNvi">
+                        <ref role="3TtcxE" to="kgf2:4UEpjnnMaBf" resolve="aspects" />
+                      </node>
+                    </node>
+                    <node concept="34oBXx" id="6hFzgtFCzPI" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6hFzgtFC_qI" role="3cqZAp">
+            <node concept="2OqwBi" id="6hFzgtFC_qJ" role="3clFbG">
+              <node concept="1iwH7S" id="6hFzgtFC_qK" role="2Oq$k0" />
+              <node concept="2kEO4f" id="6hFzgtFC_qL" role="2OqNvi">
+                <node concept="3cpWs3" id="6hFzgtFC_qM" role="2k5Stb">
+                  <node concept="Xl_RD" id="6hFzgtFC_qN" role="3uHU7B">
+                    <property role="Xl_RC" value="#Embeddings: " />
+                  </node>
+                  <node concept="2OqwBi" id="6hFzgtFC_qO" role="3uHU7w">
+                    <node concept="2OqwBi" id="6hFzgtFC_qP" role="2Oq$k0">
+                      <node concept="30H73N" id="6hFzgtFC_qQ" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="6hFzgtFCCJw" role="2OqNvi">
+                        <ref role="3TtcxE" to="kgf2:4UEpjnnMaEx" resolve="embeddings" />
+                      </node>
+                    </node>
+                    <node concept="34oBXx" id="6hFzgtFC_qS" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs6" id="cjTv4fWeoN" role="3cqZAp">
             <node concept="3clFbT" id="cjTv4fWeO5" role="3cqZAk" />
           </node>
