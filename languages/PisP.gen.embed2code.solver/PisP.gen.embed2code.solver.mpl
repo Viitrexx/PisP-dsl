@@ -132,6 +132,90 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630148469286" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630132348993" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630150428588" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630148469286" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630155642417" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630150428588" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630159768674" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630155642417" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630160269856" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630159768674" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630176361727" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="268c8a3e-3b07-46aa-a9c9-a1c4bf233f07(PisP.gen.embed2code.solver.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a328e98e-e51a-4323-be9a-f851e5b5df1d(PisP.gen.embed2code.solver.generator.templates@generator)" nodeID="221773630160269856" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>

@@ -11,20 +11,35 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.math.BigInteger;
+import jetbrains.mps.internal.collections.runtime.ILeftCombinator;
+import jetbrains.mps.generator.template.PropertyMacroContext;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import jetbrains.mps.generator.template.MapSrcMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import PisP.embeddings.generator.util.AbstractPuzzleMaker;
 import PisP.embeddings.generator.util.AbstractPuzzle;
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
-import jetbrains.mps.generator.impl.query.MapNodeQuery;
+import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.generator.template.TemplateVarContext;
 import java.util.HashMap;
+import jetbrains.mps.generator.impl.query.MapRootRuleCondition;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.generator.impl.query.QueryKey;
-import org.jetbrains.annotations.Nullable;
+import jetbrains.mps.generator.template.MapRootRuleContext;
 import jetbrains.mps.generator.impl.GenerationFailureException;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.generator.impl.query.SourceNodesQuery;
+import java.util.Collection;
+import jetbrains.mps.util.IterableUtil;
+import jetbrains.mps.generator.impl.query.PropertyValueQuery;
 import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.annotations.Nullable;
+import jetbrains.mps.generator.impl.query.VariableValueQuery;
+import jetbrains.mps.generator.impl.query.MapNodeQuery;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
@@ -54,6 +69,55 @@ public class QueriesGenerated extends QueryProviderBase {
     }
     return false;
   }
+  public static boolean rule_Condition_4_0(final BaseMappingRuleContext _context) {
+    for (SNode a : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$bIOZ))) {
+      try {
+        Integer.parseInt(SPropertyOperations.getString(a, PROPS.name$MnvL));
+      } catch (NumberFormatException e) {
+        return true;
+      }
+    }
+    return false;
+  }
+  public static boolean rule_Condition_6_0(final BaseMappingRuleContext _context) {
+    SNode curr = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.embeddings$iT2w)).first();
+    SNode next = (SNode) SNodeOperations.getNextSibling(curr);
+    final int a = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$bIOZ)).count();
+    BigInteger i = ListSequence.fromList(SLinkOperations.getChildren(curr, LINKS.aspects$q3wJ)).foldLeft(BigInteger.ZERO, new ILeftCombinator<SNode, BigInteger>() {
+      public BigInteger combine(BigInteger s, SNode it) {
+        return s.add(BigInteger.ONE.shiftLeft(a - Integer.parseInt(SPropertyOperations.getString(it, PROPS.name$MnvL))));
+      }
+    });
+    while (SNodeOperations.getNextSibling(curr) != null) {
+      BigInteger j = ListSequence.fromList(SLinkOperations.getChildren(next, LINKS.aspects$q3wJ)).foldLeft(BigInteger.ZERO, new ILeftCombinator<SNode, BigInteger>() {
+        public BigInteger combine(BigInteger s, SNode it) {
+          return s.add(BigInteger.ONE.shiftLeft(a - Integer.parseInt(SPropertyOperations.getString(it, PROPS.name$MnvL))));
+        }
+      });
+      if (i.compareTo(j) == -1) {
+        return true;
+      }
+      i = j;
+      curr = next;
+      next = (SNode) SNodeOperations.getNextSibling(curr);
+    }
+    return false;
+  }
+  public static Object propertyMacro_GetValue_5_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_7_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+  }
+  public static Iterable<SNode> sourceNodesQuery_5_0(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.embeddings$iT2w);
+  }
+  public static Iterable<SNode> sourceNodesQuery_5_1(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$bIOZ);
+  }
+  public static Iterable<SNode> sourceNodesQuery_7_0(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$bIOZ);
+  }
   public static SNode mapSrcMacro_map_1_0(final MapSrcMacroContext _context) {
     SNode ap = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf18355ad2d424a0aL, 0xa78566932d080030L, 0x4eaa6535d7c70685L, "PisP.embeddings.structure.AbstractPuzzle"));
     SPropertyOperations.assign(ap, PROPS.name$MnvL, SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
@@ -63,9 +127,185 @@ public class QueriesGenerated extends QueryProviderBase {
     ListSequence.fromList(SLinkOperations.getChildren(ap, LINKS.embeddings$iT2w)).addSequence(ListSequence.fromList(apJava.embeddings));
     return ap;
   }
+  public static SNode mapSrcMacro_map_5_0(final MapSrcMacroContext _context) {
+    List<String> names = ListSequence.fromList(new ArrayList<String>());
+    for (SNode a : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$q3wJ))) {
+      ListSequence.fromList(names).addElement(((Map<String, String>) _context.getVariable("var:dict")).get(SPropertyOperations.getString(a, PROPS.name$MnvL)));
+    }
+    names = ListSequence.fromList(names).sort(new ISelector<String, Integer>() {
+      public Integer select(String it) {
+        return Integer.parseInt(it);
+      }
+    }, true).toListSequence();
+    int i = 0;
+    for (SNode a : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$q3wJ))) {
+      SPropertyOperations.assign(a, PROPS.name$MnvL, ListSequence.fromList(names).getElement(i++));
+    }
+    return _context.getNode();
+  }
+  public static SNode mapSrcMacro_map_5_1(final MapSrcMacroContext _context) {
+    // Not the best place to do this but idk where else
+    // since I can not use a property macro for some reason
+    SPropertyOperations.assign(((SNode) SNodeOperations.getParent(_context.getNode())), PROPS.name$MnvL, ((String) _context.getVariable("var:name")));
+    SPropertyOperations.assign(_context.getNode(), PROPS.name$MnvL, ((Map<String, String>) _context.getVariable("var:dict")).get(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL)));
+    return _context.getNode();
+  }
+  public static SNode mapSrcMacro_map_7_0(final MapSrcMacroContext _context) {
+    List<SNode> list = ListSequence.fromList(ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.embeddings$iT2w)).sort(new ISelector<SNode, BigInteger>() {
+      public BigInteger select(SNode it) {
+        return ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.aspects$q3wJ)).foldLeft(BigInteger.ZERO, new ILeftCombinator<SNode, BigInteger>() {
+          public BigInteger combine(BigInteger s, SNode it) {
+            return s.add(BigInteger.ONE.shiftLeft(((Integer) _context.getVariable("var:a")) - Integer.parseInt(SPropertyOperations.getString(it, PROPS.name$MnvL))));
+          }
+        });
+      }
+    }, true).toListSequence()).reversedList();
+    ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.embeddings$iT2w)).clear();
+    ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.embeddings$iT2w)).addSequence(ListSequence.fromList(list));
+    return _context.getNode();
+  }
+  public static Object varMacro_Value_5_0(final TemplateVarContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+  }
+  public static Object varMacro_Value_5_1(final TemplateVarContext _context) {
+    Map<String, String> m = new HashMap<>();
+    int i = 0;
+    for (SNode a : ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$bIOZ))) {
+      m.put(SPropertyOperations.getString(a, PROPS.name$MnvL), Integer.toString(i++));
+    }
+    return m;
+  }
+  public static Object varMacro_Value_7_0(final TemplateVarContext _context) {
+    return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.aspects$bIOZ)).count();
+  }
+  private final Map<String, MapRootRuleCondition> mrrcMethods = new HashMap<String, MapRootRuleCondition>();
+  {
+    int i = 0;
+    mrrcMethods.put("221773630165405004", new MRRC(i++));
+    mrrcMethods.put("221773630185594956", new MRRC(i++));
+  }
+  @Override
+  @NotNull
+  public MapRootRuleCondition getMapRootRuleCondition(@NotNull QueryKey identity) {
+    MapRootRuleCondition query = identity.forTemplateNode(mrrcMethods);
+    return (query != null ? query : super.getMapRootRuleCondition(identity));
+  }
+  private static class MRRC implements MapRootRuleCondition {
+    private final int methodKey;
+    public MRRC(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @Override
+    public boolean check(@NotNull MapRootRuleContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return QueriesGenerated.rule_Condition_4_0(ctx);
+        case 1:
+          return QueriesGenerated.rule_Condition_6_0(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+  private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
+  {
+    int i = 0;
+    snsqMethods.put("221773630165539780", new SNsQ(i++));
+    snsqMethods.put("221773630165485094", new SNsQ(i++));
+    snsqMethods.put("221773630186150086", new SNsQ(i++));
+  }
+  @NotNull
+  @Override
+  public SourceNodesQuery getSourceNodesQuery(@NotNull QueryKey identity) {
+    SourceNodesQuery query = identity.forFunctionNode(snsqMethods);
+    return (query != null ? query : super.getSourceNodesQuery(identity));
+  }
+  private static class SNsQ implements SourceNodesQuery {
+    private final int methodKey;
+    public SNsQ(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @NotNull
+    public Collection<SNode> evaluate(@NotNull SourceSubstituteMacroNodesContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_5_0(ctx));
+        case 1:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_5_1(ctx));
+        case 2:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_7_0(ctx));
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+  private final Map<String, PropertyValueQuery> pvqMethods = new HashMap<String, PropertyValueQuery>();
+  {
+    int i = 0;
+    pvqMethods.put("221773630171229571", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "map_AP"));
+    pvqMethods.put("221773630186147708", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "map_AbstractPuzzle"));
+  }
+  @NotNull
+  @Override
+  public PropertyValueQuery getPropertyValueQuery(@NotNull QueryKey identity) {
+    PropertyValueQuery query = identity.forTemplateNode(pvqMethods);
+    return (query != null ? query : super.getPropertyValueQuery(identity));
+  }
+  private static class PVQ extends PropertyValueQuery.Base {
+    private final int methodKey;
+    /*package*/ PVQ(int methodKey, SProperty property, String templateValue) {
+      super(property, templateValue);
+      this.methodKey = methodKey;
+    }
+    @Nullable
+    public Object evaluate(@NotNull PropertyMacroContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return QueriesGenerated.propertyMacro_GetValue_5_0(ctx);
+        case 1:
+          return QueriesGenerated.propertyMacro_GetValue_7_0(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+  private final Map<String, VariableValueQuery> vvqMethods = new HashMap<String, VariableValueQuery>();
+  {
+    vvqMethods.put("221773630166331010", new VVQ(0));
+    vvqMethods.put("221773630165405387", new VVQ(1));
+    vvqMethods.put("221773630196607776", new VVQ(2));
+  }
+  @NotNull
+  @Override
+  public VariableValueQuery getVariableValueQuery(@NotNull QueryKey queryKey) {
+    VariableValueQuery query = queryKey.forTemplateNode(vvqMethods);
+    return (query != null ? query : super.getVariableValueQuery(queryKey));
+  }
+  private static class VVQ implements VariableValueQuery {
+    private final int methodKey;
+    /*package*/ VVQ(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @Nullable
+    public Object evaluate(@NotNull TemplateVarContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return QueriesGenerated.varMacro_Value_5_0(ctx);
+        case 1:
+          return QueriesGenerated.varMacro_Value_5_1(ctx);
+        case 2:
+          return QueriesGenerated.varMacro_Value_7_0(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
   private final Map<String, MapNodeQuery> mnqMethods = new HashMap<String, MapNodeQuery>();
   {
     mnqMethods.put("5668454362927157598", new MNQ(0));
+    mnqMethods.put("221773630165539779", new MNQ(1));
+    mnqMethods.put("221773630165485093", new MNQ(2));
+    mnqMethods.put("221773630186153010", new MNQ(3));
   }
   @NotNull
   @Override
@@ -83,6 +323,12 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.mapSrcMacro_map_1_0(ctx);
+        case 1:
+          return QueriesGenerated.mapSrcMacro_map_5_0(ctx);
+        case 2:
+          return QueriesGenerated.mapSrcMacro_map_5_1(ctx);
+        case 3:
+          return QueriesGenerated.mapSrcMacro_map_7_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }

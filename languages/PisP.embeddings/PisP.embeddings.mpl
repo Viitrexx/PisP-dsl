@@ -98,6 +98,34 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="1e10f57a-e96b-4f9b-9765-db2ed63bd6e3(PisP.embeddings.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:4a84af5a-94ec-457e-a09c-5be1e6851d58(PisP.embeddings.generator.templates@generator)" nodeID="221773630165405003" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="1e10f57a-e96b-4f9b-9765-db2ed63bd6e3(PisP.embeddings.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:4a84af5a-94ec-457e-a09c-5be1e6851d58(PisP.embeddings.generator.templates@generator)" nodeID="5668454362927004858" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="1e10f57a-e96b-4f9b-9765-db2ed63bd6e3(PisP.embeddings.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:4a84af5a-94ec-457e-a09c-5be1e6851d58(PisP.embeddings.generator.templates@generator)" nodeID="221773630185586629" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="1e10f57a-e96b-4f9b-9765-db2ed63bd6e3(PisP.embeddings.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:4a84af5a-94ec-457e-a09c-5be1e6851d58(PisP.embeddings.generator.templates@generator)" nodeID="221773630165405003" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>

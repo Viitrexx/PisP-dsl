@@ -187,6 +187,9 @@
       <node concept="2iRkQZ" id="cjTv4cr2uT" role="2iSdaV" />
       <node concept="3EZMnI" id="cjTv4cr1Wu" role="3EZMnx">
         <node concept="2iRfu4" id="cjTv4cr1Wv" role="2iSdaV" />
+        <node concept="3F0ifn" id="6hFzgtEn7U6" role="3EZMnx">
+          <property role="3F0ifm" value="def" />
+        </node>
         <node concept="3F0A7n" id="cjTv4cr1Zq" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
