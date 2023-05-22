@@ -615,7 +615,7 @@
     <property role="TrG5h" value="renamer+innersorter" />
     <node concept="3lhOvk" id="cjTv4ezGPc" role="3lj3bC">
       <ref role="30HIoZ" to="kgf2:4UEpjnnLKq5" resolve="AbstractPuzzle" />
-      <ref role="3lhOvi" node="cjTv4ezGPo" resolve="map_AbstractPuzzle" />
+      <ref role="3lhOvi" node="cjTv4ezGPo" resolve="map_AP" />
       <node concept="30G5F_" id="cjTv4e_By3" role="30HLyM">
         <node concept="3clFbS" id="cjTv4e_By4" role="2VODD2">
           <node concept="2Gpval" id="cjTv4e_BAf" role="3cqZAp">

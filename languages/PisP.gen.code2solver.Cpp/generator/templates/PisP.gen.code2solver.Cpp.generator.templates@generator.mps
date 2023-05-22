@@ -395,7 +395,7 @@
             </node>
             <node concept="356sEK" id="DtOU931YfX" role="383Ya9">
               <node concept="356sEF" id="DtOU931YfY" role="356sEH">
-                <property role="TrG5h" value="int i = 0;" />
+                <property role="TrG5h" value="long i = 0;" />
               </node>
               <node concept="2EixSi" id="DtOU931YfZ" role="2EinRH" />
             </node>
@@ -464,6 +464,24 @@
               <property role="TrG5h" value="//cout &lt;&lt; &quot;\r&quot; &lt;&lt; i;" />
             </node>
             <node concept="2EixSi" id="6hFzgtGkW11" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="gAO0A_jaPb" role="383Ya9">
+            <node concept="356sEF" id="gAO0A_jaPc" role="356sEH">
+              <property role="TrG5h" value="//if ((++i &amp; (~0u  &gt;&gt; 10) == 0) {" />
+            </node>
+            <node concept="2EixSi" id="gAO0A_jaPd" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="gAO0A_jaPn" role="383Ya9">
+            <node concept="356sEF" id="gAO0A_jaPo" role="356sEH">
+              <property role="TrG5h" value="//    cout &lt;&lt; i &lt;&lt; endl;" />
+            </node>
+            <node concept="2EixSi" id="gAO0A_jaPp" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="gAO0A_jaPA" role="383Ya9">
+            <node concept="356sEF" id="gAO0A_jaPB" role="356sEH">
+              <property role="TrG5h" value="//}" />
+            </node>
+            <node concept="2EixSi" id="gAO0A_jaPC" role="2EinRH" />
           </node>
         </node>
       </node>
@@ -659,7 +677,7 @@
                         <node concept="10QFUN" id="6hFzgtEoDcf" role="33vP2m">
                           <node concept="2OqwBi" id="6hFzgtEoDcg" role="10QFUP">
                             <node concept="37vLTw" id="6hFzgtEoDch" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6hFzgtEoDc5" resolve="cm" />
+                              <ref role="3cqZAo" node="6hFzgtEoDc5" resolve="cu" />
                             </node>
                             <node concept="3TrEf2" id="6hFzgtEoDci" role="2OqNvi">
                               <ref role="3Tt5mk" to="isvg:cjTv4cqvf4" resolve="right" />

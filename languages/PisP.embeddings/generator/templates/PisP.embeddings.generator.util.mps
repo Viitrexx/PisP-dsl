@@ -1383,7 +1383,7 @@
                                     </node>
                                     <node concept="TSZUe" id="2nxbYHpGOsE" role="2OqNvi">
                                       <node concept="37vLTw" id="2nxbYHpGR56" role="25WWJ7">
-                                        <ref role="3cqZAo" node="2nxbYHpGrT3" resolve="aspectNode" />
+                                        <ref role="3cqZAo" node="2nxbYHpGrT3" resolve="pieceAspect" />
                                       </node>
                                     </node>
                                   </node>

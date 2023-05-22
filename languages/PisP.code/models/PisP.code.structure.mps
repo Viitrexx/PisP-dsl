@@ -45,7 +45,7 @@
     <property role="EcuMT" value="221773630129379886" />
     <property role="TrG5h" value="Program" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="cjTv4cqi6t" role="1TKVEi">
       <property role="IQ2ns" value="221773630129381789" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -61,7 +61,7 @@
     <property role="EcuMT" value="221773630129381164" />
     <property role="TrG5h" value="Statement" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="cjTv4cqiDf">
     <property role="EcuMT" value="221773630129384015" />
@@ -98,7 +98,7 @@
     <property role="EcuMT" value="221773630129390685" />
     <property role="TrG5h" value="Boolean" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="cjTv4cqlfJ">
     <property role="EcuMT" value="221773630129394671" />
@@ -181,7 +181,7 @@
   <node concept="1TIwiD" id="cjTv4cqoIH">
     <property role="EcuMT" value="221773630129408941" />
     <property role="TrG5h" value="Variable" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cjTv4cqoQ2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -211,7 +211,7 @@
   <node concept="1TIwiD" id="cjTv4cqq0A">
     <property role="EcuMT" value="221773630129414182" />
     <property role="TrG5h" value="Aspect" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cjTv4cqqgv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -232,7 +232,7 @@
     <property role="EcuMT" value="221773630129419759" />
     <property role="TrG5h" value="Collection" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="cjTv4cqrG5">
     <property role="EcuMT" value="221773630129421061" />

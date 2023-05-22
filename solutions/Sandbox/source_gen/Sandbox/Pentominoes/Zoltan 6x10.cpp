@@ -9,7 +9,7 @@ int i = 0;
 
 void Sinfty() {
   i++;
-  //cout << "\r" << i;
+  cout << "\r" << i;
 }
 void S71() {
   if (!q[71]) {
