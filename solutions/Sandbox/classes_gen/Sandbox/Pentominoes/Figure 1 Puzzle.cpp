@@ -5,11 +5,14 @@ using namespace std;
 using namespace std::chrono;
 
 bool q[30] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,};
-int i = 0;
+long i = 0;
 
 void Sinfty() {
   i++;
-  cout << "\r" << i;
+  //cout << "\r" << i;
+  //if ((++i & (~0u  >> 10) == 0) {
+  //    cout << i << endl;
+  //}
 }
 void S29() {
   if (!q[29]) {
