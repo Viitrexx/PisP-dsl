@@ -13,10 +13,10 @@
 
 <xs:complexType name="ShapeType">
     <xs:sequence>
-        <!-- Comment at start or end -->
-        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
-        <xs:element name="Location" type="LocationType" maxOccurs="unbounded"/>
-        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+            <xs:element name="Location" type="LocationType" maxOccurs="unbounded"/>
+        </xs:choice>
     </xs:sequence>
     <xs:attribute name="name" type="xs:string"/>
     <xs:attribute name="lattice" type="xs:string"/>
@@ -34,10 +34,10 @@
 
 <xs:complexType name="BagOfPiecesType">
     <xs:sequence>
-        <!-- Comment at start or end -->
-        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
-        <xs:element name="PieceReference" type="PieceReferenceType" maxOccurs="unbounded"/>
-        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+            <xs:element name="PieceReference" type="PieceReferenceType" maxOccurs="unbounded"/>
+        </xs:choice>
     </xs:sequence>
     <xs:attribute name="name"/>
 </xs:complexType>
@@ -51,10 +51,10 @@
 
 <xs:complexType name="PieceType">
     <xs:sequence>
-        <!-- Comment at start or end -->
-        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
-        <xs:element name="Location" type="LocationType" maxOccurs="unbounded"/>
-        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+            <xs:element name="Location" type="LocationType" maxOccurs="unbounded"/>
+        </xs:choice>
     </xs:sequence>
     <xs:attribute name="name" type="xs:string"/>
     <xs:attribute name="lattice" type="xs:string"/>
