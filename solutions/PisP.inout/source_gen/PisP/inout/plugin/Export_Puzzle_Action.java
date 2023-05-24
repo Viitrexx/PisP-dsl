@@ -87,7 +87,7 @@ public class Export_Puzzle_Action extends BaseAction {
     FileNameExtensionFilter filter = new FileNameExtensionFilter("XML", "xml");
     jfc.setFileFilter(filter);
     jfc.setDialogTitle("Choose save location.");
-    final Wrappers._T<String> puzzleName = new Wrappers._T<String>();
+    final Wrappers._T<String> puzzleName = new Wrappers._T<String>("");
     event.getData(MPSCommonDataKeys.MPS_PROJECT).getRepository().getModelAccess().executeCommand(() -> {
       SNode puzzle = (SNode) event.getData(MPSCommonDataKeys.NODE);
       for (char c : SPropertyOperations.getString(puzzle, PROPS.name$MnvL).toCharArray()) {

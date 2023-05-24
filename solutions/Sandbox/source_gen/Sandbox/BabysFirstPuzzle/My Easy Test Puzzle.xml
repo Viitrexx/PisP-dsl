@@ -17,6 +17,7 @@
       <Coordinate coordinate="1"></Coordinate>
       <Coordinate coordinate="1"></Coordinate>
     </Location>
+    <DescriptionComment comment="::"></DescriptionComment>
   </Shape>
   <BagOfPieces name="Easy Test Pieces">
     <PieceReference multiplicity="1">

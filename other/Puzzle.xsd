@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Elements -->
+<xs:complexType name="PuzzleType">
+    <xs:all>
+        <xs:element name="Shape" type="ShapeType"/>
+        <xs:element name="BagOfPieces" type="BagOfPiecesType"/>
+        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="ShapeType">
+    <xs:sequence>
+        <!-- Comment at start or end -->
+        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+        <xs:element name="Location" type="LocationType" maxOccurs="unbounded"/>
+        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="lattice" type="xs:string"/>
+</xs:complexType>
+
+<xs:complexType name="LocationType">
+    <xs:sequence>
+        <xs:element name="Coordinate" type="CoordinateType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CoordinateType">
+    <xs:attribute name="coordinate"/>
+</xs:complexType>
+
+<xs:complexType name="BagOfPiecesType">
+    <xs:sequence>
+        <!-- Comment at start or end -->
+        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+        <xs:element name="PieceReference" type="PieceReferenceType" maxOccurs="unbounded"/>
+        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name"/>
+</xs:complexType>
+
+<xs:complexType name="PieceReferenceType">
+    <xs:sequence>
+        <xs:element name="Piece" type="PieceType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="multiplicity" type="xs:string"/>
+</xs:complexType>
+
+<xs:complexType name="PieceType">
+    <xs:sequence>
+        <!-- Comment at start or end -->
+        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+        <xs:element name="Location" type="LocationType" maxOccurs="unbounded"/>
+        <xs:element name="DescriptionComment" type="DescriptionCommentType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="lattice" type="xs:string"/>
+</xs:complexType>
+
+<xs:complexType name="DescriptionCommentType">
+    <xs:attribute name="comment" type="xs:string"/>
+</xs:complexType>
+
+<!-- Content -->
+<xs:element name="Puzzle" type="PuzzleType"/>
+
+</xs:schema>
