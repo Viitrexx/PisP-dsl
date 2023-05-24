@@ -10,7 +10,7 @@ long i = 0;
 void Sinfty() {
   i++;
   //cout << "\r" << i;
-  //if ((++i & (~0u  >> 10) == 0) {
+  //if ((++i & (~0u  >> 10)) == 0) {
   //    cout << i << endl;
   //}
 }

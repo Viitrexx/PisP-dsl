@@ -467,7 +467,7 @@
           </node>
           <node concept="356sEK" id="gAO0A_jaPb" role="383Ya9">
             <node concept="356sEF" id="gAO0A_jaPc" role="356sEH">
-              <property role="TrG5h" value="//if ((++i &amp; (~0u  &gt;&gt; 10) == 0) {" />
+              <property role="TrG5h" value="//if ((++i &amp; (~0u  &gt;&gt; 10)) == 0) {" />
             </node>
             <node concept="2EixSi" id="gAO0A_jaPd" role="2EinRH" />
           </node>

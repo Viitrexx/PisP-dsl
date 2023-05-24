@@ -9,17 +9,20 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
+import jetbrains.mps.project.MPSProject;
 import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import javax.swing.JFrame;
 import javax.swing.JFileChooser;
 import java.io.File;
 import java.util.Scanner;
-import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.ModelImports;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -35,7 +38,7 @@ public class Import_Legacy_Action extends BaseAction {
   public Import_Legacy_Action() {
     super("Import legacy puzzle", "", ICON);
     this.setIsAlwaysVisible(false);
-    this.setActionAccess(ActionAccess.UNDO_PROJECT);
+    this.setActionAccess(ActionAccess.NONE);
   }
   @Override
   public boolean isDumbAware() {
@@ -52,13 +55,21 @@ public class Import_Legacy_Action extends BaseAction {
         return false;
       }
     }
+    {
+      MPSProject p = event.getData(MPSCommonDataKeys.MPS_PROJECT);
+      if (p == null) {
+        return false;
+      }
+    }
     return true;
   }
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
-    SNode puzzle = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37abf69bL, "PisP.structure.Puzzle"));
-    SNode bop = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ada031L, "PisP.structure.BagOfPieces"));
-    SNode shape = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ada4e2L, "PisP.structure.Shape"));
+    LogContext.with(Import_Legacy_Action.class, null, null).info("Importing legacy");
+    final SNode puzzle = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37abf69bL, "PisP.structure.Puzzle"));
+    final SNode bop = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ada031L, "PisP.structure.BagOfPieces"));
+    final SNode shape = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ada4e2L, "PisP.structure.Shape"));
+    final Wrappers._T<SModel> new_model = new Wrappers._T<SModel>();
     SLinkOperations.setTarget(puzzle, LINKS.shape$f2Vs, shape);
     SLinkOperations.setTarget(puzzle, LINKS.bagofpieces$Ua4q, bop);
     JFrame frame = new JFrame();
@@ -79,6 +90,11 @@ public class Import_Legacy_Action extends BaseAction {
             }
           } else if (sPuzzle.startsWith("Name:")) {
             SPropertyOperations.assign(puzzle, PROPS.name$MnvL, sPuzzle.substring("Name: ".length()));
+            event.getData(MPSCommonDataKeys.MPS_PROJECT).getRepository().getModelAccess().executeCommand(() -> {
+              new_model.value = event.getData(MPSCommonDataKeys.CONTEXT_MODEL).getModelRoot().createModel(event.getData(MPSCommonDataKeys.CONTEXT_MODEL).getName() + "." + SPropertyOperations.getString(puzzle, PROPS.name$MnvL).replace(' ', '_'));
+              new ModelImports(new_model.value).addUsedLanguage(MetaAdapterFactory.getLanguage(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, "PisP"));
+              new ModelImports(new_model.value).copyLanguageEngagedOnGeneration(event.getData(MPSCommonDataKeys.CONTEXT_MODEL));
+            });
           } else if (sPuzzle.startsWith("Bag-of-Pieces Name:")) {
             SPropertyOperations.assign(bop, PROPS.name$MnvL, sPuzzle.substring("Bag-of-Pieces Name: ".length()));
             File bopFile = new File(selectedFile.getAbsolutePath() + "/../../Bags of Pieces/" + SPropertyOperations.getString(bop, PROPS.name$MnvL));
@@ -106,7 +122,7 @@ public class Import_Legacy_Action extends BaseAction {
                 if (sBop.startsWith("Class")) {
                   String[] classLine = sBop.split(":")[1].split(">");
                   String locationString = classLine[0];
-                  SNode piece = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, "PisP.structure.Piece"));
+                  final SNode piece = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae0ae9L, "PisP.structure.Piece"));
                   SNode pieceRef = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9ea5405ccd504139L, 0x8b0811b78b688cf5L, 0x2cd4be37ae02bdL, "PisP.structure.PieceReference"));
                   String cooString = "";
                   SNode loc = null;
@@ -130,11 +146,11 @@ public class Import_Legacy_Action extends BaseAction {
                       cooString += c;
                     }
                   }
-                  SPropertyOperations.assign(piece, PROPS.name$MnvL, trim_endkxl_a0a2a7a1a4a0e0b1a1a1a01a5(classLine[1]).split("\\s+")[2]);
+                  SPropertyOperations.assign(piece, PROPS.name$MnvL, trim_endkxl_a0a2a7a1a4a0e0b1a1a1a21a5(classLine[1]).split("\\s+")[2]);
                   SPropertyOperations.assignEnum(piece, PROPS.lattice$e_Fj, lattice);
-                  SModelOperations.addRootNode(event.getData(MPSCommonDataKeys.CONTEXT_MODEL), piece);
+                  event.getData(MPSCommonDataKeys.MPS_PROJECT).getRepository().getModelAccess().executeCommand(() -> SModelOperations.addRootNode(new_model.value, piece));
                   SLinkOperations.setTarget(pieceRef, LINKS.piece$jZYy, piece);
-                  SPropertyOperations.assign(pieceRef, PROPS.multiplicity$Equw, Integer.parseInt(trim_endkxl_a0a0c0l0b0e0a4a1b0b0b0k0f(classLine[1]).split("\\s+")[1]));
+                  SPropertyOperations.assign(pieceRef, PROPS.multiplicity$Equw, Integer.parseInt(trim_endkxl_a0a0c0l0b0e0a4a1b0b0b0m0f(classLine[1]).split("\\s+")[1]));
                   ListSequence.fromList(SLinkOperations.getChildren(bop, LINKS.pieces$2_Tv)).addElement(pieceRef);
                 } else {
                 }
@@ -186,15 +202,18 @@ public class Import_Legacy_Action extends BaseAction {
       } catch (IOException ioe) {
         LogContext.with(Import_Legacy_Action.class, null, null).error(ioe);
       }
-      SModelOperations.addRootNode(event.getData(MPSCommonDataKeys.CONTEXT_MODEL), puzzle);
-      SModelOperations.addRootNode(event.getData(MPSCommonDataKeys.CONTEXT_MODEL), bop);
-      SModelOperations.addRootNode(event.getData(MPSCommonDataKeys.CONTEXT_MODEL), shape);
+      event.getData(MPSCommonDataKeys.MPS_PROJECT).getRepository().getModelAccess().executeCommand(() -> {
+        SModelOperations.addRootNode(new_model.value, puzzle);
+        SModelOperations.addRootNode(new_model.value, bop);
+        SModelOperations.addRootNode(new_model.value, shape);
+      });
     }
+    frame.dispose();
   }
-  public static String trim_endkxl_a0a2a7a1a4a0e0b1a1a1a01a5(String str) {
+  public static String trim_endkxl_a0a2a7a1a4a0e0b1a1a1a21a5(String str) {
     return (str == null ? null : str.trim());
   }
-  public static String trim_endkxl_a0a0c0l0b0e0a4a1b0b0b0k0f(String str) {
+  public static String trim_endkxl_a0a0c0l0b0e0a4a1b0b0b0m0f(String str) {
     return (str == null ? null : str.trim());
   }
 

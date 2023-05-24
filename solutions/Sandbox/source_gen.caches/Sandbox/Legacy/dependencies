@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <uses language="l:f18355ad-2d42-4a0a-a785-66932d080030:PisP.embeddings" />
+  <uses language="l:31e3a3f9-3c6d-4ff3-835b-963db6c69f0a:PisP.enriched" />
+  <uses language="l:f1d4aa19-b634-45c9-bf52-a9c395af91f4:PisP.gen.code2solver.Cpp" />
+  <uses language="l:0ca29447-9381-4823-a206-2594a57130c7:PisP.gen.embed2code.solver" />
+</dependenciesRoot>
+

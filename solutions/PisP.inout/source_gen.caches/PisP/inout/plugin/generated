@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-arah40a7uztx2v57nlgk793tuycmwe7">
-  <files names="Import_Legacy_Action.java:Inout_ApplicationPlugin.java" />
+<product version="3" modelHash="ab4ak559rhmqahjz4hm8e60ly82jl25">
+  <files names="Export_Puzzle_Action.java:Import_Legacy_Action.java:Inout_ApplicationPlugin.java:Shortcuts_KeymapChanges.java" />
 </product>
 
