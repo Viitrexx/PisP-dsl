@@ -25,6 +25,7 @@ public class Inout_ApplicationPlugin extends BaseApplicationPlugin {
     // actions w/o parameters
     addAction(new Export_Puzzle_Action());
     addAction(new Import_Legacy_Action());
+    addAction(new Import_Puzzle_Action());
     // groups
   }
   public List<BaseKeymapChanges> initKeymaps() {

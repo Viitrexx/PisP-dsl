@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <root nodeRef="r:2db0bd90-8b27-4a7e-a8e9-6240ffdff03f(Sandbox.BabysFirstPuzzle)/12618812418365182">
-    <file name="My Easy Test Puzzle.xml">
-      <unit id="12618812418365182" at="1,0,50,9" name="Sandbox.BabysFirstPuzzle.My Easy Test Puzzle" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 
