@@ -3,7 +3,7 @@ import time
 import sys
 import random
 
-file = "./../PisPy/copypasta/Soma Cube.xml"
+file = "./../PisPy/xml/Soma Cube.xml"
 myPuzzle = PuzzleParser().loadFromFile(file)
 print("Generating embeddings...")
 e = generateEmbeddings(myPuzzle)
